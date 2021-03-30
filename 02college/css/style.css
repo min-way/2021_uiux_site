@@ -12,9 +12,10 @@
 
 .sideMenu {float: right;}
 .sideMenu li { float: left;}
+.sideMenu > li > p { line-height: 40px; color: #fff; font-size: 12px; text-align: center;}
 .sideMenu > li > a { display: block; line-height: 40px; color: #fff; font-size: 12px; text-align: center;}
 .sideMenu > li + li { padding-left: 10px;}
-.sideMenu > li > ul { line-height: 40px;}
+.sideMenu > li > ul { padding-top: 9px;}
 
 .logo { float: left; width: 300px; margin-top: 25px; }
 .logo img { float: left; padding-right: 15px; width: 27%;}
@@ -120,6 +121,11 @@ border-radius: 50%;}
     right: 0;
     background: url(../images/slide_btn_02.png) no-repeat;
     opacity: 0.5;
+}
+
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  background-position: 0 0;
 }
 
 .bx-wrapper .bx-controls-direction a {
