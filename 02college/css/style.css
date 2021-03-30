@@ -29,7 +29,7 @@
 .mainMenu ul:last-child li {padding-top: 35px}
 
 /*------------contents------------*/
-#contents { width: 100%; height: 1310px; 
+#contents { width: 100%; height: 1310px;
     background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg);
     background-repeat: repeat,no-repeat;
     background-position: center;
@@ -51,7 +51,7 @@ border-radius: 50%;}
 .txtSlider {position: absolute; left: 95px; top: 80px;}
 .txtSlider p {font-size: 65px; color: #1550b8; line-height: 75px;}
 
-.twb {font-weight: bold;}
+.twb { font-weight: bold;}
 .btn { display: block; border: 1px solid #999; width: 170px; line-height: 40px; text-align: center; background: rgba(0,0,0,0.5); color: #fff;}
 .btn2 { display: block; border: 1px solid #0b1f41; width: 170px; line-height: 40px; text-align: center; background: #192d4e; color: #fff;}
 
