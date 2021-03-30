@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+/*header*/
+#header, .visualWrap, footer {
+    min-width: 980px; /*짤림현상 방지*/
+}
+
+.utilWrap {
+    border-bottom: 1px solid #000;
+}
+
+.util {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.uMenu {
+    float: right;
+}
+
+.uMenu li {
+    position: relative;
+    float: left;
+    padding: 0 10px;
+}
+
+.uMenu li:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background: #00f;
+    right: 0;
+    top: 12px;
+}
+
+.uMenu li:last-child:after {
+    content: '';
+    display: none;
+}
+
+.uMenu li a {
+    display: block;
+    line-height: 35px;
+    font-size: 12px;
+}
+
+#header h1 {
+    text-align: center;
+    line-height: 90px;
+}
+
+.gnbWrap {
+    background: #1d5da4;
+}
+
+.gnbMenu {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.gnbMenu li {
+    float: left;
+    width: calc(100% / 6);
+    border-left: 1px solid #fff;
+}
+
+.gnbMenu li:last-child {
+    border-right: 1px solid #fff;
+}
+
+.gnbMenu li:hover {
+    background: pink;
+}
+
+.gnbMenu li a {
+    display: block;
+    line-height: 40px;
+    text-align: center;;
+    color: #fff;
+}
+
+/*visual wrap*/
+.visualWrap {
+    height: 400px;
+    overflow: hidden;
+/*
+    background-color: #223a6a;
+    background-image: url(../img/visual.png);
+    background-repeat: no-repeat;
+    background-position: center;
+*/
+    background: #223a6a url(../img/main_bg01.jpg) no-repeat center;
+}
+
+.visual {
+    position: relative;
+    width: 980px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.visual .vimg1,
+.visual .vimg2 {
+    position: absolute;
+}
+
+.visual .vimg1 {
+    left: 0;
+    top: 76px;
+}
+.visual .vimg2 {
+    right: 0;
+    top: -10px;
+}
+
+/*section*/
+.section {
+    background: #eee;
+}
+
+.banner {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.banner li {
+    float: left;
+    width: calc(100% / 5);
+    padding-top: 10px;
+}
+
+.banner li:nth-child(1) {
+    background: #7c99b9;
+}
+
+.banner li:nth-child(2) {
+    background: #4f74a1;
+}
+
+.banner li:nth-child(3) {
+    background: #4b8ce0;
+}
+
+.banner li:nth-child(4) {
+    background: #3db5f2;
+}
+
+.banner li:nth-child(5) {
+    background: #95c8ff;
+}
+
+.banner li a {
+    display: block;
+    height: 196px;
+    text-align: center;
+    color: #fff;
+}
+
+/*contWrap 1st*/
+.contWrap1st {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.contWrap1st li {
+    float: left;
+    width: 310px;
+    margin-right: 25px;
+}
+
+.contWrap1st li:last-child {
+    margin-right: 0;
+}
+
+.contWrap1st .body {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #ccc;
+    border-top: 0 none;
+}
+
+.contWrap1st img {
+    display: block;
+}
+
+/*contWrap2sc*/
+.contWrap2sc {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.contWrap2sc li {
+    float: left;
+    width: 310px;
+    margin-right: 25px;
+    border: 1px solid #ccc;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contWrap2sc li:last-child {
+    margin-right: 0;
+}
+
+.contWrap2sc .body {
+    width: 130px;
+}
+
+.contWrap2sc a {
+    color: #1c78f5;
+}
+
+.contWrap2sc img {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+/*footer*/
+.ftop {
+    background: #4a4a4a;;
+}
+
+.ftWrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.ftWrap li {
+    position: relative;
+    float: left;
+
+}
+
+.ftWrap li:first-child a {
+    padding-left: 0;
+}
+
+.ftWrap li a {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    line-height: 35px;
+    padding: 0 15px;
+}
+
+.ftWrap li:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #fff;
+    right: 0;
+    top: 12px;
+}
+
+.ftWrap li:last-child:after {
+    content: '';
+    display: none;
+}
+
+.fb {
+    background: #5e5e5e;
+}
+
+.ftbWrap {
+    width: 980px;
+    margin: 0 auto;
+    
+}
+
+.ftbWrap h2 {
+    color: #fff;
+    line-height: 150px;
+    padding-right: 50px;
+    float: left;
+}
+
+.copy {
+    float: left;
+}
+
+.copy h4 {
+    color: #fff;
+    line-height: 50px;
+}
+
+.copy p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+}
+
+
+/*common*/
+.mb5{margin-bottom: 5px !important;}
+.mb10{margin-bottom: 10px !important;}
+.mb15{margin-bottom: 15px !important;}
+.mb20{margin-bottom: 20px !important;}
+.mb30{margin-bottom: 30px !important;}
+
+
+
+
+
+
+
