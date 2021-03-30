@@ -14,6 +14,10 @@
             $(".slider").bxSlider({
                 auto:true
             });
+            $(".slider2").bxSlider({
+                auto:true,
+                controls:false
+            });
         });
         
     </script>
@@ -62,8 +66,8 @@
             </div>
         </div>
     </header>
-    <section id="contents">
-        <div class="wrap ">
+    <section id="contents" class="mb10">
+        <div class="wrap">
             <div class="conTop clearfix">
                 <div class="txtTop">
                     <p>함께 나누며 세상을 이끌어</p>
@@ -154,15 +158,37 @@
                         <img src="images/video_btn.png" alt="">
                     </li>
                     <li>
-                        <p>2017년 신&#183;편입생 2차 모집</p>
-                        <h4>2017.7.1 &#126; 7.10</h4>
-                        <a href="#" class="btn4">입학사전예약 &#9654;</a>
+                        <div class="txtBanner">
+                           <p>2017년 신&#183;편입생 2차 모집</p>
+                            <h4>2017.7.1 &#126; 7.10</h4>
+                            <a href="#" class="btn4">입학사전예약 &#9654;</a>
+                        </div>
+                        
+                        <div class="slider2Wrap">
+                            <ul class="slider2">
+                                <li><img src="images/banner.png" alt=""></li>
+                                <li><img src="images/banner.png" alt=""></li>
+                                <li><img src="images/banner.png" alt=""></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
     <footer id="footer">
+        <div class="ftWrap">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">한국대학교</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">이용정책</a></li>
+                <li><a href="#">입점&#47;제휴문의 및 광고</a></li>
+                <li><a href="#">이메일 무단수집거부</a></li>
+            </ul>
+            <p>대표자 : 홍길동 서울특별시 구로구 구로로 300(구로동 6가)  사업자등록번호 : 123-56-7890234<br>통신판매업 신고번호 : 제 1234-서울 구로구-1004호 개인정보관리 책임자 : 홍길동  소비자피해보상보험<br>고객센터 : 1234-5678 FAX : 02-1234-5678 HNAGUKUNIVERSITY&#64;HANGUK.COM</p>
+            <p>COPYRIGHT &#169; HANGUK. ALL RIGHTS RESERVED.</p>
+        </div>
     </footer>
 </body>
 </html>
