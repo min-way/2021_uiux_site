@@ -11,7 +11,6 @@ body {min-width: 1200px;}
 .topMenu li a { display: block; line-height: 40px; padding: 0 30px; color: #fff; font-weight: bold; text-align: center;}
 .topMenu li:first-child a {color: #666; background: #fff;}
 
-
 .sideMenu {float: right;}
 .sideMenu li { float: left;}
 .sideMenu > li > p { line-height: 40px; color: #fff; font-size: 12px; text-align: center;}
@@ -24,6 +23,7 @@ body {min-width: 1200px;}
 .logo h2 { letter-spacing: 5px; color: #999;}
 .logo h2:after { content: ''; display: block; width: 150px; height: 2px; background: #999; margin: 5px 0; overflow: hidden;}
 .logo p { font-size: 14px; color: #999;}
+
 .mainMenu { float: right; }
 .mainMenu ul { float: left;}
 .mainMenu ul li { float: left; }
@@ -49,7 +49,6 @@ body {min-width: 1200px;}
 .btnTop li a {display: block; color: #fff; text-align: center; font-size: 13px; line-height: 20px; margin-left: 20px;}
 .btnTop img {border: 1px solid #fff; padding: 10px;
 border-radius: 50%;}
-
 
 .txtSlider {position: absolute; left: 95px; top: 80px;}
 .txtSlider p {font-size: 70px; color: #1550b8; line-height: 75px; letter-spacing: -5px}
@@ -84,13 +83,10 @@ border-radius: 50%;}
 .container > ul > li:nth-child(5) .sns_icon {float: right;}
 .container > ul > li:nth-child(5) .sns_icon li {float: left;}
 .container > ul > li:nth-child(5) .sns_icon li + li {margin-left: 5px;}
-
 .container > ul > li:nth-child(6) {background: url(../images/campus.jpg) no-repeat -140px -50px; }
 .container > ul > li:nth-child(6) {position: relative;}
-
 .container > ul > li:nth-child(6) .cc_overlay {position: absolute; color: #fff; text-align: center; line-height: 50px; font-size: 19px; background: rgba(0,0,0,0.7); width: 100%; font-weight: bold; height: 100%; top: 75%; transition: 0.5s;}
 .container > ul > li:nth-child(6) .cc_overlay:hover {top: 0; line-height: 225px;}
-
 .container > ul > li:nth-child(7) {background: url(../images/video_img.jpg) no-repeat; position: relative;}
 .container > ul > li:nth-child(7) img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%; opacity: 0.7;}
 .container > ul > li:nth-child(8) { position: relative; width: 75%; }
