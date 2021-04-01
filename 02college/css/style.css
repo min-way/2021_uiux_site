@@ -87,12 +87,14 @@ border-radius: 50%;}
 
 .container > ul > li:nth-child(6) {background: url(../images/campus.jpg) no-repeat -140px -50px; }
 .container > ul > li:nth-child(6) {position: relative;}
-.container > ul > li:nth-child(6) .btn3 {position: absolute; color: #fff; width: 100%; display: block; background: rgba(0,0,0,0.7); text-align: center; line-height: 50px; font-size: 19px; bottom: 0;}
+
+.container > ul > li:nth-child(6) .cc_overlay {position: absolute; color: #fff; text-align: center; line-height: 50px; font-size: 19px; background: rgba(0,0,0,0.7); width: 100%; font-weight: bold; height: 100%; top: 75%; transition: 0.5s;}
+.container > ul > li:nth-child(6) .cc_overlay:hover {top: 0; line-height: 225px;}
 
 .container > ul > li:nth-child(7) {background: url(../images/video_img.jpg) no-repeat; position: relative;}
 .container > ul > li:nth-child(7) img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%; opacity: 0.7;}
 .container > ul > li:nth-child(8) { position: relative; width: 75%; }
-.container > ul > li:nth-child(8) .txtBanner {position: absolute; z-index: 1; padding: 30px;}
+.container > ul > li:nth-child(8) .txtBanner {position: absolute; padding: 30px;}
 .container > ul > li:nth-child(8) p {color: #ff503d; font-size: 30px; margin-bottom: -15px;}
 .container > ul > li:nth-child(8) h4 {color: #ff503d; font-weight: bold; font-size: 60px; letter-spacing: -4px; margin-bottom: 10px;}
 .container > ul > li:nth-child(8) .btn4 {display: block; border: 1px solid #bebebe; width: 180px; line-height: 40px; text-align: center; background: rgba(212, 12, 12, 0.71); color: #fff; font-size: 14px;}
@@ -100,6 +102,7 @@ border-radius: 50%;}
     top: 10px;
     right: 30px;
     width: 120px;
+    height: 40px;
 }
 .container > ul > li:nth-child(8) .bx-wrapper .bx-pager.bx-default-pager a:hover, .container > ul > li:nth-child(8) .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #ff503d;
@@ -170,8 +173,3 @@ border-radius: 50%;}
 #footer ul li a {display: block; line-height: 40px; font-size: 14px; color: #222;}
 #footer ul + p {font-size: 14px; color: #777; line-height: 25px; letter-spacing: -2px}
 #footer p + p {font-size: 14px; color: #777; line-height: 30px;}
-
-
-
-
-
