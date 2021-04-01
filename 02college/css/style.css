@@ -98,7 +98,7 @@ border-radius: 50%;}
     top: 10px;
     right: 30px;
     width: 120px;
-    height: 40px;
+    height: 35px;
 }
 .container > ul > li:nth-child(8) .bx-wrapper .bx-pager.bx-default-pager a:hover, .container > ul > li:nth-child(8) .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #ff503d;
@@ -168,7 +168,7 @@ border-radius: 50%;}
 .ftLogo p { font-size: 14px; color: #999;}
 .ftWrap { float: left; width: 700px;}
 .ftWrap ul li {float: left;}
-.ftWrap ul li a:after { content: ''; width: 1px; height: 10px; background: #000; position: absolute; top: 15px; margin-left: 10px;}
+.ftWrap ul li a:after { content: ''; width: 1px; height: 10px; background: #000; position: absolute; top: 15px; margin-left: 12px;}
 .ftWrap ul li:last-child a:after { display: none;}
 .ftWrap ul li + li { margin-left: 25px;}
 .ftWrap ul li a {display: block; margin: 10px 0; font-size: 14px; color: #222;}
