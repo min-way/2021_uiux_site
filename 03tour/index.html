@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>하이미디어 여행사</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".reservation").bxSlider({
+                pagerCustom: ".Tap",
+                controls:false
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="hTop">
+            <div class="wrap">
+                <h1 class="logo blind">
+                    <a href="#">TRAVEL 하이미디어</a>
+                </h1>
+                <div class="serach">
+                    <label for="search">SEARCH</label>
+                    <input type="text" id="search" name="search" placeholder="검색어를 입력하세요." class="input_serach">
+                    <input type="submit" value="검색" class="btn-submit blind">
+                </div>
+                <div class="subMenu">
+                    <h2>+82 02 1234 5678</h2>
+                    <ul class="blind">
+                        <li><a href="#">fb</a></li>
+                        <li><a href="#">tw</a></li>
+                        <li><a href="#">b</a></li>
+                        <li><a href="#">in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hBtm">
+            <div class="wrap">
+                <ul class="gnb">
+                    <li><a href="#">여행도시</a></li>
+                    <li><a href="#">호텔예약</a></li>
+                    <li><a href="#">렌트카</a></li>
+                    <li><a href="#">여행TIP</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="contents">
+        <div class="wrap">
+            <div class="conTop">
+                <div class="ct_left">
+                    <ul class="reservation clearfix"> <!--bxslider w470 h300--> 
+                        <li><a href="#"><img src="img/reservation_img.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/reservation_img.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/reservation_img.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/reservation_img.png" alt=""></a></li>
+                    </ul>
+                    <ul class="Tap">
+                        <li><a href="#" data-slide-index="0">공항예약</a></li>
+                        <li><a href="#" data-slide-index="1">호텔예약</a></li>
+                        <li><a href="#" data-slide-index="2">렌트카</a></li>
+                        <li><a href="#" data-slide-index="3">휴양지</a></li>
+                    </ul>
+                    <div class="container1">
+                        <div class="cont1"></div>
+                        <div class="cont2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

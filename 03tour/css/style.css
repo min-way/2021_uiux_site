@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+.wrap {width: 1000px; margin: 0 auto;}
+.blind {text-indent: -9999px;}
+
+/*----------header----------*/
+.hTop {width: 100%; height: 90px; background: #0d72a8 url(../img/header_top_img.png) no-repeat center;}
+.logo {float: left; background: url(../img/logo.png) no-repeat; width: 145px; height: 50px; margin-top: 20px; margin-right: 130px; display: block; cursor: pointer;}
+.serach {float: left; margin-top: 30px; position: relative;}
+.serach label {position: absolute; left: 15px; top: 5px; font-size: 14px; font-weight: bold;}
+.input_serach {width: 290px; height: 30px; font-size: 12px; padding-left: 85px; border-radius: 30px;}
+.btn-submit {position: absolute; border: 0 none; width: 22px; height: 22px; background: #fff url(../img/search_icon.png) no-repeat 3px; right: 15px; top: 4px; cursor: pointer;}
+
+.subMenu {float: right; margin-top: 25px; width: 340px;}
+.subMenu h2 {float: left; color: #fff; font-size: 24px; font-weight: bold;}
+.subMenu ul {float: right; margin-top: 4px;}
+.subMenu ul li {float: left; width: 24px; height: 24px; background: url(../img/sns_icon.png) no-repeat; border-radius: 10%;}
+.subMenu ul li:nth-child(2) {background-position: -24px 0;}
+.subMenu ul li:nth-child(3) {background-position: -48px 0;}
+.subMenu ul li:nth-child(4) {background-position: -72px 0;}
+.subMenu ul li + li {margin-left: 6px;}
+.subMenu ul li a {display: block; }
+
+.hBtm {width: 100%; height: 60px; border-bottom: 5px solid #0e73a7;}
+
+.gnb {}
+.gnb li {float: left; width: calc(1000px / 6); border-left: 1px solid #e7e7e7;}
+.gnb li:last-child {border-right: 1px solid #e7e7e7;}
+.gnb li a {display: block; line-height: 56px; font-size: 18px; text-align: center; font-weight: bold;}
+
+/*----------contents----------*/
+.contents {background: url(../img/bg01.jpg) no-repeat; background-size: cover;}
+.conTop {margin-top: 55px;}
+.ct_left {position: relative; width: 470px; height: 550px; border: 1px solid #000;}
+.reservation {float: left;}
+.reservation li {}
+.reservation li a {}
+.Tap {position: absolute; top: 0; left: 0;}
+.Tap li {}
+.Tap li a {display: block; width: 130px; line-height: 74px; text-align: center; background: #0099cb; color: #fff; border-bottom: 1px solid #006fa8;}
+.Tap li:last-child a {border-bottom: 0;}
+
+/*-----reservation slider-----*/
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none
+    background: none;
+}
+
+.bx-viewport {width: 470px;}
+
+
