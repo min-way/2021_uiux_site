@@ -3,13 +3,17 @@
 
 .wrap {width: 1000px; margin: 0 auto;}
 .blind {text-indent: -9999px;}
+body {background: url(../img/bg01.jpg) no-repeat; background-size: cover;}
 
 /*----------header----------*/
 .hTop {width: 100%; height: 90px; background: #0d72a8 url(../img/header_top_img.png) no-repeat center;}
 .logo {float: left; background: url(../img/logo.png) no-repeat; width: 145px; height: 50px; margin-top: 20px; margin-right: 130px; display: block; cursor: pointer;}
-.serach {float: left; margin-top: 30px; position: relative;}
-.serach label {position: absolute; left: 15px; top: 5px; font-size: 14px; font-weight: bold;}
-.input_serach {width: 290px; height: 30px; font-size: 12px; padding-left: 85px; border-radius: 30px;}
+
+fieldset {width: 300px; height: 30px; background: #fff; border-radius: 30px; border:0;}
+.search {position: relative; float: left; margin-top: 30px; }
+.search label {position: absolute; left: 15px; top: 5px; font-size: 14px; color: #343b41; font-weight: bold;}
+.input_search {width: 200px; margin-left: 85px; border:0; font-size: 12px; height: 30px;}
+.input_search:focus, .btn-submit:focus {outline: 0;}
 .btn-submit {position: absolute; border: 0 none; width: 22px; height: 22px; background: #fff url(../img/search_icon.png) no-repeat 3px; right: 15px; top: 4px; cursor: pointer;}
 
 .subMenu {float: right; margin-top: 25px; width: 340px;}
@@ -22,7 +26,7 @@
 .subMenu ul li + li {margin-left: 6px;}
 .subMenu ul li a {display: block; }
 
-.hBtm {width: 100%; height: 60px; border-bottom: 5px solid #0e73a7;}
+.hBtm {width: 100%; height: 60px; background: #fff; border-bottom: 5px solid #0e73a7;}
 
 .gnb {}
 .gnb li {float: left; width: calc(1000px / 6); border-left: 1px solid #e7e7e7;}
@@ -30,16 +34,19 @@
 .gnb li a {display: block; line-height: 56px; font-size: 18px; text-align: center; font-weight: bold;}
 
 /*----------contents----------*/
-.contents {background: url(../img/bg01.jpg) no-repeat; background-size: cover;}
+.contents {}
 .conTop {margin-top: 55px;}
-.ct_left {position: relative; width: 470px; height: 550px; border: 1px solid #000;}
+.ct_left {float: left; position: relative; width: 485px; height: 560px;}
 .reservation {float: left;}
 .reservation li {}
 .reservation li a {}
 .Tap {position: absolute; top: 0; left: 0;}
-.Tap li {}
-.Tap li a {display: block; width: 130px; line-height: 74px; text-align: center; background: #0099cb; color: #fff; border-bottom: 1px solid #006fa8;}
+.Tap .active {background: #fff; color: #535353; font-weight: bold;}
+.Tap li {width: 130px; height: calc(300 / 4); background: #0099cb;}
+.Tap li a {display: block; line-height: 75px; text-align: center;  color: #fff; border-bottom: 1px solid #005d7b;}
 .Tap li:last-child a {border-bottom: 0;}
+.fas fa-plane {font-size: 5em;}
+.fa-fw {width: 100px;}
 
 /*-----reservation slider-----*/
 .bx-wrapper {
@@ -52,4 +59,49 @@
 
 .bx-viewport {width: 470px;}
 
+.bx-wrapper {
+    margin-bottom: 15px;
+}
+
+/*-----ct_right-----*/
+.ct_right { float: right; width: 515px; padding: 20px 0 0 50px;}
+.ct_right h2 {position: relative; width: 350px; font-size: 65px; letter-spacing: -1px;}
+.ct_right h2:after {content: ''; position: absolute; width: 90px; height: 5px; background: #000; bottom: 0;right: 0;}
+.ct_right h3 {font-size: 30px; letter-spacing: -4px; font-weight: normal;}
+
+.container1 {width: 100%; height: 240px; background: #aaa;}
+.cont1 {position: relative; float: left; width: 235px; height: 240px; background: #ccc; background: url(../img/contents_img01.png)no-repeat;}
+.cont2 {position: relative; float: right; width: 235px; height: 240px; background: #eee; background: url(../img/contents_img02.png)no-repeat;}
+
+.container1 h5 {float: left; color: #fff; line-height: 50px; font-size: 16px;}
+.container1 p {float: right; line-height: 50px; font-size: 16px; color: #6ec662; padding-left: 10px; margin-right: 20px; letter-spacing: 0.5px; font-weight: bold;}
+.container1 a {position: absolute; right: 20px; margin-top: 17px; width: 20px; background: url(../img/Union.png)no-repeat 5px 0; }
+.bar {position: absolute; width: 100%; height: 50px; background: #152630; bottom: 0; padding: 0 25px;}
+
+
+.btn {position: absolute; bottom: 0; height: 65px; color: #fff; padding: 10px 15px; width: 100%; font-weight: bold;}
+.btn1 {background: #529351;}
+.btn2 {background: #152630;}
+.btn3 {background: rgba(0,0,0,0.5);}
+.btn4 {background: #44619d;}
+
+.cont3 {background: url(../img/contents_img03.png)no-repeat;}
+.cont4 {background: url(../img/contents_img04.png)no-repeat;}
+.cont5 {background: url(../img/contents_img05.png)no-repeat;}
+.cont6 {background: url(../img/contents_img06.png)no-repeat;}
+.cont7 {background: url(../img/contents_img07.png)no-repeat;}
+.cont8 {background: url(../img/contents_img08.png)no-repeat;}
+.cont9 {background: url(../img/contents_img09.png)no-repeat;}
+.cont10 {background: url(../img/contents_img10.png)no-repeat;}
+
+.conBtm {width: 100%; height: 495px;}
+.conBtm>ul {float: left;}
+.conBtm>ul>li {position: relative; float: left; width: 235px; height: 240px; margin-bottom: 15px;}
+.conBtm>ul>li + li {margin-left: 15px;}
+.conBtm>ul>li:nth-child(5) {margin-left: 0;}
+.cont5 h2 {color: #fff; text-align: center; padding-top: 15px;}
+
+
+
+.conBtm ul li a {}
 
