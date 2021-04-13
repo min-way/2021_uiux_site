@@ -3,7 +3,7 @@
 
 .wrap {width: 1000px; margin: 0 auto;}
 .blind {text-indent: -9999px;}
-body {background: url(../img/bg01.jpg) no-repeat; background-size: cover;}
+body {background: url(../img/bg01.png) no-repeat; background-size: cover;}
 
 /*----------header----------*/
 .hTop {width: 100%; height: 90px; background: #0d72a8 url(../img/header_top_img.png) no-repeat center;}
@@ -45,7 +45,8 @@ fieldset {width: 300px; height: 30px; background: #fff; border-radius: 30px; bor
 .Tap li {width: 130px; height: calc(300 / 4); background: #0099cb;}
 .Tap li a {display: block; line-height: 75px; text-align: center;  color: #fff; border-bottom: 1px solid #005d7b;}
 .Tap li:last-child a {border-bottom: 0;}
-.fas fa-plane {font-size: 5em;}
+.fas {font-size: 1.7em;}
+.active .fas {color: #0099cb;}
 .fa-fw {width: 100px;}
 
 /*-----reservation slider-----*/
@@ -83,11 +84,11 @@ fieldset {width: 300px; height: 30px; background: #fff; border-radius: 30px; bor
 .btn1 {background: #529351;}
 .btn2 {background: #152630;}
 .btn3 {background: rgba(0,0,0,0.5);}
-.btn4 {background: #44619d;}
+.btn4 {background: #44619d; position: absolute; left: 0; bottom: 0;}
 
 .cont3 {background: url(../img/contents_img03.png)no-repeat;}
 .cont4 {background: url(../img/contents_img04.png)no-repeat;}
-.cont5 {background: url(../img/contents_img05.png)no-repeat;}
+.cont5 {position: relative; overflow: hidden;}
 .cont6 {background: url(../img/contents_img06.png)no-repeat;}
 .cont7 {background: url(../img/contents_img07.png)no-repeat;}
 .cont8 {background: url(../img/contents_img08.png)no-repeat;}
@@ -99,9 +100,42 @@ fieldset {width: 300px; height: 30px; background: #fff; border-radius: 30px; bor
 .conBtm>ul>li {position: relative; float: left; width: 235px; height: 240px; margin-bottom: 15px;}
 .conBtm>ul>li + li {margin-left: 15px;}
 .conBtm>ul>li:nth-child(5) {margin-left: 0;}
-.cont5 h2 {color: #fff; text-align: center; padding-top: 15px;}
+.cont5 h2 {color: #fff; text-align: center; padding-top: 15px; position: absolute; top: 0; left: 50%; transform: translate(-50%);}
+.cont5 img { position: absolute; top: 0; left: 0;}
+.cont5:hover img {transition: all 1s; transform: scale(1.2); overflow: hidden; display: block;}
+
+
+.cont6 {padding: 20px; position: relative;}
+.cont6>a>p {font-size: 14px; font-weight: bold; color: #5d5d5d;}
+.cont6 h5 {color: #44619d;}
+.cont7, .cont8, .cont9, .cont10 {position: relative; overflow: hidden;}
+.cont7:hover .over {top: 0;}
+.cont8:hover .over2 {top: 0;}
+.cont9:hover .over2 {top: 0;}
+.cont10:hover .over {top: 0;}
+
+/*------contents overlay-----*/
+
+.over {width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: absolute; left: 0; top: 100%; transition: 0.5s; }
+.over h3 {text-indent: 0px; color: #fff; font-size: 22px; margin: 0 auto; width: 160px; margin-top: 25px; margin-bottom: 10px; text-align: center;}
+.over p {font-size: 14px; text-align: center; color: #fff; margin-bottom: 15px;}
+.over h3>img {float: left;}
+.over>img {margin: 0 auto; display: block;}
+
+.over2 {width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: absolute; left: 0; top: 100%; transition: 0.5s;}
+.over2 h3 {text-indent: 0px; color: #fff; font-size: 22px; margin: 0 auto; width: 150px; margin-top: 5px; margin-bottom: 10px; text-align: center;}
+.over2 p {font-size: 14px; text-align: center; color: #fff;}
+.over2 h3>img {float: left; margin-top: -5px;}
+.over2>img {margin: 0 auto; display: block; margin-top: 100px;}
+
+
+.ft_menu li {float: left;}
+.ft_menu li a {display: block; line-height: 40px; font-size: 14px; font-weight: bold;}
+.ft_menu li + li {margin-left: 25px;}
+
+.copy {float: left; font-size: 12px; color: #5d5d5d;}
 
 
 
-.conBtm ul li a {}
+
 
