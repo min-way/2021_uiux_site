@@ -5,10 +5,10 @@
 .blind {text-indent: -9999px;}
 fieldset {border: 0 none; }
 legend {display: block; position: absolute;left: 0; top: -9999px;}
-body {background: url(../img/bg01.png) no-repeat; background-size: cover; }
+body {min-width:1200px; background: url(../img/bg01.png) no-repeat; background-size: cover;}
 
 /*--------animation----------*/
-.ani_wrap {width: 100%; height: 1380px; overflow: hidden; position: absolute; z-index: -100;}
+.ani_wrap {width: 100%; height: 1380px; overflow: hidden; position: absolute;}
 .ani01 {
     position: absolute; top: 200px; left: 100px; 
     animation-name: ani01;
@@ -20,10 +20,10 @@ body {background: url(../img/bg01.png) no-repeat; background-size: cover; }
 }
 
 .ani02 {
-    position: absolute; left: -400px; bottom: -300px;
+    position: absolute; left: -1000px; bottom: -300px;
     animation-name: ani02;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
     animation-fill-mode: forwards;
 }
 
@@ -39,7 +39,7 @@ body {background: url(../img/bg01.png) no-repeat; background-size: cover; }
 }
 
 .ani04 {
-    position: absolute; left: 350px; bottom: 450px;
+    position: absolute; left: 350px; bottom: 100px;
     animation-name: ani04;
     animation-duration: 15s;
     animation-direction: alternate;
@@ -48,12 +48,23 @@ body {background: url(../img/bg01.png) no-repeat; background-size: cover; }
     animation-timing-function: ease-in-out;
     transform: scale(0.1);
 }
+
+.ani05 {
+    position: absolute; right: 100px; top: 500px;
+    animation-name: ani05;
+    animation-direction: alternate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
 @keyframes ani01 {
     to{top: 250px;}
 }
 
 @keyframes ani02 {
-    to {left: 100%; bottom: 100%; transform: scale(0.6);}
+    to {left: 100%; bottom: 100%; transform: scale(0.3);}
 }
 
 @keyframes ani03 {
@@ -65,8 +76,14 @@ body {background: url(../img/bg01.png) no-repeat; background-size: cover; }
 }
 
 @keyframes ani04 {
-    to {left: 100px; bottom: 500px; transform: rotate(60deg);}
+    to {left: 100px; bottom: 300px; transform: rotate(60deg);}
 }
+
+@keyframes ani05 {
+    to {top: 600px; transform: scale(0.8);}
+}
+
+
 
 /*----------header----------*/
 .hTop {width: 100%; height: 90px; background: #0d72a8 url(../img/header_top_img.png) no-repeat center;}
@@ -95,10 +112,13 @@ body {background: url(../img/bg01.png) no-repeat; background-size: cover; }
 .gnb li:last-child {border-right: 1px solid #e7e7e7;}
 .gnb li a {display: block; line-height: 56px; font-size: 18px; text-align: center; font-weight: bold;}
 .gnb li a:hover {color: #0e73a7;}
+/*----------company_menu----------*/
+.gnb li a.menu-company {color: #0e73a7;}
 
 /*----------contents----------*/
 
-.conTop {margin-top: 55px;}
+.contents { padding-top: 55px; height: 1125px; position: relative; }
+.conTop {}
 .ct_left {float: left; position: relative; width: 485px; height: 560px;}
 
 .reservation {}
@@ -106,13 +126,13 @@ body {background: url(../img/bg01.png) no-repeat; background-size: cover; }
 .reservation li a {}
 .reservation_form {width: 300px;}
 .reservation_form label {display: block; font-weight: bold; margin-bottom: 5px;}
-.reservation_form select {width: 100%; border-radius: 3px; border: 1px solid #aaa; height: 35px; text-indent: 8px; font-weight: bold; margin-bottom: 10px; font-size: 16px;}
+.reservation_form select {width: 100%; border-radius: 3px; border: 1px solid #aaa; height: 35px; text-indent: 8px; font-weight: bold; margin-bottom: 10px; font-size: 14px;}
 .reservation_form .reLeft, .reservation_form .reRight {float: left;}
-.reLeft input, .reRight input {border-radius: 3px; border: 1px solid #aaa; height: 35px; text-indent: 8px; font-weight: bold; margin-bottom: 10px; width: 140px;}
+.reLeft input, .reRight input {border-radius: 3px; border: 1px solid #aaa; height: 35px; text-indent: 8px; font-weight: bold; margin-bottom: 10px; width: 140px; font-size: 12px;}
 .reRight {margin-left: 20px;}
-.reRightNum {float: left; margin-left: 30px;}
+.reRightNum {float: left; margin-left: 36px;}
 .reservation_form .reRightNum input {border-radius: 3px; border: 1px solid #aaa; height: 35px; text-indent: 8px; font-weight: bold; margin-bottom: 10px; width: 57px;}
-.btn-reserv {height: 40px; line-height: 35px; width: 100%;  color: #fff; font-size: 18px; border-radius: 5px; background-color: #ea4f1f; background-image: url(../img/reserv_icon.png); background-repeat: no-repeat; background-position: 90px 10px; cursor: pointer;}
+.btn-reserv {height: 40px; line-height: 35px; width: 100%;  color: #fff; font-size: 18px; border-radius: 5px; background-color: #ea4f1f; background-image: url(../img/reserv_icon.png); background-repeat: no-repeat; background-position: 90px 10px; cursor: pointer; border: 1px solid #aaa;}
 
 .Tap {position: absolute; top: 0; left: 0;}
 .Tap .active {background: #fff; color: #535353; font-weight: bold;}
@@ -150,7 +170,6 @@ body {background: url(../img/bg01.png) no-repeat; background-size: cover; }
 .container1 p {float: right; line-height: 50px; font-size: 16px; color: #6ec662; padding-left: 10px; margin-right: 20px; letter-spacing: 0.5px; font-weight: bold;}
 .container1 a {position: absolute; right: 20px; margin-top: 17px; width: 20px; background: url(../img/Union.png)no-repeat 5px 0; }
 .bar {position: absolute; width: 100%; height: 50px; background: #152630; bottom: 0; padding: 0 25px;}
-
 
 .btn {position: absolute; bottom: 0; height: 65px; color: #fff; padding: 10px 15px; width: 100%; font-weight: bold;}
 .btn1 {background: #529351;}
@@ -238,6 +257,6 @@ body {background: url(../img/bg01.png) no-repeat; background-size: cover; }
 .copy {float: left; font-size: 12px; color: #5d5d5d;}
 
 
-
+/*----------sub_page------------*/
 
 
