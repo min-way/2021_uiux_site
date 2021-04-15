@@ -17,7 +17,7 @@
                 controls:false,
                 touchEnabled: false
             });
-            
+
             $(".tour_slider").bxSlider({
                 controls:true
             });
@@ -25,20 +25,11 @@
     </script>
 </head>
 <body>
-    <div class="ani_wrap">
-        <div class="ani">
-            <img src="img/content1.png" alt="" class="ani01">
-            <img src="img/reallyAir.png" alt="" class="ani02">
-            <img src="img/content2.png" alt="" class="ani03">
-            <img src="img/content5.png" alt="" class="ani04">
-            <img src="img//content6.png" alt="" class="ani05">
-        </div>
-    </div>
     <header class="header">
         <div class="hTop">
             <div class="wrap">
-                <h1 class="logo blind">
-                    <a href="index.html">TRAVEL 하이미디어</a>
+                <h1 class="logo">
+                    <a href="index.html"><span class="blind">TRAVEL 하이미디어</span></a>
                 </h1>
                 <fieldset class="search">
                     <label for="search">SEARCH</label>
@@ -70,14 +61,22 @@
         </div>
     </header>
     <div class="contents clearfix">
-       
+    <div class="ani_wrap">
+        <div class="ani">
+            <img src="img/content1.png" alt="" class="ani01">
+            <img src="img/reallyAir.png" alt="" class="ani02">
+            <img src="img/content2.png" alt="" class="ani03">
+            <img src="img/content5.png" alt="" class="ani04">
+            <img src="img//content6.png" alt="" class="ani05">
+        </div>
+    </div>
+        <div class="contents_bg"></div>
         <div class="wrap">
-            <div class="conTop">
+            <div class="conTop clearfix">
                 <div class="ct_left mb15">
-                    
                     <form action="#">
                         <legend>여행일정</legend>
-                        <ul class="reservation"> <!--bxslider w470 h300--> 
+                        <ul class="reservation"> <!--bxslider w470 h300-->
                             <li>
                                 <fieldset class="reservation_form">
                                     <label for="goal">가고싶은 나라를 선택하세요.</label>
@@ -103,16 +102,17 @@
                                             <option value="퍼스트 클래스">퍼스트 클래스</option>
                                         </select>
                                     </div>
-                                    <div class="reRightNum">
-                                        <label for="person">인원</label>
-                                        <input type="number" id="person" placeholder="1" min="1">
-                                    </div>
-                                    <div class="reRightNum mb10">
-                                        <label for="person">아이</label>
-                                        <input type="number" id="person" placeholder="1" min="1">
-                                    </div>
+                                        <div class="personNum">
+                                            <div class="reRightNum">
+                                                <label for="person">인원</label>
+                                                <input type="number" id="person" placeholder="1" min="1">
+                                            </div>
+                                            <div class="reRightNum mb10 ml15">
+                                                <label for="person">아이</label>
+                                                <input type="number" id="person" placeholder="1" min="1">
+                                            </div>
+                                        </div>
                                     <div class="reBtm">
-                                        
                                         <input type="submit" value="검색하기" class="btn-reserv">
                                     </div>
                                 </fieldset>
@@ -142,16 +142,17 @@
                                             <option value="퍼스트 클래스">퍼스트 클래스</option>
                                         </select>
                                     </div>
-                                    <div class="reRightNum">
-                                        <label for="person">인원</label>
-                                        <input type="number" id="person" placeholder="1" min="1">
-                                    </div>
-                                    <div class="reRightNum mb10">
-                                        <label for="person">아이</label>
-                                        <input type="number" id="person" placeholder="1" min="1">
-                                    </div>
+                                        <div class="personNum">
+                                            <div class="reRightNum">
+                                                <label for="person">인원</label>
+                                                <input type="number" id="person" placeholder="1" min="1">
+                                            </div>
+                                            <div class="reRightNum mb10 ml15">
+                                                <label for="person">아이</label>
+                                                <input type="number" id="person" placeholder="1" min="1">
+                                            </div>
+                                        </div>
                                     <div class="reBtm">
-                                        
                                         <input type="submit" value="검색하기" class="btn-reserv">
                                     </div>
                                 </fieldset>
@@ -181,16 +182,17 @@
                                             <option value="퍼스트 클래스">퍼스트 클래스</option>
                                         </select>
                                     </div>
-                                    <div class="reRightNum">
-                                        <label for="person">인원</label>
-                                        <input type="number" id="person" placeholder="1" min="1">
-                                    </div>
-                                    <div class="reRightNum mb10">
-                                        <label for="person">아이</label>
-                                        <input type="number" id="person" placeholder="1" min="1">
-                                    </div>
+                                        <div class="personNum">
+                                            <div class="reRightNum">
+                                                <label for="person">인원</label>
+                                                <input type="number" id="person" placeholder="1" min="1">
+                                            </div>
+                                            <div class="reRightNum mb10 ml15">
+                                                <label for="person">아이</label>
+                                                <input type="number" id="person" placeholder="1" min="1">
+                                            </div>
+                                        </div>
                                     <div class="reBtm">
-                                        
                                         <input type="submit" value="검색하기" class="btn-reserv">
                                     </div>
                                 </fieldset>
@@ -220,24 +222,24 @@
                                             <option value="퍼스트 클래스">퍼스트 클래스</option>
                                         </select>
                                     </div>
-                                    <div class="reRightNum">
-                                        <label for="person">인원</label>
-                                        <input type="number" id="person" placeholder="1" min="1">
-                                    </div>
-                                    <div class="reRightNum mb10">
-                                        <label for="person">아이</label>
-                                        <input type="number" id="person" placeholder="1" min="1">
-                                    </div>
+                                        <div class="personNum">
+                                            <div class="reRightNum">
+                                                <label for="person">인원</label>
+                                                <input type="number" id="person" placeholder="1" min="1">
+                                            </div>
+                                            <div class="reRightNum mb10 ml15">
+                                                <label for="person">아이</label>
+                                                <input type="number" id="person" placeholder="1" min="1">
+                                            </div>
+                                        </div>
                                     <div class="reBtm">
-                                        
                                         <input type="submit" value="검색하기" class="btn-reserv">
                                     </div>
                                 </fieldset>
                             </li>
-                            
                         </ul>
                     </form>
-                    
+
                     <ul class="Tap">
                         <li><a href="#" data-slide-index="0"><i class="fas fa-plane fa-fw"></i>&nbsp;공항예약</a></li>
                         <li><a href="#" data-slide-index="1"><i class="fas fa-mouse fa-fw"></i>&nbsp;호텔예약</a></li>
@@ -266,7 +268,7 @@
                     <h3>지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</h3>
                 </div>
             </div> <!--//class="conTop"-->
-            <div class="conBtm">
+            <div class="conBtm clearfix">
                 <ul class="clearfix">
                     <li class="cont3">
                         <ul class="tour_slider">
@@ -297,7 +299,7 @@
                                 <p>20&#8451; 구름조금</p>
                                 <p>습도60&#37; 바람 남남동 2m/s</p>
                             </div>
-                            
+
                         </a>
                     </li>
                     <li class="cont6"><a href="#">
@@ -365,5 +367,5 @@
             </div>
         </div>
     </footer>
-</body> 
+</body>
 </html>

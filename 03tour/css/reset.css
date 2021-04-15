@@ -20,3 +20,8 @@ clearfix:after {content: ''; display: block; clear: both;}
 .mb45{margin-bottom: 45px !important;}
 .mb50{margin-bottom: 50px !important;}
 .mb55{margin-bottom: 55px !important;}
+
+/*margin left*/
+.ml5{margin-left: 5px !important;}
+.ml10{margin-left: 10px !important;}
+.ml15{margin-left: 15px !important;}
