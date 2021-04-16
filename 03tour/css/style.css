@@ -36,7 +36,20 @@ body {min-width:1200px;}
 
 /*----------company_menu----------*/
 .gnb li a.company {color: #0e73a7;}
-.contents.company {background: #fff;}
+.contents.company {position: relative; background: lightgray;}
+.contents.company h3 {text-align: center; font-size: 48px; color: #fff;}
+.contents.company .visualImg {padding-top: 50px; height: 300px; background: url(../img/subimg01.jpg)no-repeat center; background-size: cover;}
+.contents.company .content {position: absolute; top: 250px; left: 50%; transform: translateX(-50%); background: #fff; width: 980px; padding: 20px;}
+.contents.company .content img {display: block; margin: 0 auto;}
+
+/*----------citytour_menu----------*/
+.gnb li a.citytour {color: #0e73a7;}
+.contents.citytour {position: relative; background: lightgray;}
+.contents.citytour h3 {text-align: center; font-size: 48px; color: #fff;}
+.contents.citytour .visualImg {padding-top: 50px; height: 300px; background: url(../img/util_bg.jpg)no-repeat center; background-size: cover;}
+.contents.citytour .content {position: absolute; top: 250px; left: 50%; transform: translateX(-50%); background: #fff; width: 980px; padding: 20px;}
+.contents.citytour .content img {display: block; margin: 0 auto;}
+
 
 /*----------contents----------*/
 
@@ -228,9 +241,9 @@ body {min-width:1200px;}
 
 @keyframes ani05 {
 
-    0% {top: 150px;}
+    0% {top: 150px; transform: scale(0.8);}
     25% {right: 200px;}
-    50% {right: 100px;}
+    50% {right: 100px; transform: scale(0.5);}
     75% {right: 200px;}
     100% {transform: scale(0.8);}
 }
