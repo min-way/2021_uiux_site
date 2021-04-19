@@ -52,15 +52,11 @@ body {min-width:1200px;}
 
 
 /*----------contents----------*/
-
-
 .contents {margin: 0 auto; height: 1125px; background: url(../img/bg01.png)no-repeat fixed 0 0/100% 100%; position: relative;}
 .zIndex {position: absolute; z-index: 10;}
 .ct_left {float: left; position: relative; width: 485px; height: 560px;}
-.conTop {padding-top: 55px; float: left;}
-.reservation {}
+.conTop {padding-top: 55px; float: left; position: relative;}
 .reservation li {padding: 15px 10px 10px 155px;}
-.reservation li a {}
 .reservation_form {width: 300px;}
 .reservation_form label {display: block; font-weight: bold; margin-bottom: 5px;}
 .reservation_form select {width: 100%; border-radius: 3px; border: 1px solid #aaa; height: 35px; text-indent: 8px; font-weight: bold; margin-bottom: 10px; font-size: 12px; display: block;}
@@ -82,12 +78,10 @@ body {min-width:1200px;}
 .fa-fw {width: 100px;}
 
 /*-----reservation slider-----*/
-
 .bx-wrapper {box-shadow: none; border: none; background: none; margin-bottom: 15px; height: 300px; background: #fff;}
 
 /*----------------content top----------------*/
-
-.ct_right {float: right; width: 515px; padding: 20px 0 0 50px;}
+.ct_right {float: right; width: 515px; padding: 20px 0 0 50px; position: relative; z-index: 20; }
 .ct_right h2 {position: relative; width: 350px; font-size: 65px; letter-spacing: -1px;}
 .ct_right h2:after {content: ''; position: absolute; width: 90px; height: 5px; background: #000; bottom: 0;right: 0;}
 .ct_right h3 {font-size: 30px; letter-spacing: -4px; font-weight: normal;}
@@ -108,7 +102,6 @@ body {min-width:1200px;}
 .btn4 {background: #44619d; position: absolute; left: 0; bottom: 0;}
 
 /*--------contents 5~10 background---------*/
-
 .cont5 {position: relative; overflow: hidden;}
 .cont6 {background: url(../img/contents_img06.png)no-repeat;}
 .cont7 {background: url(../img/contents_img07.png)no-repeat;}
@@ -117,7 +110,6 @@ body {min-width:1200px;}
 .cont10 {background: url(../img/contents_img10.png)no-repeat;}
 
 /*--------cont3, cont4 slider---------*/
-
 .bx-wrapper .bx-pager {display: none;}
 .cont3 .bx-wrapper, .cont4 .bx-wrapper {margin-bottom: 0; height: 300px; background: none;}
 .bx-wrapper .bx-controls-direction a {position: absolute; top: 80px; margin-top: -16px;    outline: 0; width: 33px; height: 50px; text-indent: -9999px; z-index: 9999;}
@@ -128,7 +120,6 @@ body {min-width:1200px;}
 
 
 /*-----------------contents bottom---------------------*/
-
 .conBtm {width: 1200px; height: 495px;}
 .conBtm>ul {float: left; }
 .conBtm>ul>li {float: left;position: relative; width: 235px; height: 240px; margin-bottom: 15px;}
@@ -148,7 +139,6 @@ body {min-width:1200px;}
 .cont10:hover .over {top: 0;}
 
 /*------contents 하단 overlay-----*/
-
 .over {width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: absolute; left: 0; top: 100%; transition: 0.5s; }
 .over h3 {text-indent: 0px; color: #fff; font-size: 22px; margin: 0 auto; width: 160px; margin-top: 25px; margin-bottom: 10px; text-align: center;}
 .over p {font-size: 14px; text-align: center; color: #fff; margin-bottom: 15px;}
@@ -166,9 +156,7 @@ body {min-width:1200px;}
 
 
 /*--------animation----------*/
-
 .ani_wrap {width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; z-index: 5;}
-
 .ani01 {
     position: absolute; top: 200px; left: 100px;
     animation-name: ani01;
@@ -188,7 +176,7 @@ body {min-width:1200px;}
 }
 
 .ani03 { /*//열기구*/
-    position: absolute; right: 550px; top: 500px;
+    position: absolute; right: 100px; top: 40px;
     animation-name: ani03;
     animation-duration: 10s;
     animation-direction: alternate;
@@ -228,11 +216,11 @@ body {min-width:1200px;}
 }
 
 @keyframes ani03 {
-    0% {transform: rotate(-20deg); top: 150px;}
+    0% {transform: rotate(-20deg);}
     25% {transform: rotate(20deg);}
     50% {transform: rotate(-20deg);}
     75% {transform: rotate(20deg);}
-    100% {transform: rotate(-20deg);}
+    100% {transform: rotate(-20deg); top: 250px;}
 }
 
 @keyframes ani04 {
@@ -240,7 +228,6 @@ body {min-width:1200px;}
 }
 
 @keyframes ani05 {
-
     0% {top: 150px; transform: scale(0.8);}
     25% {right: 200px;}
     50% {right: 100px; transform: scale(0.5);}
