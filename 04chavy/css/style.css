@@ -1,9 +1,42 @@
 @charset 'utf-8';
 
-* {padding: 0; margin: 0;}
+/* ----------header----------- */
+.wrap {width: 1200px; margin: 0 auto;}
+header {height: 60px; margin-top: 30px;}
+header h1 {width: 180px; height: 60px; float: left; font-size: 40px; text-align: center;}
+.gnb {width: 600px; float: left; margin-left: 50px; margin-top: 10px;}
+.gnb li {float: left; width: 25%; display: block; text-align: center;}
+.gnb li a {line-height: 50px; font-size: 20px; font-weight: bold;}
+.gnb li a:hover {text-decoration: underline;}
+.snb {float: right; width: 250px; margin-right: 70px;}
+.snb li {float: left; width: 50%; margin-top: 10px;}
+.snb li a {display: block; line-height: 50px; font-size: 18px; text-align: center; font-weight: bold;}
+.snb li a:hover {background: #2c2c96; border-radius: 25px; color: #fff;}
 
-a {text-decoration: none;}
+/* ----------content----------- */
+.btn {width: 185px; height: 55px; background: #2c2c96; border-radius: 27.5px; border: 0;}
 
-ul {list-style: none;}
+.content {width: 100%; height: 800px;}
+.sliderTxt {width: 600px; height: 430px; padding-top: 200px;}
+.sliderTxt h2 {font-size: 55px; color: #222; margin-bottom: 40px;}
+.sliderTxt h2 span {color: #2c2c96;}
+.sliderTxt p {width: 450px; color: #6e6e6e; margin-bottom: 50px; font-weight: bold; line-height: 40px;}
+.btnTop a {display: block; text-align: center; color: #fff; font-size: 17px;}
+.slider li {width: 100%; height: 800px; background: url("../img/slider01.png")no-repeat center / auto;}
+.contentTxt {width: 100%; height: 275px; background: #f8f9ff;}
+.contentTxt h2 {font-size: 55px; color: #222; text-align: center; padding-top: 50px;  margin-bottom: 30px;}
+.contentTxt h2 span {color: #2c2c96;}
+.contentTxt p {width: 500px; color: #6e6e6e; text-align: center; font-weight: bold; margin: 0 auto; line-height: 30px;}
 
-.clearfix:after {content: ''; display: block; clear: both;}
+/* --------slider--------- */
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    margin-bottom: 0;
+}
+
+/* --------content2--------- */
+.content2 { width: 500px; height: 750px; background: #999; }
