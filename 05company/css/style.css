@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* ----------header------------ */
+.wrap {width: 1290px; margin: 0 auto;}
+#header {background: url("../img/bg_main01.png")no-repeat center; width: 100%; height: 1000px;}
+.headTop h1 {background: url("../img/netmarble_logo.png")no-repeat 100% 100% / cover; width: 262px; height: 45px; cursor: pointer; text-indent: -9999px; float: left; margin-top: 40px;}
+.headTop {width: 100%; height: 120px; background: #aaa;}
+.gnb {width: 720px; float: left; margin-left: 180px; margin-top: 45px; }
+.gnb li {float: left; width: calc(720px / 6); text-align: center;}
+.gnb li a { line-height: 40px; text-align: center; color: #fff; }
+.gnb li a:hover {color: #553A31;}
+.conversion {float: right; width: 80px; height: 40px; border: 1px solid #EE3F22; margin-top: 45px;}
+.conversion ul {}
+.conversion ul li {float: left; width: 39px;}
+.conversion ul li a {line-height: 40px; text-align: center; display: block; color: #fff;}
+.conversion ul li a:first-child {background: #EE3F22;}
