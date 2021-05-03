@@ -3,21 +3,21 @@
 /* ----------header------------ */
 .wrap {width: 1240px; margin: 0 auto;}
 #header {width: 100%; height: 1000px;}
-.headTop h1 {background: url("../images/netmarble_logo.png")no-repeat 100% 100% / cover; width: 270px; height: 45px; cursor: pointer; text-indent: -9999px; float: left; margin-top: 40px;}
+.logo {background: url("../images/netmarble_logo.png")no-repeat 100% 100% / cover; width: 270px; height: 45px; cursor: pointer; text-indent: -9999px; float: left; margin-top: 40px;}
 .headTop {width: 100%; height: 120px; background: #FFC905; position: fixed; z-index: 1000; left: 50%; transform: translate(-50%);}
-.gnb {width: 720px; float: left; margin-left: 150px; margin-top: 45px; }
+.gnb {width: 720px; float: right; margin-top: 45px; }
 .gnb li {float: left; width: calc(720px / 6); text-align: center;}
-.gnb li a { line-height: 40px; text-align: center; color: #fff;}
+.gnb li a {line-height: 40px; text-align: center; color: #fff;}
 .gnb li a:hover {color: #553A31;}
 .conversion {float: right; height: 40px; border: 1px solid #EE3F22; margin-top: 45px;}
-.conversion ul {}
+
 .conversion ul li {float: left;}
 .conversion ul li a {width: 40px; line-height: 40px; text-align: center; display: block; color: #fff;}
 .conversion ul li:first-child {}
 .conversion ul li.on {background: #EE3F22;}
 
-.toggleMenu {width: 50px; height: 50px; float: left; position: relative; display: flex; justify-content: center; align-items: center; top: -40px; display: none;}
-.toggleMenu div{width: 30px; height: 2px; background: #fff; border-radius: 2px; position: absolute;}
+.toggleMenu {width: 40px; height: 40px; float: left; position: relative; display: flex; justify-content: center; align-items: center; top: -40px;}
+.toggleMenu div{width: 24px; height: 2px; background: #fff; border-radius: 2px; position: absolute;}
 .toggleMenu .bar1 {transform: translateY(10px);}
 .toggleMenu .bar2 {}
 .toggleMenu .bar3 {transform: translateY(-10px);}
@@ -39,16 +39,24 @@
 .contList>li {width: 25%; height: 310px; text-align: center; position: relative;}
 .contList>li>a>img {position: absolute; left: 50%; top: 30%; transform: translate(-50%);}
 .contList>li>a>p {position: absolute; left: 50%; top: 65%; transform: translate(-50%); color: #fff; font-weight: bold;}
+.contList .contTxt {display: none;}
 .contList>li:nth-child(2) a p, .contList>li:nth-child(4) a p {color: #444;}
 
+/* no.2 news */
 .contList>li:nth-child(2) {padding: 40px; text-align: left;}
-.contList>li:nth-child(2) h2 {font-size: 22px; margin-bottom: 14px;}
+.contList>li:nth-child(2) .newsTit {font-size: 22px; margin-bottom: 35px; color: #444;}
 .newsList {position: relative;}
-.newsList li + li {margin-top: 12px;}
-.newsList li a {font-weight: bold; color: #444;}
+.newsList li + li {margin-top: 14px;}
 .newsList li span {position: absolute; right: 0; color: #888;}
+.newsList .more a {position: absolute; right: 0; top: -35px; color: #888;}
 .txtLine {width:450px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.txtLine a {font-weight: bold; color: #444;}
 
+/* no.6,7,8 introduce */
+.contList .intro {padding: 40px;}
+.contList .intro h2 {font-size: 22px; margin-bottom: 35px; color: #fff; text-align: left;}
+.contList .intro h2:after {content: ''; display: block; width: 85px; height: 1px; background: #fff; margin-top: 17px;}
+.contList .intro p {font-size: 16px; font-weight: normal; width: 100%; line-height: 25px;  text-align: left; padding: 0 40px; top: 108px;}
 
 .contList>li:nth-child(1) {background-image: url("../images/contlist01.png");}
 .contList>li:nth-child(2) {width: 50%;}
@@ -62,4 +70,13 @@
 
 
 
-.vision {width: 100%; height: 700px; background-image: url("../images/bg_vision.png");}
+.vision {width: 100%; height: 700px; background-image: url("../images/bg_vision.png"); margin-bottom: 80px;}
+.viIntro {width: 500px; text-align: center; margin: 0 auto; padding-top: 70px;}
+.viIntro h2 {width: 270px; font-size: 22px; color: #fff; margin: 18px auto;}
+.viIntro h2:after {content: ''; display: block; width: 100%; height: 1px; background: #fff; margin-top: 17px;}
+.viIntro p {width: 100%; line-height: 25px; color: #fff; margin-bottom: 115px;}
+
+.viList {display: flex; justify-content: center; text-align: center;}
+.viList li + li{ margin-left: 110px;}
+.viList {color: #fff;}
+.viList h3 {font-size: 22px; padding: 20px 0;}
