@@ -40,7 +40,6 @@
 .contList>li>a>img {position: absolute; left: 50%; top: 30%; transform: translate(-50%);}
 .contList>li>a>p {position: absolute; left: 50%; top: 65%; transform: translate(-50%); color: #fff; font-weight: bold;}
 .contList .contTxt {display: none;}
-.contList>li:nth-child(2) a p, .contList>li:nth-child(4) a p {color: #444;}
 
 /* no.2 news */
 .contList>li:nth-child(2) {padding: 40px; text-align: left;}
@@ -52,12 +51,16 @@
 .txtLine {width:450px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .txtLine a {font-weight: bold; color: #444;}
 
+/* no.4 introduce */
+.contList>li:nth-child(4) .contTit {color: #444;}
+
 /* no.6,7,8 introduce */
 .contList .intro {padding: 40px;}
 .contList .intro h2 {font-size: 22px; margin-bottom: 35px; color: #fff; text-align: left;}
 .contList .intro h2:after {content: ''; display: block; width: 85px; height: 1px; background: #fff; margin-top: 17px;}
 .contList .intro p {font-size: 16px; font-weight: normal; width: 100%; line-height: 25px;  text-align: left; padding: 0 40px; top: 108px;}
 
+/* contents List (bg) */
 .contList>li:nth-child(1) {background-image: url("../images/contlist01.png");}
 .contList>li:nth-child(2) {width: 50%;}
 .contList>li:nth-child(3) {background-image: url("../images/contlist03.png");}
@@ -69,14 +72,17 @@
 .contList>li:nth-child(9) {background-image: url("../images/contlist09.png");}
 
 
+/* ----------vision------------ */
+.vision {height: 700px; background: url("../images/bg_vision.png")no-repeat center fixed; background-size: cover; margin-bottom: 80px;}
+.viIntro {text-align: center; padding-top: 70px;}
+.viIntro .viTit {width: 270px; font-size: 22px; color: #fff; margin: 18px auto;}
+.viIntro .viTit:after {content: ''; display: block; width: 100%; height: 1px; background: #fff; margin-top: 17px;}
+.viIntro .viTxt {line-height: 25px; color: #fff; margin-bottom: 50px;}
 
-.vision {width: 100%; height: 700px; background-image: url("../images/bg_vision.png"); margin-bottom: 80px;}
-.viIntro {width: 500px; text-align: center; margin: 0 auto; padding-top: 70px;}
-.viIntro h2 {width: 270px; font-size: 22px; color: #fff; margin: 18px auto;}
-.viIntro h2:after {content: ''; display: block; width: 100%; height: 1px; background: #fff; margin-top: 17px;}
-.viIntro p {width: 100%; line-height: 25px; color: #fff; margin-bottom: 115px;}
-
-.viList {display: flex; justify-content: center; text-align: center;}
-.viList li + li{ margin-left: 110px;}
-.viList {color: #fff;}
-.viList h3 {font-size: 22px; padding: 20px 0;}
+.viList {width: 900px; color: #fff; margin: 0 auto;}
+.viList li {float: left; width: calc( ( 100% - 60px ) / 3); height: 380px;  border-radius: 10px;  transition: 0.2s; cursor: pointer;}
+.viList li:hover {box-shadow: 8px 8px 10px rgba(0,0,0,0.5); transform: translate(-10px,-10px); background: rgba(255,255,255,0.3);}
+.viList li + li{margin-left: 20px;}
+.viList li img {display: block; margin: 0 auto; padding-top: 70px;}
+.cardTxt {text-align: center;}
+.cardTxt h3 {font-size: 22px; padding: 20px 0;}
