@@ -37,12 +37,11 @@
 /* ----------contents------------ */
 .contList {width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; margin-bottom: 80px;}
 .contList>li {width: 25%; height: 310px; text-align: center; position: relative;}
-.contList>li>a>img {position: absolute; left: 50%; top: 30%; transform: translate(-50%);}
+.contList li a img {position: absolute; left: 50%; top: 30%; transform: translate(-50%);}
 .contList .contTit {position: absolute; left: 50%; top: 65%; transform: translate(-50%); color: #fff; font-size: 16px; font-weight: bold;}
+.contList .contMoTit {position: absolute; left: 50%; top: 65%; transform: translate(-50%); color: #fff; font-size: 16px; font-weight: bold;}
 .contList .introTxt {position: absolute; left: 50%; top: 65%; transform: translate(-50%); color: #fff; font-weight: bold;}
-.contList .contTxt, .contList .contbtn {display: none;}
-.contList .contBtn {width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; position: absolute; left: 50%; bottom: 50px; transform: translate(-50%);}
-
+.contList .contTxt, .contList .contBtn, .contList .contMoTxt, .contList .contMoBtn  {display: none;}
 
 
 /* no.2 news */
@@ -56,7 +55,7 @@
 .txtLine a {font-weight: bold; color: #444;}
 
 /* no.4 introduce */
-.contList>li:nth-child(4) .contTit {color: #444;}
+.contList>li:nth-child(4) .contMoTit {color: #444;}
 
 /* no.6,7,8 introduce */
 .contList .intro {padding: 40px;}
@@ -78,15 +77,47 @@
 
 /* ----------vision------------ */
 .vision {height: 700px; background: url("../images/bg_vision.png")no-repeat center fixed; background-size: cover; margin-bottom: 80px;}
-.viIntro {text-align: center; padding-top: 70px;}
+.viIntro {text-align: center; padding-top: 70px; margin-bottom: 100px;}
 .viIntro .viTit {width: 270px; font-size: 22px; color: #fff; margin: 18px auto;}
 .viIntro .viTit:after {content: ''; display: block; width: 100%; height: 1px; background: #fff; margin-top: 17px;}
-.viIntro .viTxt {line-height: 25px; color: #fff; margin-bottom: 50px;}
+.viIntro .viTxt {color: #fff; margin-bottom: 50px; margin: 0 auto;}
 
 .viList {width: 900px; color: #fff; margin: 0 auto;}
-.viList li {float: left; width: calc( ( 100% - 60px ) / 3); height: 380px;  border-radius: 10px;  transition: 0.2s; cursor: pointer;}
+.viList li {float: left; width: calc( ( 100% - 60px ) / 3); height: 380px; border-radius: 10px; transition: 0.2s; cursor: pointer;}
 .viList li:hover {box-shadow: 8px 8px 10px rgba(0,0,0,0.5); transform: translate(-10px,-10px); background: rgba(255,255,255,0.3);}
 .viList li + li{margin-left: 20px;}
 .viList li img {display: block; margin: 0 auto; padding-top: 70px;}
 .cardTxt {text-align: center;}
 .cardTxt h3 {font-size: 22px; padding: 20px 0;}
+
+/* ----------newGame------------ */
+.newGame {margin-bottom: 80px;}
+.newGameIntro {width: 310px; height: 600px; text-align: center; background: #2E4D8E; float: left; color: #fff; display: flex; align-items: center; justify-content: center;}
+.newGameIntro img {width: 100px;}
+.newGameIntro h3 {font-size: 30px; margin: 30px 0 60px 0;}
+.newGameIntro p {width: 200px; margin: 0 auto;}
+
+.gameList {display: flex; flex-wrap: wrap; width: 930px; margin: 0 auto;}
+.gameList li {width: 310px; height: 300px; padding: 30px;}
+.gameList li h3 {font-size: 20px; margin-bottom: 30px;}
+.gameList li p {}
+.gameList li span {color: #666; font-weight: bold; position: absolute; top: 0; left: 50%;}
+.newgameCard {position: relative; }
+
+
+
+.gameList li:nth-child(1) {background-image: url("../images/bg_mobilegame01.png");}
+.gameList li:nth-child(2) {background: #bbb;}
+.gameList li:nth-child(3) {background: #ccc;}
+.gameList li:nth-child(4) h3{ }
+.gameList li:nth-child(5) {background: #eee;}
+.gameList li:nth-child(6) {background: #999;}
+
+
+
+
+
+
+
+
+/* ---- */
