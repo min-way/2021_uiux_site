@@ -98,20 +98,23 @@
 .newGameIntro p {width: 200px; margin: 0 auto;}
 
 .gameList {display: flex; flex-wrap: wrap; width: 930px; margin: 0 auto;}
-.gameList li {width: 310px; height: 300px; padding: 30px;}
-.gameList li h3 {font-size: 20px; margin-bottom: 30px;}
-.gameList li p {}
-.gameList li span {color: #666; font-weight: bold; position: absolute; top: 0; left: 50%;}
-.newgameCard {position: relative; }
+.gameList li {width: 310px; height: 600px; display: block;}
+.newGameBg {position: relative;}
+.newGameBg img {display: block;}
+.newgameCard {height: 300px; padding: 30px; position: relative; background: #e7e7e7;}
+.newgameCard h3 {display: inline-block; font-size: 20px; margin-bottom: 20px;}
+.newgameCard span {color: #666; font-size: 16px; font-weight: bold; padding-left: 15px;}
+
+.appBtn {position: absolute; bottom: 30px; right: 30px;}
+
+.arrowUp {position: absolute; bottom: 0; left: 50%; transform: translate(-50%); width: 0; height: 0; border-bottom: 20px solid #e7e7e7;border-left: 20px solid transparent; border-right: 20px solid transparent;}
+.arrowDown {position: absolute; top: 0; left: 50%; transform: translate(-50%); width: 0;	height: 0; border-top: 20px solid #e7e7e7; border-left: 20px solid transparent;	border-right: 20px solid transparent;}
 
 
 
-.gameList li:nth-child(1) {background-image: url("../images/bg_mobilegame01.png");}
-.gameList li:nth-child(2) {background: #bbb;}
-.gameList li:nth-child(3) {background: #ccc;}
-.gameList li:nth-child(4) h3{ }
-.gameList li:nth-child(5) {background: #eee;}
-.gameList li:nth-child(6) {background: #999;}
+
+
+
 
 
 

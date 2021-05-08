@@ -7,10 +7,12 @@ $(document).ready(function(){
     $(this).addClass("on").siblings().removeClass("on");
   });
 
-  // $(window).resize(function(){
-  //   console.log(window.innerWidth)
-  //   if(window.innerWidth <= 600){
-  //
-  //   }
-  // });
+  $(window).resize(function(){
+    console.log(window.innerWidth)
+    if(window.innerWidth <= 700){
+      $(".gameList").bxSlider({
+
+      });
+    }
+  });
 });
