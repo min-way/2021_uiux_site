@@ -128,6 +128,9 @@
 #footer:before {content: ''; display: block; width: 100%; height: 1px; background: #444; margin-bottom: 20px;}
 .ftSort {display: flex; justify-content: space-between;}
 .footer_logo {background: url("../images/netmarble_logo2.png")no-repeat 100% 100% / cover; width: 270px; height: 45px; cursor: pointer; text-indent: -9999px;}
+.topBtn {display: none; width: 50px; height: 20px; margin-bottom: 15px; cursor: pointer;}
+.topBtn img {display: block; float: left;}
+.topBtn span {display: flex; justify-content: center; align-items: center; font-size: 12px;}
 .corp {width: 500px;}
 .corp ul {display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 20px;}
 .corp ul li + li {margin-left: 30px;}

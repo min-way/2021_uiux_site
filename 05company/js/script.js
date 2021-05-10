@@ -7,6 +7,12 @@ $(document).ready(function(){
     $(this).addClass("on").siblings().removeClass("on");
   });
 
+  const topBtn = document.getElementsByClassName("topBtn")[0];
+  topBtn.onclick = function(){
+    // window.scrollTo(0,0);
+    $("html,body").animate({scrollTop:0},1000)
+  }
+
   var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -20,6 +26,8 @@ $(document).ready(function(){
           prevEl: ".swiper-button-prev",
         },
       });
+
+
 
   // $(window).resize(function(){
   //   console.log(window.innerWidth)
