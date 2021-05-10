@@ -13,7 +13,8 @@
   .sliderWrap li.slider1st, .sliderWrap li.slider2st {height: 500px;}
 
   /* contents */
-  .contList {width: 100%;}
+  #contents {height: 1705px;}
+  .contList {width: 100%; _margin-bottom: 80px; top: 500px; transform: translate(-50%,0);}
   .contList>li {width: 100%; height: 275px; order: 11; position: relative;}
   .contList li a img {display: none;}
   .contList .contTit {color: #444;}
@@ -29,7 +30,7 @@
   .contList>li:nth-child(8) {display: none;}
   .contList>li:nth-child(9) {order:5;}
   .contList>li:nth-child(1) {background-image: url("../images/bg_company.png"); background-repeat: no-repeat; background-size: cover;}
-  .contList>li:nth-child(4) {background-image: url("../images/bg_Business.png"); background-repeat: no-repeat;}
+  .contList>li:nth-child(4) {background-image: url("../images/bg_Business.png"); background-repeat: no-repeat; background-image: none;}
   .contList>li:nth-child(3) {background-image: url("../images/bg_ir.png"); background-repeat: no-repeat; background-position: right;}
   .contList>li:nth-child(9) {background-image: url("../images/bg_jd.png"); background-repeat: no-repeat;}
   .contList>li:nth-child(5) {background-image: url("../images/bg_dev.png"); background-repeat: no-repeat; background-size: cover;}
@@ -41,26 +42,38 @@
   .newsList li + li {margin-top: 20px;}
 
   /* no.2 회사소개  */
-  .contList .contTit {top: 50px; font-size: 20px;}
+  /* .contList .contTit {top: 50px; font-size: 20px;}
   .contList .contTit:before {content: ''; display: block; width: 40px; height: 1px; background: #222; margin: 0 auto; margin-bottom: 15px;}
   .contList .contTxt {position: absolute; left: 50%; top: 120px; transform: translate(-50%); width: 280px; color: #222; font-size: 12px; font-weight: bold;}
-  .contList .contBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; position: absolute; left: 50%; bottom: 50px; transform: translate(-50%); cursor: pointer;}
+  .contList .contBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; position: absolute; left: 50%; bottom: 50px; transform: translate(-50%); cursor: pointer;} */
+  .contList .contTit {font-size: 20px; margin-bottom: 20px;}
+  .contList .contTit:before {content: ''; display: block; width: 40px; height: 1px; background: #222; margin: 0 auto; margin-bottom: 15px;}
+  .contList .contTxt { width: 280px; color: #222; font-size: 12px; font-weight: bold; margin-bottom: 20px;}
+  .contList .contBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; cursor: pointer; margin: 0 auto;}
 
   /* no.3 사업소개 */
-  .contMoBox {position: absolute; width: 200px; height: 275px; right: 10%; top: 0;}
-  .contList .contMoTit {top: 30px; font-size: 20px;}
+
+  /* .contMoBox {position: absolute; width: 200px; height: 275px; right: 10%; top: 0;} */
+  /* .contList .contMoTit {top: 30px; font-size: 20px;}
   .contList .contMoTit:before {content: ''; display: block; width: 40px; height: 1px; background: #222; margin: 0 auto; margin-bottom: 15px;}
   .contList .contMoTxt {position: absolute; left: 50%;  top: 85px; transform: translate(-50%); width: 105px; color: #222; font-size: 12px; font-weight: bold;}
-  .contList .contMoBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; position: absolute; left: 50%; bottom: 30px; transform: translate(-50%); cursor: pointer;}
+  .contList .contMoBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; position: absolute; left: 50%; bottom: 30px; transform: translate(-50%); cursor: pointer;} */
+
+  .contList .contMoBox>img {}
+  .contList .contMoTit:before {content: ''; display: block; width: 40px; height: 1px; background: #222; margin: 0 auto; margin-bottom: 15px;}
+  .contList .contMoTxt {width: 105px; color: #222; font-size: 12px; font-weight: bold;}
+  .contList .contMoBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; cursor: pointer; margin: 0 auto;}
+
 
   /* no.4 투자정보 */
   .contMoBox_left {position: absolute; width: 200px; height: 275px; left: 10%; top: 0;}
+
 
   /* no.5 정도경영*/
 
 
   /* ----------vision------------ */
-  .vision {height: 726px; margin-bottom: 20px; background: url("../images/bg_vision.png")no-repeat center;background-size: cover;}
+  .vision {height: 726px; margin-bottom: 20px; background: url("../images/bg_vision.png")no-repeat center; background-size: cover;}
   .viIntro {text-align: center; padding-top: 50px; margin-bottom: 0;}
   .viIntro .viTit {font-size: 20px; margin: 0 auto; padding-bottom: 20px;}
   .viIntro .viTit:before {content: ''; display: block; width: 40px; height: 1px; background: #fff; margin: 0 auto; margin-bottom: 15px;}
@@ -95,17 +108,17 @@
   .bannerBtn {font-size: 10px; width: 80px; height: 28px; color: #fff; background: rgba(255,255,255,0.1); border: 1px solid #fff; cursor: pointer;}
 
   /* ----------footer------------ */
-.footer_logo {display: none;}
-.ftSort {display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.topBtn {display: block;}
-.corp {width: 280px;}
-.corp ul {display: flex; justify-content: center; margin-bottom: 10px; }
-.corp li:after {content: ''; display: block; width: 1px; height: 10px; float: right; background: #444; bottom: 0; margin-top: 10px; margin-left: 15px;}
-.corp li:nth-child(3):after, .corp li:nth-child(5):after {display: none;}
-.corp ul li + li {margin-left: 20px;}
-.corp ul li a {font-size: 12px;}
-.corp p {font-size: 10px; width: 185px; margin: 0 auto;}
-.fmSite select {display: none;}
+  .footer_logo {display: none;}
+  .ftSort {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+  .topBtn {display: block;}
+  .corp {width: 280px;}
+  .corp ul {display: flex; justify-content: center; margin-bottom: 10px; }
+  .corp li:after {content: ''; display: block; width: 1px; height: 10px; float: right; background: #444; bottom: 0; margin-top: 10px; margin-left: 15px;}
+  .corp li:nth-child(3):after, .corp li:nth-child(5):after {display: none;}
+  .corp ul li + li {margin-left: 20px;}
+  .corp ul li a {font-size: 12px;}
+  .corp p {font-size: 10px; width: 185px; margin: 0 auto;}
+  .fmSite select {display: none;}
 
 
 } /* max-width:700px */

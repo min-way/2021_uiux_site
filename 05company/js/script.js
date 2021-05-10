@@ -29,10 +29,12 @@ $(document).ready(function(){
 
 
 
-  // $(window).resize(function(){
-  //   console.log(window.innerWidth)
-  //   if(window.innerWidth <= 700){
-  //
-  //   }
-  // });
+  $(window).resize(function(){
+
+    if(window.innerWidth <= 700){
+      $(".contMoBox img").attr("src","images/bg_Business.png");
+    }else{
+      $(".contMoBox img").attr("src","images/icon03.png");
+    }
+  });
 });

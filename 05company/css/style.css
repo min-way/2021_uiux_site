@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-
 /* ----------header------------ */
+
 .wrap {width: 1240px; margin: 0 auto;}
 #header {width: 100%; height: 1000px;}
 .logo {background: url("../images/netmarble_logo.png")no-repeat 100% 100% / cover; width: 270px; height: 45px; cursor: pointer; text-indent: -9999px; float: left; margin-top: 40px;}
@@ -36,14 +36,21 @@
 }
 
 /* ----------contents------------ */
-.contList {width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; margin-bottom: 80px;}
-.contList>li {width: 25%; height: 310px; text-align: center; position: relative;}
-.contList li a img {position: absolute; left: 50%; top: 30%; transform: translate(-50%);}
+
+#contents {height: 700px;}
+.contList {width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; margin-bottom: 80px; position: absolute; left: 50%; top: 690px; transform: translate(-50%,0);}
+.contList>li {width: 25%; height: 310px; text-align: center; position: relative; display: flex; align-items: center; justify-content: center;}
+.contList>li:nth-child(2) {width: 25%; height: 310px; text-align: center; position: relative; display: block;} /* news 제외 */
+
+/* .contList li a img {position: absolute; left: 50%; top: 30%; transform: translate(-50%);}
 .contList .contTit {position: absolute; left: 50%; top: 65%; transform: translate(-50%); color: #fff; font-size: 16px; font-weight: bold;}
 .contList .contMoTit {position: absolute; left: 50%; top: 65%; transform: translate(-50%); color: #fff; font-size: 16px; font-weight: bold;}
-.contList .introTxt {position: absolute; left: 50%; top: 65%; transform: translate(-50%); color: #fff; font-weight: bold;}
-.contList .contTxt, .contList .contBtn, .contList .contMoTxt, .contList .contMoBtn  {display: none;}
+.contList .introTxt {position: absolute; left: 50%; top: 65%; transform: translate(-50%); color: #fff; font-weight: bold;} */
+.contList .contMoBox {}
+.contList .contTit {color: #fff; font-size: 16px; font-weight: bold;}
+.contList .contMoTit {color: #fff; font-size: 16px; font-weight: bold;}
 
+.contList .contTxt, .contList .contBtn, .contList .contMoTxt, .contList .contMoBtn  {display: none;}
 
 /* no.2 news */
 .contList>li:nth-child(2) {padding: 40px; text-align: left;}
@@ -60,13 +67,13 @@
 
 /* no.6,7,8 introduce */
 .contList .intro {padding: 40px;}
-.contList .intro h2 {font-size: 22px; margin-bottom: 35px; color: #fff; text-align: left;}
-.contList .intro h2:after {content: ''; display: block; width: 85px; height: 1px; background: #fff; margin-top: 17px;}
-.contList .intro p {font-size: 16px; font-weight: normal; width: 100%; line-height: 25px;  text-align: left; padding: 0 40px; top: 108px;}
+.contList .introTit {font-size: 22px; margin-bottom: 30px; color: #fff; text-align: left;}
+.contList .introTit:after {content: ''; display: block; width: 85px; height: 1px; background: #fff; margin-top: 17px;}
+.contList .introTxt {width: 100%;font-size: 16px; color: #fff;  line-height: 25px; font-weight: bold; text-align: left;}
 
 /* contents List (bg) */
 .contList>li:nth-child(1) {background-image: url("../images/contlist01.png");}
-.contList>li:nth-child(2) {width: 50%;}
+.contList>li:nth-child(2) {width: 50%; background: #fff;}
 .contList>li:nth-child(3) {background-image: url("../images/contlist03.png");}
 .contList>li:nth-child(4) {background-image: url("../images/contlist04.png");}
 .contList>li:nth-child(5) {background-image: url("../images/contlist05.png");}
@@ -74,7 +81,6 @@
 .contList>li:nth-child(7) {background-image: url("../images/contlist07.png");}
 .contList>li:nth-child(8) {background-image: url("../images/contlist08.png"); width: 50%;}
 .contList>li:nth-child(9) {background-image: url("../images/contlist09.png");}
-
 
 /* ----------vision------------ */
 .vision {height: 700px; background: url("../images/bg_vision.png")no-repeat center fixed; background-size: cover; margin-bottom: 80px;}
@@ -107,7 +113,6 @@
 .newgameCard span {color: #666; font-size: 16px; font-weight: bold; padding-left: 15px;}
 
 .appBtn {position: absolute; bottom: 30px; right: 30px;}
-
 .arrowUp {position: absolute; bottom: 0; left: 50%; transform: translate(-50%); width: 0; height: 0; border-bottom: 20px solid #e7e7e7;border-left: 20px solid transparent; border-right: 20px solid transparent;}
 .arrowDown {position: absolute; top: 0; left: 50%; transform: translate(-50%); width: 0;	height: 0; border-top: 20px solid #e7e7e7; border-left: 20px solid transparent;	border-right: 20px solid transparent;}
 
@@ -131,7 +136,7 @@
 .topBtn {display: none; width: 50px; height: 20px; margin-bottom: 15px; cursor: pointer;}
 .topBtn img {display: block; float: left;}
 .topBtn span {display: flex; justify-content: center; align-items: center; font-size: 12px;}
-.corp {width: 500px;}
+.corp {width: 550px;}
 .corp ul {display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 20px;}
 .corp ul li + li {margin-left: 30px;}
 .corp ul li a {}
