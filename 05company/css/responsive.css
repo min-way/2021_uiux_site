@@ -5,7 +5,6 @@
   #header {height: 500px;}
   .headTop {position: none; position: absolute;}
   .logo {float: none; display: block; margin: 0 auto; margin-top: 55px; width: 178px; height: 30px;}
-  /* .toggleMenu {display: block; position: absolute; top: 100px; left: 50px;} */
   .toggleMenu {display: block; position: absolute; top: 75px; left: 30px;}
   .gnb, .conversion {display: none;}
 
@@ -14,7 +13,7 @@
 
   /* contents */
   #contents {height: 1705px;}
-  .contList {width: 100%; _margin-bottom: 80px; top: 500px; transform: translate(-50%,0);}
+  .contList {width: 100%; top: 500px; transform: translate(-50%,0);}
   .contList>li {width: 100%; height: 275px; order: 11; position: relative;}
   .contList li a img {display: none;}
   .contList .contTit {color: #444;}
@@ -31,8 +30,8 @@
   .contList>li:nth-child(9) {order:5;}
   .contList>li:nth-child(1) {background-image: url("../images/bg_company.png"); background-repeat: no-repeat; background-size: cover;}
   .contList>li:nth-child(4) {background-image: url("../images/bg_Business.png"); background-repeat: no-repeat; background-image: none;}
-  .contList>li:nth-child(3) {background-image: url("../images/bg_ir.png"); background-repeat: no-repeat; background-position: right;}
-  .contList>li:nth-child(9) {background-image: url("../images/bg_jd.png"); background-repeat: no-repeat;}
+  .contList>li:nth-child(3) {background-image: url("../images/bg_ir.png"); background-repeat: no-repeat; background-position: right; background-image: none;}
+  .contList>li:nth-child(9) {background-image: url("../images/bg_jd.png"); background-repeat: no-repeat; background-image: none;}
   .contList>li:nth-child(5) {background-image: url("../images/bg_dev.png"); background-repeat: no-repeat; background-size: cover;}
 
   /* no.1 news */
@@ -42,40 +41,35 @@
   .newsList li + li {margin-top: 20px;}
 
   /* no.2 회사소개  */
-  /* .contList .contTit {top: 50px; font-size: 20px;}
-  .contList .contTit:before {content: ''; display: block; width: 40px; height: 1px; background: #222; margin: 0 auto; margin-bottom: 15px;}
-  .contList .contTxt {position: absolute; left: 50%; top: 120px; transform: translate(-50%); width: 280px; color: #222; font-size: 12px; font-weight: bold;}
-  .contList .contBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; position: absolute; left: 50%; bottom: 50px; transform: translate(-50%); cursor: pointer;} */
   .contList .contTit {font-size: 20px; margin-bottom: 20px;}
   .contList .contTit:before {content: ''; display: block; width: 40px; height: 1px; background: #222; margin: 0 auto; margin-bottom: 15px;}
   .contList .contTxt { width: 280px; color: #222; font-size: 12px; font-weight: bold; margin-bottom: 20px;}
   .contList .contBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; cursor: pointer; margin: 0 auto;}
 
   /* no.3 사업소개 */
+  .contList .contMoBox {display: flex; justify-content: space-between; width: 100%;}
+  .contList .contMoBox .moImg {display: none;}
+  .contList .contMoBox .contMoSort {display: flex; justify-content: center; flex-direction: column; margin: 0 auto;}
+  .contList li:nth-child(4)>div>div:nth-of-type(1) {display: block; width: 45%; height: 275px; background-image: url("../images/bg_Business.png"); background-repeat: no-repeat; background-size: cover;}
 
-  /* .contMoBox {position: absolute; width: 200px; height: 275px; right: 10%; top: 0;} */
-  /* .contList .contMoTit {top: 30px; font-size: 20px;}
+  .contList .contMoTit {font-size: 20px; margin-bottom: 10px;}
   .contList .contMoTit:before {content: ''; display: block; width: 40px; height: 1px; background: #222; margin: 0 auto; margin-bottom: 15px;}
-  .contList .contMoTxt {position: absolute; left: 50%;  top: 85px; transform: translate(-50%); width: 105px; color: #222; font-size: 12px; font-weight: bold;}
-  .contList .contMoBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; position: absolute; left: 50%; bottom: 30px; transform: translate(-50%); cursor: pointer;} */
-
-  .contList .contMoBox>img {}
-  .contList .contMoTit:before {content: ''; display: block; width: 40px; height: 1px; background: #222; margin: 0 auto; margin-bottom: 15px;}
-  .contList .contMoTxt {width: 105px; color: #222; font-size: 12px; font-weight: bold;}
+  .contList .contMoTxt {width: 105px; color: #222; font-size: 12px; font-weight: bold; margin-bottom: 20px;}
   .contList .contMoBtn {display: block; width: 80px; height: 28px; color: #222; font-size: 10px; background: rgba(255,255,255,0.1); border: 1px solid #222; cursor: pointer; margin: 0 auto;}
 
-
   /* no.4 투자정보 */
-  .contMoBox_left {position: absolute; width: 200px; height: 275px; left: 10%; top: 0;}
-
+  .contList .contMoBox_left {display: flex; justify-content: space-between; width: 100%;}
+  .contList .contMoBox_left .moImg {display: none;}
+  .contList .contMoBox_left .contMoSort {display: flex; justify-content: center; flex-direction: column; margin: 0 auto;}
+  .contList li:nth-child(3)>div>div:nth-of-type(2) {display: block; width: 45%; height: 275px; background-image: url("../images/bg_ir.png"); background-repeat: no-repeat; background-size: cover;}
 
   /* no.5 정도경영*/
-
+  .contList li:nth-child(9)>div>div:nth-of-type(1) {display: block; width: 45%; height: 275px; background-image: url("../images/bg_jd.png"); background-repeat: no-repeat; background-size: cover;}
 
   /* ----------vision------------ */
-  .vision {height: 726px; margin-bottom: 20px; background: url("../images/bg_vision.png")no-repeat center; background-size: cover;}
+  .vision {height: 750px; margin-bottom: 20px; background: url("../images/bg_vision.png")no-repeat center; background-size: cover;}
   .viIntro {text-align: center; padding-top: 50px; margin-bottom: 0;}
-  .viIntro .viTit {font-size: 20px; margin: 0 auto; padding-bottom: 20px;}
+  .viIntro .viTit {font-size: 20px; margin: 0 auto; padding-bottom: 20px; width: 100%;}
   .viIntro .viTit:before {content: ''; display: block; width: 40px; height: 1px; background: #fff; margin: 0 auto; margin-bottom: 15px;}
   .viIntro .viTit:after {display: none;}
   .viIntro .viTxt {width: 300px; line-height: 20px; font-weight: bold; font-size: 12px; margin-bottom: 0;}
@@ -89,17 +83,59 @@
   .cardTxt p {font-size: 12px; text-align: center;}
 
   /* ----------newGame------------ */
-  .newGame {display: none;}
+  .newGame {display: block;}
   .newGameIntro {width: 260px; height: 40px; float: none; margin: 0 auto; border-radius: 20px; margin-bottom: 20px;}
   .newGameIntro img, .newGameIntro p {display: none;}
-  .newGameIntro h3 {font-size: 18px;  margin: 0; font-weight: normal;}
-  .gameList {}
+  .newGameIntro h3 {font-size: 18px; margin: 0; font-weight: normal;}
+  .gameList {display: block; flex-wrap: wrap; width: 100%; margin: 0 auto;}
+  .newGameBg {}
   .newGameBg img {width: 100%; height: 300px;}
   .arrowUp, .arrowDown {display: none;}
+  .gameList li {width: 100%; height: 600px; display: block;}
+  html, body {
+          position: relative;
+        }
+      .swiper-container {
+        width: 100%;
+        height: 600px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .swiper-container {
+              margin-left: auto;
+              margin-right: auto;
+            }
+
 
   /* ----------banner------------ */
   .banner {width: 100%; margin-bottom: 20px;}
   .sort {display: flex; flex-direction: column;}
+  .social {margin-bottom: 20px;}
   .social, .hr {padding: 30px; width: 100%; height: 187px; background-size: 100%; background-repeat: no-repeat; background-position: center; padding: 30px;}
   .social h3, .hr h3 {font-size: 16px; margin-bottom: 10px;}
   .social h3:before, .hr h3:before {content: ''; display: block; width: 40px; height: 1px; background: #fff; margin: 0 0 10px 0; }

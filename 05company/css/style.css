@@ -49,6 +49,7 @@
 .contList .contMoBox {}
 .contList .contTit {color: #fff; font-size: 16px; font-weight: bold;}
 .contList .contMoTit {color: #fff; font-size: 16px; font-weight: bold;}
+.contList .contMoBox .contMoBg {display: none;}
 
 .contList .contTxt, .contList .contBtn, .contList .contMoTxt, .contList .contMoBtn  {display: none;}
 
@@ -62,7 +63,7 @@
 .txtLine {width:450px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .txtLine a {font-weight: bold; color: #444;}
 
-/* no.4 introduce */
+/* no.4 사업소개 */
 .contList>li:nth-child(4) .contMoTit {color: #444;}
 
 /* no.6,7,8 introduce */
