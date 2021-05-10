@@ -83,7 +83,7 @@
   .cardTxt p {font-size: 12px; text-align: center;}
 
   /* ----------newGame------------ */
-  .newGame {display: block;}
+  .newGame {display: none;}
   .newGameIntro {width: 260px; height: 40px; float: none; margin: 0 auto; border-radius: 20px; margin-bottom: 20px;}
   .newGameIntro img, .newGameIntro p {display: none;}
   .newGameIntro h3 {font-size: 18px; margin: 0; font-weight: normal;}
