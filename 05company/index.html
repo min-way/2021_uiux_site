@@ -8,24 +8,25 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/animate.css.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="wow.min.js"></script>
   <script src="js/script.js"></script>
-
 </head>
 <body>
-  <header id="header">
-      <div class="headTop clearfix">
+  <header id="header" class="header">
+      <div class="headTop">
         <div class="wrap">
+          <h1 class="logo"><a href="#">Netmarble</a></h1>
           <div class="toggleMenu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
           </div>
-          <h1 class="logo"><a href="#">Netmarble</a></h1>
           <div class="conversion">
             <ul>
               <li class="on"><a href="#">KOR</a></li>
@@ -33,12 +34,50 @@
             </ul>
           </div>
           <ul class="gnb clearfix">
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">사업소개</a></li>
-            <li><a href="#">정도경영</a></li>
-            <li><a href="#">사회공헌</a></li>
-            <li><a href="#">IR</a></li>
-            <li><a href="#">인재채용</a></li>
+            <li><a href="#">회사소개</a>
+              <ul class="lnb">
+                <li><a href="#">넷마블 컴퍼니</a></li>
+                <li><a href="#">비전/미션</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">뉴스</a></li>
+              </ul>
+            </li>
+            <li><a href="#">사업소개</a>
+              <ul class="lnb">
+                <li><a href="#">사업영역</a></li>
+                <li><a href="#">넷마블게임</a></li>
+                <li><a href="#">글로벌사업</a></li>
+              </ul>
+            </li>
+            <li><a href="#">정도경영</a>
+              <ul class="lnb">
+                <li><a href="#">정도경영</a></li>
+                <li><a href="#">윤리강령</a></li>
+              </ul>
+            </li>
+            <li><a href="#">사회공헌</a>
+              <ul class="lnb">
+                <li><a href="#">방향성</a></li>
+                <li><a href="#">활동소개</a></li>
+                <li><a href="#">활동소식</a></li>
+              </ul>
+            </li>
+            <li><a href="#">IR</a>
+              <ul class="lnb">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">기업지배구조</a></li>
+                <li><a href="#">재무정보</a></li>
+                <li><a href="#">공시</a></li>
+              </ul>
+            </li>
+            <li><a href="#">인재채용</a>
+              <ul class="lnb">
+                <li><a href="#">인재상</a></li>
+                <li><a href="#">직무소개</a></li>
+                <li><a href="#">인사제도</a></li>
+                <li><a href="#">채용공고</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -59,7 +98,7 @@
         </ul>
       </div>
   </header>
-  <div id="contents">
+  <div id="contents" class="contents">
     <ul class="contList">
       <li><a href="#"><img src="images/icon01.png" alt="icon">
           <h2 class="contTit">회사소개</h2>
@@ -172,7 +211,6 @@
       </ul>
     </div>
   </div><!-- vision -->
-
   <div class="newGame">
     <div class="wrap">
       <div class="newGameIntro">
@@ -182,63 +220,62 @@
           <p>넷마블의 최신 모바일 게임을 다양하게 즐겨보세요!</p>
         </div>
       </div>
-
-          <ul class="gameList">
-            <li>
-              <div class="newGameBg">
-                <div class="arrowUp"></div>
-                <img src="images/bg_mobilegame01.png" alt="">
+        <ul class="gameList">
+          <li>
+            <div class="newGameBg">
+              <div class="arrowUp"></div>
+              <img src="images/bg_mobilegame01.png" alt="">
+            </div>
+            <div class="newgameCard">
+              <h3>세븐나이츠2</h3><span>MMORPG</span>
+              <P>강림의 날로부터 20년후...<br>
+                용병 단장이 된 '아일린', 그리고 악의 무리와 함께 나타난 '세인'<br>
+                세인과의 치열한 전투 끝에 아일린은 자신의 딸 '렌'에게 최후의 세븐나이츠
+                 '루디'를 찾아라!라고 말하게 되는데..</P>
+              <div class="appBtn">
+                <a href="#"><img src="images/app_icon01.png" alt=""></a>
+                <a href="#"><img src="images/app_icon02.png" alt=""></a>
               </div>
-              <div class="newgameCard">
-                <h3>세븐나이츠2</h3><span>MMORPG</span>
-                <P>강림의 날로부터 20년후...<br>
-                  용병 단장이 된 '아일린', 그리고 악의 무리와 함께 나타난 '세인'<br>
-                  세인과의 치열한 전투 끝에 아일린은 자신의 딸 '렌'에게 최후의 세븐나이츠
-                   '루디'를 찾아라!라고 말하게 되는데..</P>
-                <div class="appBtn">
-                  <a href="#"><img src="images/app_icon01.png" alt=""></a>
-                  <a href="#"><img src="images/app_icon02.png" alt=""></a>
-                </div>
+            </div>
+          </li>
+          <li>
+            <div class="newgameCard">
+              <h3>마구마구2021</h3><span>스포츠</span>
+              <P>선수도 야구팬도 함께하는<br>
+                대한민국 1등 모바일 야구장<br>
+                마구마구 2021<br><br>
+                모바일 대표 야구 게임 마구마구!<br>
+                이젠 다같이 함께 ‘마구’ 붙자!</P>
+              <div class="appBtn">
+                <a href="#"><img src="images/app_icon01.png" alt=""></a>
+                <a href="#"><img src="images/app_icon02.png" alt=""></a>
               </div>
-            </li>
-            <li>
-              <div class="newgameCard">
-                <h3>마구마구2021</h3><span>스포츠</span>
-                <P>선수도 야구팬도 함께하는<br>
-                  대한민국 1등 모바일 야구장<br>
-                  마구마구 2021<br><br>
-                  모바일 대표 야구 게임 마구마구!<br>
-                  이젠 다같이 함께 ‘마구’ 붙자!</P>
-                <div class="appBtn">
-                  <a href="#"><img src="images/app_icon01.png" alt=""></a>
-                  <a href="#"><img src="images/app_icon02.png" alt=""></a>
-                </div>
+            </div>
+            <div class="newGameBg">
+              <img src="images/bg_mobilegame02.png" alt="">
+              <div class="arrowDown"></div>
+            </div>
+          </li>
+          <li>
+            <div class="newGameBg">
+              <img src="images/bg_mobilegame03.png" alt="">
+              <div class="arrowUp"></div>
+            </div>
+            <div class="newgameCard">
+              <h3>모두의마블<span>보드</span></h3>
+                <P>캔디를 지켜라! 신규맵 ‘캔디샵맵’ 출시
+                  골든캔디를 찾아 떠나는 여정 시작!
+                  맵 곳곳에 숨어있는 캔디를 모아
+                  승리하세요!<br>
+                  달콤살벌 캔디쟁탈전! 달달한 재미를 즐기세요!</P>
+              <div class="appBtn">
+                <a href="#"><img src="images/app_icon01.png" alt=""></a>
+                <a href="#"><img src="images/app_icon02.png" alt=""></a>
               </div>
-              <div class="newGameBg">
-                <img src="images/bg_mobilegame02.png" alt="">
-                <div class="arrowDown"></div>
-              </div>
-            </li>
-            <li>
-              <div class="newGameBg">
-                <img src="images/bg_mobilegame03.png" alt="">
-                <div class="arrowUp"></div>
-              </div>
-              <div class="newgameCard">
-                <h3>모두의마블<span>보드</span></h3>
-                  <P>캔디를 지켜라! 신규맵 ‘캔디샵맵’ 출시
-                    골든캔디를 찾아 떠나는 여정 시작!
-                    맵 곳곳에 숨어있는 캔디를 모아
-                    승리하세요!<br>
-                    달콤살벌 캔디쟁탈전! 달달한 재미를 즐기세요!</P>
-                <div class="appBtn">
-                  <a href="#"><img src="images/app_icon01.png" alt=""></a>
-                  <a href="#"><img src="images/app_icon02.png" alt=""></a>
-                </div>
-              </div>
-            </li>
-          </ul>
-
+            </div>
+          </li>
+        </ul>
+    </div><!-- wrap -->
   </div><!-- newGame -->
   <div class="banner">
     <div class="wrap">
@@ -257,7 +294,7 @@
     </div>
   </div><!-- banner -->
 
-  <div id="footer">
+  <footer id="footer" class="footer">
     <div class="wrap">
       <div class="ftSort">
         <h1 class="footer_logo"><a href="#">Netmarble</a></h1>
@@ -286,7 +323,7 @@
         </div>
       </div>
     </div><!-- wrap -->
-  </div><!-- footer -->
+  </footer><!-- footer -->
 </div>
 </body>
 </html>
