@@ -2,6 +2,7 @@ $(document).ready(function(){
   $(".slider").bxSlider({
     pager:false
   });
+  // $('.owl-carousel').owlCarousel();
 
   $(".conversion ul li").click(function(){
     $(this).addClass("on").siblings().removeClass("on");
