@@ -3,11 +3,24 @@ $(document).ready(function(){
     pager:false
   });
   // $('.owl-carousel').owlCarousel();
+  const topPos = $(".gnb").offset().top;
+  $(window).scroll(function(){
+    let scrollY = $(window).scrollTop();
+    if(topPos<scrollY){
+      $(".headTop").addClass("fixed");
+    }else{
+      $(".headTop").removeClass("fixed");
+    }
+  });
+
+
 
   $(".gnb>li").hover(function(){
-      $(".lnb").stop().slideDown();
+      $(".headTop").stop().animate({height:300},100);
+      $(".lnb").stop().slideDown().animate({},200);
   },function(){
-    $(".lnb").stop().slideUp();
+      $(".headTop").stop().animate({height:120},100);
+      $(".lnb").stop().slideUp().animate({},200);
   });
 
   $(".conversion ul li").click(function(){
