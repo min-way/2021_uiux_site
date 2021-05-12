@@ -38,7 +38,7 @@
     right: 10px;
     background: url(../images/controls.png) no-repeat -43px -32px;
 }
-
+.bx-wrapper .bx-controls-direction a {z-index: 100;}
 
 /* ----------contents------------ */
 
