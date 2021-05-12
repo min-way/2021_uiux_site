@@ -6,27 +6,26 @@
 .logo {background: url("../images/netmarble_logo.png")no-repeat 100% 100% / cover; width: 270px; height: 45px; cursor: pointer; text-indent: -9999px; float: left; margin-top: 40px;}
 .headTop {width: 100%; height: 120px; _background: #FFC905; background: #EE3F22; position: fixed; z-index: 1000; left: 50%; transform: translate(-50%); transition: 0.3s;}
 .headTop.fixed {background: rgba(0,0,0,0.5); height: 120px;}
-.gnb {width: 780px; float: left; margin-top: 45px;}
+.gnb {width: 780px; float: left; margin-top: 45px; margin-left: 80px;}
 .gnb>li {float: left; width: calc(780px / 6); text-align: center;}
 .gnb>li>a {display:inline-block; line-height: 40px; text-align: center; color: #fff; font-size: 18px;}
-.gnb>li>a:after, .lnb>li>a:after {content: ''; display:block; border-bottom: solid 2px #553A31; transform: scaleX(0); transition: 0.2s ease-in-out;}
+.gnb>li>a:after, .lnb>li>a:after {content: ''; display:block; border-bottom: solid 3px #553A31; transform: scaleX(0); transition: 0.2s ease-in-out;}
 .gnb>li>a:hover:after, .lnb>li>a:hover:after {transform: scaleX(1);}
 
-
-.lnb {display: none;}
+.lnb {display: none; padding-top: 10px;}
 .lnb>li {}
 .lnb>li>a {display:inline-block; padding: 10px 0; line-height: 30px; text-align: center; color: #fff; font-size: 18px; }
-.conversion {float: right; height: 40px; border: 1px solid #EE3F22; margin-top: 45px;}
-
+.conversion {float: right; height: 40px; border: 1px solid #FFC905; margin-top: 45px;}
 .conversion ul li {float: left;}
 .conversion ul li a {width: 39px; line-height: 39px; text-align: center; display: block; color: #fff; font-size: 14px;}
-.conversion ul li.on {background: #EE3F22;}
+.conversion ul li.on {background: #FFC905;}
 
-.toggleMenu {width: 40px; height: 40px; float: left; position: relative; display: flex; justify-content: center; align-items: center; top: -40px;}
-.toggleMenu div{width: 24px; height: 2px; background: #fff; border-radius: 2px; position: absolute;}
-.toggleMenu .bar1 {transform: translateY(10px);}
-.toggleMenu .bar2 {}
+.toggleMenu {width: 50px; height: 50px; position: relative; display: flex; justify-content: center; align-items: center; display: none;}
+.toggleMenu div {width: 24px; height: 2px; background: #fff; border-radius: 2px; position: absolute; transition: 0.3s;}
 .toggleMenu .bar3 {transform: translateY(-10px);}
+.toggleMenu .bar2 {}
+.toggleMenu .bar1 {transform: translateY(10px);}
+
 
 /* ----------slider------------ */
 .slider li img {width: 100%;}
