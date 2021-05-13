@@ -2,14 +2,23 @@ $(document).ready(function(){
   $(".slider").bxSlider({
     pager:false
   });
+  new WOW().init();
   // $('.owl-carousel').owlCarousel();
-  const topPos = $(".gnb").offset().top;
+  const menuPos = $(".gnb").offset().top;
+  const topPos = $(".topBtn").offset().top;
   $(window).scroll(function(){
     let scrollY = $(window).scrollTop();
-    if(topPos<scrollY){
+
+    if(menuPos<scrollY){
       $(".headTop").addClass("fixed");
     }else{
       $(".headTop").removeClass("fixed");
+    }
+
+    if(topPos<scrollY + window.innerHeight/2){
+      $(".topBtn").addClass("view");
+    }else{
+      $(".topBtn").removeClass("view");
     }
   });
 
@@ -31,40 +40,35 @@ $(document).ready(function(){
     if(check=="toggleMenu"){
       $(this).addClass("on");
       $(".gnb").stop().animate({left:0},300);
+      $(".logo").addClass("on");
     }else{
       $(this).removeClass("on");
       $(".gnb").stop().animate({left:"100%"},300);
+      $(".logo").removeClass("on");
     }
   });
 
-  $(".gnb>li>a").click(function(){
-
-  });
+let winWidth = $(window).innerWidth();
+console.log(winWidth)
 
   $(".gnb>li").hover(function(){
+      if(winWidth < 700){return false}
       $(".headTop").stop().animate({height:320},100);
-      $(".lnb").stop().slideDown().animate({},200);
+      $(".lnb").stop().slideDown(600);
+      $(".headTop").addClass("fixed");
   },function(){
       $(".headTop").stop().animate({height:120},100);
-      $(".lnb").stop().slideUp().animate({},200);
-  });
+      $(".lnb").stop().slideUp(600);
+      $(".headTop").removeClass("fixed");
+    });
+
 
   $(window).resize(function(){
-    console.log(window.innerWidth)
-    if(window.innerWidth <= 700){
-      //mobile
-
-    }else{//PC
-        $(".gnb>li").hover(function(){
-            $(".headTop").stop().animate({height:320},100);
-            $(".lnb").stop().slideDown().animate({},200);
-        },function(){
-            $(".headTop").stop().animate({height:120},100);
-            $(".lnb").stop().slideUp().animate({},200);
-        });
-        $(".toggleMenu").removeClass("on");
-        $(".gnb").stop().animate({left:"100%"},300);
-      }
+    $(".headTop").removeAttr("style");
+    $(".toggleMenu").removeClass("on");
+    $(".gnb>li").click(function(){
+      $(".lnb").stop().slideDown();
+    });
 
   });
 });
