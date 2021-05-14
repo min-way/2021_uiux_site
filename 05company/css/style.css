@@ -7,7 +7,8 @@
 .headTop {position: fixed; z-index: 1000; width: 100%; background: #FFC905; transition: 0.6s; height: 120px;}
 .headTop.fixed {background: #EE3F22;}
 .gnb {width: 780px; float: left; margin-top: 45px; margin-left: 80px;}
-.gnb>li {float: left; width: calc(780px / 6); text-align: center;}
+.menuBtn {display: none;}
+.gnb>li {float: left; width: calc(780px / 6); text-align: center; position: relative;}
 .gnb>li>a {display:inline-block; line-height: 40px; text-align: center; color: #fff; font-size: 18px;}
 .gnb>li>a:after, .lnb>li>a:after {content: ''; display:block; border-bottom: solid 3px #553A31; transform: scaleX(0); transition: 0.2s ease-in-out;}
 .gnb>li>a:hover:after, .lnb>li>a:hover:after {transform: scaleX(1);}
@@ -56,6 +57,7 @@
 .contList>li:nth-child(2) {padding: 40px; text-align: left;}
 .contList>li:nth-child(2) .newsTit {font-size: 22px; margin-bottom: 35px; color: #444;}
 .newsList {position: relative;}
+.newsList li:hover a {color: #FFC905;}
 .newsList li + li {margin-top: 14px;}
 .newsList li span {position: absolute; right: 0; color: #888;}
 .newsList .more a {position: absolute; right: 0; top: -35px; color: #888;}
