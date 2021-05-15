@@ -18,7 +18,11 @@
   <script src="js/script.js"></script>
 </head>
 <body>
-
+  <!-- -wow.js 사용법- -->
+  <!-- data-wow-duration: 시간
+  data-wow-delay: 딜레이
+  data-wow-offset: 위치
+  data-wow-iteration: 반복 -->
   <header id="header" class="header">
       <div class="headTop">
         <div class="wrap">
@@ -101,7 +105,7 @@
   </header>
   <div id="contents" class="contents">
     <ul class="contList">
-      <li class="wow bounceInLeft">
+      <li class="wow bounceIn">
         <div class="contMoBox">
           <img class="moImg" src="images/icon01.png" alt="icon">
           <div class="contMoSort">
@@ -111,7 +115,7 @@
           </div>
         </div>
       </li>
-      <li class="newsBox">
+      <li class="newsBox wow bounceInDown">
         <h2 class="newsTit">NEWS</h2>
         <ul class="newsList clearfix">
           <li class="more"><a href="#">more</a></li>
@@ -122,7 +126,7 @@
           <li class="txtLine"><a href="#">넷마블, '모두의마블'에 ‘과수원 맵’ 업데이트 실시</a><span>2021.04.29</span></li>
         </ul>
       </li>
-      <li>
+      <li class="wow bounceIn">
         <div class="contMoBox_left">
            <img class="moImg" src="images/icon02.png" alt="icon">
            <div class="contMoSort">
@@ -144,7 +148,7 @@
             </div>
         </div>
       </li>
-      <li>
+      <li class="wow bounceIn">
         <div class="contMoBox">
           <img class="moImg" src="images/icon04.png" alt="icon">
           <div class="contMoSort">
@@ -154,22 +158,22 @@
           </div>
         </div>
       </li>
-      <li class="intro"><a href="#">
+      <li class="intro wow bounceInRight"><div class="introCont">
           <h2 class="introTit wow fadeInUp" data-wow-offset="100">게임퍼블리싱</h2>
           <p class="introTxt wow fadeInUp">업계 최초 PC게임 퍼블리싱을 시작으로 최고의 모바일 게임서비스를 제공하고 있으며, 국내 No.1 온라인게임 퍼블리셔를 넘어 글로벌 No.1 온라인 게임사로 성장하고 있습니다.</p>
-        </a>
+        </div>
       </li>
-      <li class="intro"><a href="#">
+      <li class="intro wow rotateIn"><div class="introCont">
           <h2 class="introTit wow fadeInUp" data-wow-offset="100">게임개발</h2>
           <p class="introTxt wow fadeInUp" data-wow-offset="100">20여 개의 우수한 개발 스튜디오에서 전 세계 모두가 즐길 수 있는 최고의 게임을 만들고 있습니다.</p>
-        </a>
+        </div>
       </li>
-      <li class="intro"><a href="#">
+      <li class="intro wow flipInY"><div class="introCont">
           <h2 class="introTit wow fadeInUp" data-wow-offset="100">글로벌사업</h2>
           <p class="introTxt wow fadeInUp" data-wow-offset="100">우수한 글로벌 네트워크를 통해 전세계 이용자들에게 최고의 재미를 전달할 수 있는 다양한 장르의 게임을 서비스하고 있습니다.</p>
-        </a>
+        </div>
       </li>
-      <li>
+      <li class="wow rotateInUpRight">
         <div class="contMoBox">
           <img class="moImg" src="images/icon05.png" alt="icon">
           <div class="contMoBg"></div>
@@ -185,12 +189,12 @@
   <div class="vision">
     <div class="wrap">
       <div class="viIntro">
-        <h2 class="viTit">비전 &#47; 미션 &#47; 넷마블 정신</h2>
-        <p class="viTxt">넷마블은 재미있는 게임으로 전세계 사람들에게 즐거움을 선사하며 글로벌 게임문화를 이끌어 나갑니다.</p>
+        <h2 class="viTit wow bounceInUp" data-wow-offset="320">비전 &#47; 미션 &#47; 넷마블 정신</h2>
+        <p class="viTxt wow bounceInUp" data-wow-offset="340">넷마블은 재미있는 게임으로 전세계 사람들에게 즐거움을 선사하며 글로벌 게임문화를 이끌어 나갑니다.</p>
       </div>
       <ul class="viList clearfix">
         <li>
-          <div class="card">
+          <div class="card wow flipInY" data-wow-offset="360" data-wow-duration="3s">
             <img src="images/vision_icon01.png" alt="">
             <div class="cardTxt">
               <h3>VISION</h3>
@@ -199,7 +203,7 @@
           </div>
         </li>
         <li>
-          <div class="card">
+          <div class="card wow flipInY" data-wow-offset="360" data-wow-duration="3s">
             <img src="images/vision_icon02.png" alt="">
             <div class="cardTxt">
               <h3>MISSION</h3>
@@ -208,7 +212,7 @@
           </div>
         </li>
         <li>
-          <div class="card">
+          <div class="card wow flipInY" data-wow-offset="360" data-wow-duration="3s">
             <img src="images/vision_icon03.png" alt="">
             <div class="cardTxt">
               <h3>ENTREPRENURSHIP</h3>
@@ -232,7 +236,7 @@
           <li>
             <div class="newGameBg">
               <div class="arrowUp"></div>
-              <img src="images/bg_mobilegame01.png" alt="">
+              <img src="images/bg_mobilegame01.png" class="wow fadeInLeft" alt="">
             </div>
             <div class="newgameCard">
               <h3>세븐나이츠2</h3><span>MMORPG</span>
@@ -288,12 +292,12 @@
   <div class="banner">
     <div class="wrap">
       <div class="sort">
-        <div class="social">
+        <div class="social wow fadeInLeftBig" data-wow-duration="1s">
           <h3>사회공헌</h3>
           <p>문화적 가치 확산을 통한 <br>우리 사회 미래경쟁력 제고</p>
           <button class="bannerBtn" onclick="location.href='#'">자세히보기</button>
         </div>
-        <div class="hr">
+        <div class="hr wow fadeInRightBig" data-wow-duration="1s">
           <h3>인재채용</h3>
           <p>열정으로 도전하고, 세상의 변화를 <br>선도하며, 최고를 추구하는 사람</p>
           <button class="bannerBtn" onclick="location.href='#'">자세히보기</button>

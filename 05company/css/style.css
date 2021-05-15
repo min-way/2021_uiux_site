@@ -42,10 +42,9 @@
 .bx-wrapper .bx-controls-direction a {z-index: 100;}
 
 /* ----------contents------------ */
-
 .contents {height: 700px;}
 .contList {width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; position: absolute; left: 50%; top: 690px; transform: translate(-50%,0);}
-.contList>li {width: 25%; height: 310px; text-align: center; position: relative; display: flex; align-items: center; justify-content: center;}
+.contList>li {width: 25%; height: 310px; text-align: center; position: relative; display: flex; align-items: center; justify-content: center; transition: 0.3s;}
 .contList>li:nth-child(2) {width: 25%; height: 310px; text-align: center; position: relative; display: block;} /* news 제외 */
 .contList .contMoBox {}
 .contList .contTit {color: #fff; font-size: 16px; font-weight: bold;}
@@ -84,6 +83,18 @@
 .contList>li:nth-child(8) {background-image: url("../images/contlist08.png"); width: 50%;}
 .contList>li:nth-child(9) {background-image: url("../images/contlist09.png");}
 
+/* contents List (hover) */
+.contList>li>div {transform: scale(1);}
+.contList>li:nth-child(1):hover {transform: scale(1.1);}
+.contList>li:nth-child(2) {width: 50%; background: #fff;}
+.contList>li:nth-child(3) {background-image: url("../images/contlist03.png");}
+.contList>li:nth-child(4) {background-image: url("../images/contlist04.png");}
+.contList>li:nth-child(5) {background-image: url("../images/contlist05.png");}
+.contList>li:nth-child(6) {background-image: url("../images/contlist06.png"); width: 50%;}
+.contList>li:nth-child(7) {background-image: url("../images/contlist07.png");}
+.contList>li:nth-child(8) {background-image: url("../images/contlist08.png"); width: 50%;}
+.contList>li:nth-child(9) {background-image: url("../images/contlist09.png");}
+
 /* ----------vision------------ */
 .vision {height: 700px; background: url("../images/bg_vision.png")no-repeat center fixed; background-size: cover; margin-bottom: 80px;}
 .viIntro {text-align: center; padding-top: 70px; margin-bottom: 100px;}
@@ -109,7 +120,8 @@
 .gameList {display: flex; flex-wrap: wrap; width: 930px; margin: 0 auto;}
 .gameList li {width: 310px; height: 600px; display: block;}
 .newGameBg {position: relative;}
-.newGameBg img {display: block;}
+.newGameBg img {display: block; transition: 2s; transform: skewX(0);}
+.newGameBg:hover {display: block;transform: skewX(1);}
 .newgameCard {height: 300px; padding: 30px; position: relative; background: #e7e7e7;}
 .newgameCard h3 {display: inline-block; font-size: 20px; margin-bottom: 20px;}
 .newgameCard span {color: #666; font-size: 16px; font-weight: bold; padding-left: 15px;}
