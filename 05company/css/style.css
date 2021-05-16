@@ -4,8 +4,16 @@
 .wrap {width: 1240px; margin: 0 auto;}
 .header {width: 100%; height: 1000px; margin-bottom: 800px;}
 .logo {background: url("../images/netmarble_logo.png")no-repeat 100% 100% / cover; width: 270px; height: 45px; cursor: pointer; text-indent: -9999px; float: left; margin-top: 40px;}
-.headTop {position: fixed; z-index: 1000; width: 100%; background: #FFC905; transition: 0.6s; height: 120px;}
-.headTop.fixed {background: #EE3F22;}
+.headTop {position: fixed; z-index: 1000; width: 100%; background: #FFC905; transition: 1s; height: 120px; top: 0;}
+.headTop.ani {animation: headTopAni 1s forwards;}
+@keyframes headTopAni {
+  0% {top: -120px; opacity: 0}
+  100% {top: 0; opacity: 1}
+}
+
+/* .headTop.fixed {background: radial-gradient(#FFC905, #EE3F22) fixed;} */
+.headTop.fixed.grad {transition: 1s; background: linear-gradient(#EE3F22, #FFC905 25%) fixed;}
+.headTop.fixed {background: #EE3F22}
 .gnb {width: 780px; float: left; margin-top: 45px; margin-left: 80px;}
 .menuBtn {display: none;}
 .gnb>li {float: left; width: calc(780px / 6); text-align: center; position: relative;}
@@ -84,8 +92,10 @@
 .contList>li:nth-child(9) {background-image: url("../images/contlist09.png");}
 
 /* contents List (hover) */
-.contList>li>div {transform: scale(1);}
-.contList>li:nth-child(1):hover {transform: scale(1.1);}
+.contList>li>div {}
+.contList>li:nth-child(1) {}
+.contList>li:nth-child(1) .contMoBox::before {  }
+.contList>li:nth-child(1) .contMoSort:hover {  }
 .contList>li:nth-child(2) {width: 50%; background: #fff;}
 .contList>li:nth-child(3) {background-image: url("../images/contlist03.png");}
 .contList>li:nth-child(4) {background-image: url("../images/contlist04.png");}
@@ -112,19 +122,32 @@
 
 /* ----------newGame------------ */
 .newGame {margin-bottom: 80px;}
-.newGameIntro {width: 310px; height: 600px; text-align: center; background: #2E4D8E; float: left; color: #fff; display: flex; align-items: center; justify-content: center;}
+.newGameIntro {position: relative; width: 310px; height: 600px; text-align: center; background: #2E4D8E; float: left; color: #fff; display: flex; align-items: center; justify-content: center;}
+.newGameIntro::before {content: ''; height: 600px; width: 1240px; background: #2E4D8E; position: absolute; left: -400%; top: 0; z-index: 1000;}
+.newGameIntro.rtMove::before {animation: rtMove 2s forwards;}
+/* .newGameIntro:hover::before {} */
+@keyframes rtMove {
+  10% {left: 0;}
+  50% {left: 0; width: 310px; }
+  100% {}
+}
+@keyframes fade {
+
+}
+
 .newGameIntro img {width: 100px;}
 .newGameIntro h3 {font-size: 30px; margin: 30px 0 60px 0;}
 .newGameIntro p {width: 200px; margin: 0 auto;}
 
 .gameList {display: flex; flex-wrap: wrap; width: 930px; margin: 0 auto;}
-.gameList li {width: 310px; height: 600px; display: block;}
-.newGameBg {position: relative;}
-.newGameBg img {display: block; transition: 2s; transform: skewX(0);}
-.newGameBg:hover {display: block;transform: skewX(1);}
-.newgameCard {height: 300px; padding: 30px; position: relative; background: #e7e7e7;}
+.gameList li {width: 310px; height: 600px; display: block; overflow: hidden;}
+.newGameBg {position: relative; right: -100%; bottom: -100%; transition: 1s;}
+
+.newGameBg img {display: block;}
+.newgameCard {height: 300px; padding: 30px; position: relative; background: #e7e7e7; left: -100%; bottom: -100%; transition: 2s;}
 .newgameCard h3 {display: inline-block; font-size: 20px; margin-bottom: 20px;}
 .newgameCard span {color: #666; font-size: 16px; font-weight: bold; padding-left: 15px;}
+.newgameCard.rightMove {animation: rightMove 1s forwards; }
 
 .appBtn {position: absolute; bottom: 30px; right: 30px;}
 .arrowUp {position: absolute; bottom: 0; left: 50%; transform: translate(-50%); width: 0; height: 0; border-bottom: 20px solid #e7e7e7;border-left: 20px solid transparent; border-right: 20px solid transparent;}

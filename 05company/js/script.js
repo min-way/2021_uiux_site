@@ -9,13 +9,23 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     let scrollY = $(window).scrollTop();
+    console.log(scrollY)
     if(menuPos<=scrollY){
       $(".headTop").addClass("fixed");
-      $(".headTop").addClass("wow fadeOutUp");
-      $(".headTop").addClass("data-wow-delay='13s'");
-      $(".headTop").addClass("data-wow-offset='0'");
+      $(".headTop").addClass("ani");
     }else{
+      $(".headTop").removeClass("ani");
       $(".headTop").removeClass("fixed");
+    }
+
+    if(scrollY>1700){
+      $(".newGameBg").addClass("leftMove");
+      $(".newGameIntro").addClass("rtMove");
+      $(".newgameCard").addClass("leftMove");
+    }else{
+      $(".newGameBg").removeClass("leftMove");
+      $(".newGameIntro").removeClass("rtMove");
+      $(".newgameCard").removeClass("leftMove");
     }
 
     if(topPos<scrollY + window.innerHeight/2){
