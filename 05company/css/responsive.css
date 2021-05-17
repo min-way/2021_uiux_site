@@ -21,7 +21,7 @@
   .lnb {padding-top: 0; padding-bottom: 10px;}
   .lnb>li {margin-left: 30px;}
   .headTop.fixed {position: absolute; background: #FFC905;}
-  .toggleMenu { display: block; position: fixed; top: 55px; right: 5px; z-index: 2500;}
+  .toggleMenu {display: block; position: absolute;; top: 55px; right: 5px; z-index: 2500;}
   @keyframes togChange {
     0%, 100% {transform: scale(1);}
     50% {transform: scale(0);}

@@ -14,6 +14,8 @@
 /* .headTop.fixed {background: radial-gradient(#FFC905, #EE3F22) fixed;} */
 .headTop.fixed.grad {transition: 1s; background: linear-gradient(#EE3F22, #FFC905 25%) fixed;}
 .headTop.fixed {background: #EE3F22}
+.headTop.fixed .conversion {border: 1px solid #FFC905;}
+.headTop.fixed .conversion ul li.on {background: #FFC905}
 .gnb {width: 780px; float: left; margin-top: 45px; margin-left: 80px;}
 .menuBtn {display: none;}
 .gnb>li {float: left; width: calc(780px / 6); text-align: center; position: relative;}
@@ -24,10 +26,10 @@
 .lnb {display: none; padding-top: 10px;}
 .lnb>li {}
 .lnb>li>a {display:inline-block; padding: 10px 0; line-height: 30px; text-align: center; color: #fff; font-size: 18px; }
-.conversion {float: right; height: 40px; border: 1px solid #553A31; margin-top: 45px;}
+.conversion {float: right; height: 40px; border: 1px solid #EE3F22; margin-top: 45px;}
 .conversion ul li {float: left;}
 .conversion ul li a {width: 39px; line-height: 39px; text-align: center; display: block; color: #fff; font-size: 14px;}
-.conversion ul li.on {background: #553A31;}
+.conversion ul li.on {background: #EE3F22;}
 
 .toggleMenu {width: 50px; height: 50px; position: relative; display: flex; justify-content: center; align-items: center; display: none;}
 .toggleMenu div {width: 24px; height: 2px; background: #fff; border-radius: 2px; position: absolute; transition: 0.3s;}
@@ -52,9 +54,10 @@
 /* ----------contents------------ */
 .contents {height: 700px;}
 .contList {width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; position: absolute; left: 50%; top: 690px; transform: translate(-50%,0);}
-.contList>li {width: 25%; height: 310px; text-align: center; position: relative; display: flex; align-items: center; justify-content: center; transition: 0.3s;}
+.contList>li {overflow: hidden; width: 25%; height: 310px; text-align: center; position: relative; display: flex; align-items: center; justify-content: center; transition: 0.3s;}
+.contList>li:hover {transform: scale(1.1);}
+
 .contList>li:nth-child(2) {width: 25%; height: 310px; text-align: center; position: relative; display: block;} /* news 제외 */
-.contList .contMoBox {}
 .contList .contTit {color: #fff; font-size: 16px; font-weight: bold;}
 .contList .contMoTit {color: #fff; font-size: 16px; font-weight: bold;}
 .contList .contMoBox .contMoBg {display: none;}
@@ -122,32 +125,30 @@
 
 /* ----------newGame------------ */
 .newGame {margin-bottom: 80px;}
-.newGameIntro {position: relative; width: 310px; height: 600px; text-align: center; background: #2E4D8E; float: left; color: #fff; display: flex; align-items: center; justify-content: center;}
-.newGameIntro::before {content: ''; height: 600px; width: 1240px; background: #2E4D8E; position: absolute; left: -400%; top: 0; z-index: 1000;}
-.newGameIntro.rtMove::before {animation: rtMove 2s forwards;}
-/* .newGameIntro:hover::before {} */
-@keyframes rtMove {
-  10% {left: 0;}
-  50% {left: 0; width: 310px; }
-  100% {}
-}
-@keyframes fade {
+.newGameIntro {width: 310px; height: 600px; text-align: center; background: #2E4D8E; float: left; color: #fff; display: flex; align-items: center; justify-content: center;}
 
-}
 
 .newGameIntro img {width: 100px;}
 .newGameIntro h3 {font-size: 30px; margin: 30px 0 60px 0;}
 .newGameIntro p {width: 200px; margin: 0 auto;}
 
-.gameList {display: flex; flex-wrap: wrap; width: 930px; margin: 0 auto;}
+.gameList { display: flex; flex-wrap: wrap; width: 930px; margin: 0 auto;}
 .gameList li {width: 310px; height: 600px; display: block; overflow: hidden;}
 .newGameBg {position: relative; right: -100%; bottom: -100%; transition: 1s;}
-
+.newGameBg.rtMove {animation: rtMove 1s forwards;}
+@keyframes rtMove {
+  0% {}
+  100% {right: 0; bottom: 0;}
+}
 .newGameBg img {display: block;}
 .newgameCard {height: 300px; padding: 30px; position: relative; background: #e7e7e7; left: -100%; bottom: -100%; transition: 2s;}
 .newgameCard h3 {display: inline-block; font-size: 20px; margin-bottom: 20px;}
 .newgameCard span {color: #666; font-size: 16px; font-weight: bold; padding-left: 15px;}
-.newgameCard.rightMove {animation: rightMove 1s forwards; }
+.newgameCard.ltMove {animation: ltMove 1s forwards;}
+@keyframes ltMove {
+  0% {}
+  100% {left: 0; bottom: 0;}
+}
 
 .appBtn {position: absolute; bottom: 30px; right: 30px;}
 .arrowUp {position: absolute; bottom: 0; left: 50%; transform: translate(-50%); width: 0; height: 0; border-bottom: 20px solid #e7e7e7;border-left: 20px solid transparent; border-right: 20px solid transparent;}

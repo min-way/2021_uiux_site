@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $(".slider").bxSlider({
-    pager:false
+    pager:false,
+    controls:false
   });
   new WOW().init();
 
@@ -19,13 +20,11 @@ $(document).ready(function(){
     }
 
     if(scrollY>1700){
-      $(".newGameBg").addClass("leftMove");
-      $(".newGameIntro").addClass("rtMove");
-      $(".newgameCard").addClass("leftMove");
+      $(".newgameCard").addClass("ltMove");
+      $(".newGameBg").addClass("rtMove");
     }else{
-      $(".newGameBg").removeClass("leftMove");
-      $(".newGameIntro").removeClass("rtMove");
-      $(".newgameCard").removeClass("leftMove");
+      $(".newgameCard").removeClass("ltMove");
+      $(".newGameBg").removeClass("rtMove");
     }
 
     if(topPos<scrollY + window.innerHeight/2){
