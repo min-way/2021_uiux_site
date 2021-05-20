@@ -64,9 +64,9 @@ $(document).ready(function(){
   allView();
 
   $(window).resize(function(){
-    // $(".headTop").removeAttr("style");
+    $(".headTop").removeAttr("style");
     winWidth = $(window).innerWidth();
-    $(".toggleMenu").removeClass("on");
+    // $(".toggleMenu").removeClass("on");
     allView();
   });
 
@@ -100,12 +100,12 @@ $(document).ready(function(){
 
   function pcView(on){
     if(on=="view"){
-      $(".gnb>li").on("mouseenter",function(){
+      $(".gnb>li").on("mouseover",function(){
         $(".headTop").stop().animate({height:320},100);
         $(".lnb").stop().slideDown(600);
         $(".headTop").addClass("fixed");
       })
-      $(".gnb>li").on("mouseleave",function(){
+      $(".gnb>li").on("mouseout",function(){
         $(".headTop").stop().animate({height:120},100);
         $(".lnb").stop().slideUp(600);
         if(0>scrollY|0==scrollY){
@@ -115,8 +115,8 @@ $(document).ready(function(){
         }
       })
     }else{
-      $(".gnb>li").off("mouseenter");
-      $(".gnb>li").off("mouseleave");
+      $(".gnb>li").off("mouseover");
+      $(".gnb>li").off("mouseout");
     }
   }
 

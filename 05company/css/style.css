@@ -31,7 +31,7 @@
 .conversion ul li a {width: 39px; line-height: 39px; text-align: center; display: block; color: #fff; font-size: 14px;}
 .conversion ul li.on {background: #EE3F22;}
 
-.toggleMenu {width: 50px; height: 50px; position: relative; display: flex; justify-content: center; align-items: center; display: none;}
+.toggleMenu {width: 50px; height: 50px; position: relative; display: flex; justify-content: center; align-items: center; cursor: pointer; display: none;}
 .toggleMenu div {width: 24px; height: 2px; background: #fff; border-radius: 2px; position: absolute; transition: 0.3s;}
 .toggleMenu .bar3 {transform: translateY(-10px);}
 .toggleMenu .bar2 {}
@@ -54,9 +54,7 @@
 /* ----------contents------------ */
 .contents {height: 700px;}
 .contList {width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; position: absolute; left: 50%; top: 690px; transform: translate(-50%,0);}
-.contList>li {overflow: hidden; width: 25%; height: 310px; text-align: center; position: relative; display: flex; align-items: center; justify-content: center; transition: 0.3s;}
-.contList>li:hover {transform: scale(1.1);}
-
+.contList>li {width: 25%; height: 310px; text-align: center; position: relative; display: flex; align-items: center; justify-content: center; transition: 0.3s;}
 .contList>li:nth-child(2) {width: 25%; height: 310px; text-align: center; position: relative; display: block;} /* news 제외 */
 .contList .contTit {color: #fff; font-size: 16px; font-weight: bold;}
 .contList .contMoTit {color: #fff; font-size: 16px; font-weight: bold;}
@@ -95,18 +93,10 @@
 .contList>li:nth-child(9) {background-image: url("../images/contlist09.png");}
 
 /* contents List (hover) */
-.contList>li>div {}
-.contList>li:nth-child(1) {}
-.contList>li:nth-child(1) .contMoBox::before {  }
-.contList>li:nth-child(1) .contMoSort:hover {  }
-.contList>li:nth-child(2) {width: 50%; background: #fff;}
-.contList>li:nth-child(3) {background-image: url("../images/contlist03.png");}
-.contList>li:nth-child(4) {background-image: url("../images/contlist04.png");}
-.contList>li:nth-child(5) {background-image: url("../images/contlist05.png");}
-.contList>li:nth-child(6) {background-image: url("../images/contlist06.png"); width: 50%;}
-.contList>li:nth-child(7) {background-image: url("../images/contlist07.png");}
-.contList>li:nth-child(8) {background-image: url("../images/contlist08.png"); width: 50%;}
-.contList>li:nth-child(9) {background-image: url("../images/contlist09.png");}
+.contList>li:hover div {transform: scale(1.15); transition: 0.3s; cursor: pointer;}
+.contList>li:hover:nth-child(6) div,
+.contList>li:hover:nth-child(7) div,
+.contList>li:hover:nth-child(8) div {transform: scale(1); cursor: default;}
 
 /* ----------vision------------ */
 .vision {height: 700px; background: url("../images/bg_vision.png")no-repeat center fixed; background-size: cover; margin-bottom: 80px;}
