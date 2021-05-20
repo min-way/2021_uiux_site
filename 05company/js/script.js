@@ -64,14 +64,20 @@ $(document).ready(function(){
   allView();
 
   $(window).resize(function(){
-    $(".headTop").removeAttr("style");
     winWidth = $(window).innerWidth();
-    // $(".toggleMenu").removeClass("on");
+    console.log(winWidth)
+    $(".gnb").removeAttr("style");
+    $(".lnb").removeAttr("style");
+    $(".logo").removeClass("on");
+    $(".toggleMenu").removeClass("on");
+    $(".menuBtn").removeClass("on");
+    $('html').css("overflow","auto");
     allView();
   });
 
   function allView(){
-    if(winWidth <= 700){
+    winWidth = $(window).innerWidth();
+    if(winWidth < 700){
       mobileView("view");
       pcView("off");
     }else{
@@ -88,10 +94,10 @@ $(document).ready(function(){
           $(".menuBtn").removeClass("on");
           return false;
         }
-        $(".lnb").stop().slideUp();
-        $(this).find(".lnb").stop().slideDown();
         $(".menuBtn").removeClass("on");
         $(this).find(".menuBtn").addClass("on");
+        $(".lnb").stop().slideUp();
+        $(this).find(".lnb").stop().slideDown();
       })
     }else{
       $(".gnb>li").off("click");
@@ -108,7 +114,7 @@ $(document).ready(function(){
       $(".gnb>li").on("mouseout",function(){
         $(".headTop").stop().animate({height:120},100);
         $(".lnb").stop().slideUp(600);
-        if(0>scrollY|0==scrollY){
+        if(0>=scrollY){
           $(".headTop").removeClass("fixed");
         }else{
           $(".headTop").addClass("fixed");
@@ -119,5 +125,11 @@ $(document).ready(function(){
       $(".gnb>li").off("mouseout");
     }
   }
+
+  //company subMenu
+
+  $(".subMenu ul li").click(function(){
+    $(".contents company").hide();
+  });
 
 });
