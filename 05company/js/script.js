@@ -50,12 +50,14 @@ $(document).ready(function(){
       $(".gnb").stop().animate({left:0},300);
       $(".logo").addClass("on");
       $(".logo.on").stop().animate({left:30},300);
+      $(".logo>a>img").attr("src",'images/netmarble_logo2.png');
       $('html').css("overflow","hidden");
     }else{
       $(this).removeClass("on");
       $(".gnb").stop().animate({left:"100%"},300);
       $(".logo").removeClass("on");
       $(".lnb").stop().slideUp();
+      $(".logo>a>img").attr("src",'images/netmarble_logo.png');
       $('html').css("overflow","auto");
     }
   });
@@ -127,9 +129,18 @@ $(document).ready(function(){
   }
 
   //company subMenu
-
+  $(".main>img").eq(0).show();
   $(".subMenu ul li").click(function(){
-    $(".contents company").hide();
+    let subCheck = $(this).index();
+    let loValue = $(this).text();
+    console.log(subCheck)
+    $(".main>img").hide();
+    $(".main>img").eq(subCheck).show();
+    $(this).addClass("active").siblings().removeClass("active");
+    $(".coSubTit").text(loValue);
+    $(".coLocation").text(loValue);
+
   });
+
 
 });

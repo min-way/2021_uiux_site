@@ -4,8 +4,9 @@
   .wrap {width: 100%; margin: 0 auto;}
   .header {height: 500px;}
   .headTop {position: absolute; transform: initial; left: 0;}
-  .logo {float: inherit; display: block; margin: 0 auto; margin-top: 40px; width: 178px; height: 30px; transition: 0.5s;}
-  .logo.on {animation: logoChange 0.6s forwards; float: inherit; display: block; margin: 0 auto; margin-top: 40px; width: 178px; height: 30px; position: fixed; z-index: 5000; top: 0; left: 30px; background: url("../images/netmarble_logo2.png")no-repeat 100% 100% / cover;}
+  .logo {width: 178px; height: 30px;float: inherit; display: block; margin: 0 auto;}
+  .logo img {margin-top: 40px; width: 178px; height: 30px; transition: 0.5s; }
+  .logo.on {animation: logoChange 0.6s forwards; float: inherit; display: block; margin: 0 auto; margin-top: 40px; width: 178px; height: 30px; position: fixed; z-index: 5000; top: -40px; left: 30px;}
   @keyframes logoChange {
     0%, 50% {transform: scale(0);}
      100% {transform: scale(1);}
@@ -147,10 +148,12 @@
   .topBtn img {display: block; float: left;}
   .topBtn span {font-size: 12px; text-indent: -2px;}
 
-/* company */
-.companyIntro {padding-top: 120px; }
-.companyIntro .companyTit {font-size: 28px; margin-bottom: 0;}
-.companyIntro .companyTxt {font-size: 16px; padding: 20px;}
+  /* company */
+  .companyIntro {padding-top: 120px; }
+  .companyIntro .companyTit {font-size: 28px; margin-bottom: 0;}
+  .companyIntro .companyTxt {font-size: 16px; padding: 20px;}
+  .headBot.company {height: 300px;}
+  .subMenu {width: 100%;}
 
 } /* max-width:700px */
 
