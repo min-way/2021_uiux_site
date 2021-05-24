@@ -148,13 +148,14 @@
   .topBtn img {display: block; float: left;}
   .topBtn span {font-size: 12px; text-indent: -2px;}
 
-  /* company */
+  /* ----------company------------ */
   .companyIntro {padding-top: 120px; }
   .companyIntro .companyTit {font-size: 28px; margin-bottom: 0;}
   .companyIntro .companyTxt {font-size: 16px; padding: 20px;}
   .headBot.company {height: 300px;}
   .subMenu {width: 100%;}
 
+  /* ----------company header------------ */
 } /* max-width:700px */
 
 @media screen and (max-width: 640px){

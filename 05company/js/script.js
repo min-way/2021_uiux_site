@@ -87,7 +87,6 @@ $(document).ready(function(){
       mobileView("off");
     }
   }
-
   function mobileView(on){
     if(on=="view"){
       $(".gnb>li").on("click",function(){
@@ -109,13 +108,13 @@ $(document).ready(function(){
   function pcView(on){
     if(on=="view"){
       $(".gnb>li").on("mouseover",function(){
-        $(".headTop").stop().animate({height:320},100);
-        $(".lnb").stop().slideDown(600);
+        $(".headTop").stop().animate({height:320},50);
+        $(".lnb").stop().slideDown(800);
         $(".headTop").addClass("fixed");
       })
       $(".gnb>li").on("mouseout",function(){
-        $(".headTop").stop().animate({height:120},100);
-        $(".lnb").stop().slideUp(600);
+        $(".headTop").stop().animate({height:120},50);
+        $(".lnb").stop().slideUp(800);
         if(0>=scrollY){
           $(".headTop").removeClass("fixed");
         }else{
