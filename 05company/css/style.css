@@ -174,34 +174,63 @@
 
 
 /* ----------subPage------------ */
-
-/* ----------company header------------ */
-.header.company {height: 450px; margin-bottom: 15px; background-image: url("../images/sub_bg_company.png"); background-repeat: no-repeat; background-size: cover; }
-.headTop.company {height: 130px; position: absolute; background: none;}
-.headTop.company.fixed {height: 130px; position: absolute; background: #EE3F22;}
-.headBot.company {width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;}
 .companyIntro {display: block; width: 100%; height: 200px; padding-top: 170px; color: #fff; text-align: center;}
 .companyIntro .companyTit {font-size: 35px; margin-bottom: 20px;}
 .companyIntro .companyTxt {font-size: 18px;}
 .subMenu {width: 1240px; border-bottom: 1px solid #EE3F22; margin: auto; position: absolute; top: 399px; left: 50%; transform: translate(-50%);}
 .subMenu ul {display: flex;}
-.subMenu li {width: 25%;}
+.subMenu li {flex: 1;}
 .subMenu li a {display: block; line-height: 50px; text-align: center; color: #444; background: #F3F3F3;}
 .subMenu li.active a {background: #EE3F22; color: #fff;}
 .subMenu li a:hover {background: #EE3F22; color: #fff;}
 
-/* company contents */
-
-.location {display: flex; }
-.contents.company {height: 0;}
-.contents.company a {font-size: 14px;}
-.contents.company a.on {color: #EE3F22;}
+/* ----------subPage contents------------ */
+.contents {height: 100%;}
+.location {display: flex;}
+.location>a {font-size: 14px;}
+.location>a.on {color: #EE3F22;}
 .subBox {display: flex; justify-content: center;margin-top: 50px;}
 .coSubTit {display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 35px; margin-bottom: 30px;}
 .coSubTit.on {color: #EE3F22;}
 .coSubTit:before {content: ''; background: #EE3F22; width: 60px; height: 3px; display: block; margin-bottom: 30px;}
-.contents.company {height: 100%;}
 .main img {width: 100%; display: none;}
+
+/* ----------company------------ */
+.header.company {height: 450px; margin-bottom: 15px; background-image: url("../images/sub_bg_company.png"); background-repeat: no-repeat; background-size: cover; }
+.headTop.company {height: 130px; position: absolute; background: none;}
+.headTop.company.fixed {height: 130px; position: absolute; background: #EE3F22;}
+.headBot.company {width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;}
+
+/* ----------business------------ */
+.header.business {height: 450px; margin-bottom: 15px; background-image: url("../images/sub_bg_business.png"); background-repeat: no-repeat; background-size: cover; }
+.headTop.business {height: 130px; position: absolute; background: none;}
+.headTop.business.fixed {height: 130px; position: absolute; background: #EE3F22;}
+.headBot.business {width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;}
+
+/* ----------jeongdo------------ */
+.header.jeongdo {height: 450px; margin-bottom: 15px; background-image: url("../images/sub_bg_jeongdo.png"); background-repeat: no-repeat; background-size: cover; }
+.headTop.jeongdo {height: 130px; position: absolute; background: none;}
+.headTop.jeongdo.fixed {height: 130px; position: absolute; background: #EE3F22;}
+.headBot.jeongdo {width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;}
+
+/* ----------strategy------------ */
+.header.strategy {height: 450px; margin-bottom: 15px; background-image: url("../images/sub_bg_strategy.png"); background-repeat: no-repeat; background-size: cover; }
+.headTop.strategy {height: 130px; position: absolute; background: none;}
+.headTop.strategy.fixed {height: 130px; position: absolute; background: #EE3F22;}
+.headBot.strategy {width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;}
+
+/* ----------ir------------ */
+.header.ir {height: 450px; margin-bottom: 15px; background-image: url("../images/sub_bg_ir.png"); background-repeat: no-repeat; background-size: cover; }
+.headTop.ir {height: 130px; position: absolute; background: none;}
+.headTop.ir.fixed {height: 130px; position: absolute; background: #EE3F22;}
+.headBot.ir {width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;}
+
+/* ----------hrs------------ */
+.header.hrs {height: 450px; margin-bottom: 15px; background-image: url("../images/sub_bg_hr.png"); background-repeat: no-repeat; background-size: cover; }
+.headTop.hrs {height: 130px; position: absolute; background: none;}
+.headTop.hrs.fixed {height: 130px; position: absolute; background: #EE3F22;}
+.headBot.hrs {width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;}
+
 
 
 /* ---- */

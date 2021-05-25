@@ -4,6 +4,7 @@
   .wrap {width: 100%; margin: 0 auto;}
   .header {height: 500px;}
   .headTop {position: absolute; transform: initial; left: 0;}
+  .headTop.fixed {background: none;}
   .logo {width: 178px; height: 30px;float: inherit; display: block; margin: 0 auto;}
   .logo img {margin-top: 40px; width: 178px; height: 30px; transition: 0.5s; }
   .logo.on {animation: logoChange 0.6s forwards; float: inherit; display: block; margin: 0 auto; margin-top: 40px; width: 178px; height: 30px; position: fixed; z-index: 5000; top: -40px; left: 30px;}
@@ -148,14 +149,44 @@
   .topBtn img {display: block; float: left;}
   .topBtn span {font-size: 12px; text-indent: -2px;}
 
-  /* ----------company------------ */
+
+  /* ----------subPage contents------------ */
   .companyIntro {padding-top: 120px; }
   .companyIntro .companyTit {font-size: 28px; margin-bottom: 0;}
   .companyIntro .companyTxt {font-size: 16px; padding: 20px;}
-  .headBot.company {height: 300px;}
   .subMenu {width: 100%;}
+  
 
-  /* ----------company header------------ */
+  /* ----------company------------ */
+  .headBot.company {height: 300px;}
+  .headTop.company.fixed {background: none;}
+  .contents.company {height: 100%;}
+
+  /* ----------business------------ */
+  .headBot.business {height: 300px;}
+  .headTop.business.fixed {background: none;}
+  .contents.business {height: 100%;}
+
+  /* ----------jeongdo------------ */
+  .headBot.jeongdo {height: 300px;}
+  .headTop.jeongdo.fixed {background: none;}
+  .contents.jeongdo {height: 100%;}
+
+  /* ----------strategy------------ */
+  .headBot.strategy {height: 300px;}
+  .headTop.strategy.fixed {background: none;}
+  .contents.strategy {height: 100%;}
+
+  /* ----------ir------------ */
+  .headBot.ir {height: 300px;}
+  .headTop.ir.fixed {background: none;}
+  .contents.ir {height: 100%;}
+
+  /* ----------hrs------------ */
+  .headBot.hrs {height: 300px;}
+  .headTop.hrs.fixed {background: none;}
+  .contents.hrs {height: 100%;}
+
 } /* max-width:700px */
 
 @media screen and (max-width: 640px){

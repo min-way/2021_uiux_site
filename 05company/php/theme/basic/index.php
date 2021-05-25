@@ -1,102 +1,17 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Netmarble</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/jquery.bxslider.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/script.js"></script>
-</head>
-<body>
-  <header id="header company" class="header">
-      <div class="headTop">
-        <div class="wrap">
-          <h1 class="logo"><a href="index.html"><img src="images/netmarble_logo.png" alt=""></a></h1>
-          <div class="toggleMenu">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-          <div class="conversion">
-            <ul>
-              <li class="on"><a href="#">KOR</a></li>
-              <li><a href="#">ENG</a></li>
-            </ul>
-          </div>
-          <ul class="gnb clearfix">
-            <li><a href="#">회사소개<span class="menuBtn">버튼</span></a>
-              <ul class="lnb">
-                <li><a href="company.html">넷마블 컴퍼니</a></li>
-                <li><a href="#">비전/미션</a></li>
-                <li><a href="#">연혁</a></li>
-                <li><a href="#">뉴스</a></li>
-              </ul>
-            </li>
-            <li><a href="#">사업소개<span class="menuBtn">버튼</span></a>
-              <ul class="lnb">
-                <li><a href="business.html">사업영역</a></li>
-                <li><a href="#">넷마블게임</a></li>
-                <li><a href="#">글로벌사업</a></li>
-              </ul>
-            </li>
-            <li><a href="#">정도경영<span class="menuBtn">버튼</span></a>
-              <ul class="lnb">
-                <li><a href="jeongdo.html">정도경영</a></li>
-                <li><a href="#">윤리강령</a></li>
-              </ul>
-            </li>
-            <li><a href="#">사회공헌<span class="menuBtn">버튼</span></a>
-              <ul class="lnb">
-                <li><a href="strategy.html">방향성</a></li>
-                <li><a href="#">활동소개</a></li>
-                <li><a href="#">활동소식</a></li>
-              </ul>
-            </li>
-            <li><a href="#">IR<span class="menuBtn">버튼</span></a>
-              <ul class="lnb">
-                <li><a href="ir.html">Overview</a></li>
-                <li><a href="#">기업지배구조</a></li>
-                <li><a href="#">재무정보</a></li>
-                <li><a href="#">공시</a></li>
-              </ul>
-            </li>
-            <li><a href="#">인재채용<span class="menuBtn">버튼</span></a>
-              <ul class="lnb">
-                <li><a href="hrs.html">인재상</a></li>
-                <li><a href="#">직무소개</a></li>
-                <li><a href="#">인사제도</a></li>
-                <li><a href="#">채용공고</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- wrap -->
-      </div><!-- headTop -->
-      <div class="sliderWrap">
-        <ul class="slider">
-          <li class="slider1st">
-            <!-- <img src="images/bg_main01.png" alt=""> -->
-            <div class="sliderTxt">
-              <p>넷마블컴퍼니의 하나 된 "힘"으로 글로벌 게임문화 기업으로 도약합니다.</p>
-            </div>
-          </li>
-          <li class="slider2st">
-            <!-- <img src="images/bg_main01.png" alt=""> -->
-            <div class="sliderTxt">
-              <p>넷마블컴퍼니의 하나 된 "힘"으로<BR> 글로벌 게임문화 기업으로 도약합니다.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-  </header>
-  <div id="contents" class="contents">
+<?php
+if (!defined('_INDEX_')) define('_INDEX_', true);
+if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+
+if (G5_IS_MOBILE) {
+    include_once(G5_THEME_MOBILE_PATH.'/index.php');
+    return;
+}
+
+include_once(G5_THEME_PATH.'/head.php');
+?>
+<!-- 메인 컨텐츠 -->
+<h2 class="sound_only">컨텐츠</h2>
+<div id="contents" class="contents">
     <ul class="contList">
       <li class="wow bounceIn">
         <div class="contMoBox">
@@ -298,37 +213,7 @@
       </div>
     </div>
   </div><!-- banner -->
+<!-- 메인 컨텐츠 -->
 
-  <footer id="footer" class="footer">
-    <div class="wrap">
-      <div class="ftSort">
-        <h1 class="footer_logo"><a href="#">Netmarble</a></h1>
-        <div class="topBtn"><span>위로</span></div>
-        <div class="corp">
-          <ul>
-            <li><a href="#">게임제안</a></li>
-            <li><a href="#">정도경영</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">오시는길</a></li>
-            <li><a href="#">사이트맵</a></li>
-          </ul>
-          <p>&#169; Netmarble Corp. All Rights Reserved</p>
-        </div>
-        <div class="fmSite">
-          <select name="fm" id="fm">
-            <option value="none">FAMILY SITE</option>
-            <option value="#">넷마블앤파크</option>
-            <option value="#">넷마블몬스터</option>
-            <option value="#">넷마블엔투</option>
-            <option value="#">넷마블넥서스</option>
-            <option value="#">넷마블네오</option>
-            <option value="#">구로발게임즈</option>
-            <option value="#">넷마블에프엔씨</option>
-          </select>
-        </div>
-      </div>
-    </div><!-- wrap -->
-  </footer><!-- footer -->
-
-</body>
-</html>
+<?php
+include_once(G5_THEME_PATH.'/tail.php');
