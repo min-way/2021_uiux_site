@@ -27,165 +27,115 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     ?>
     <div id="hd_wrapper">
 
-        <div id="logo">
-            <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/logo.png" alt="<?php echo $config['cf_title']; ?>"></a>
-        </div>
+      <nav id="gnb">
+          <h2>메인메뉴</h2>
+          <div class="gnb_wrap">
+            <div id="logo" class="logo">
+                <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_THEME_URL ?>/images/netmarble_logo.png" alt="<?php echo $config['cf_title']; ?>"></a>
+            </div>
+              <ul id="gnb_1dul">
 
-        <ul class="hd_login">
-            <?php if ($is_member) {  ?>
-                <li><a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a></li>
-                <li><a href="<?php echo G5_BBS_URL ?>/logout.php">로그아웃</a></li>
-                <?php if ($is_admin) {  ?>
-                <li class="tnb_admin"><a href="<?php echo correct_goto_url(G5_ADMIN_URL); ?>">관리자</a></li>
-                <?php }  ?>
-            <?php } else {  ?>
-                <li><a href="<?php echo G5_BBS_URL ?>/register.php">회원가입</a></li>
-                <li><a href="<?php echo G5_BBS_URL ?>/login.php">로그인</a></li>
-            <?php }  ?>
-        </ul>
+
+                  <?php
+  				$menu_datas = get_menu_db(0, true);
+  				$gnb_zindex = 999; // gnb_1dli z-index 값 설정용
+                  $i = 0;
+                  foreach( $menu_datas as $row ){
+                      if( empty($row) ) continue;
+                      $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
+                  ?>
+                  <li class="gnb_1dli <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
+                      <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_1da"><?php echo $row['me_name'] ?></a>
+                      <?php
+                      $k = 0;
+                      foreach( (array) $row['sub'] as $row2 ){
+
+                          if( empty($row2) ) continue;
+
+                          if($k == 0)
+                              echo '<span class="bg">하위분류</span><div class="gnb_2dul"><ul class="gnb_2dul_box">'.PHP_EOL;
+                      ?>
+                          <li class="gnb_2dli"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" class="gnb_2da"><?php echo $row2['me_name'] ?></a></li>
+                      <?php
+                      $k++;
+                      }   //end foreach $row2
+
+                      if($k > 0)
+                          echo '</ul></div>'.PHP_EOL;
+                      ?>
+                  </li>
+                  <?php
+                  $i++;
+                  }   //end foreach $row
+
+                  if ($i == 0) {  ?>
+                      <li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
+                  <?php } ?>
+              </ul>
+              <div id="gnb_all">
+                  <h2>전체메뉴</h2>
+                  <ul class="gnb_al_ul">
+                      <?php
+
+                      $i = 0;
+                      foreach( $menu_datas as $row ){
+                      ?>
+                      <li class="gnb_al_li">
+                          <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_al_a"><?php echo $row['me_name'] ?></a>
+                          <?php
+                          $k = 0;
+                          foreach( (array) $row['sub'] as $row2 ){
+                              if($k == 0)
+                                  echo '<ul>'.PHP_EOL;
+                          ?>
+                              <li><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a></li>
+                          <?php
+                          $k++;
+                          }   //end foreach $row2
+
+                          if($k > 0)
+                              echo '</ul>'.PHP_EOL;
+                          ?>
+                      </li>
+                      <?php
+                      $i++;
+                      }   //end foreach $row
+
+                      if ($i == 0) {  ?>
+                          <li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <br><a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
+                      <?php } ?>
+                  </ul>
+                  <button type="button" class="gnb_close_btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+              </div>
+              <div id="gnb_all_bg"></div>
+          </div>
+      </nav>
+      <script>
+
+      $(function(){
+          $(".gnb_menu_btn").click(function(){
+              $("#gnb_all, #gnb_all_bg").show();
+          });
+          $(".gnb_close_btn, #gnb_all_bg").click(function(){
+              $("#gnb_all, #gnb_all_bg").hide();
+          });
+      });
+
+      </script>
+
     </div>
 
-    <nav id="gnb">
-        <h2>메인메뉴</h2>
-        <div class="gnb_wrap">
-            <ul id="gnb_1dul">
-                <li class="gnb_1dli gnb_mnal"><button type="button" class="gnb_menu_btn" title="전체메뉴"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only">전체메뉴열기</span></button></li>
-                <?php
-				$menu_datas = get_menu_db(0, true);
-				$gnb_zindex = 999; // gnb_1dli z-index 값 설정용
-                $i = 0;
-                foreach( $menu_datas as $row ){
-                    if( empty($row) ) continue;
-                    $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
-                ?>
-                <li class="gnb_1dli <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
-                    <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_1da"><?php echo $row['me_name'] ?></a>
-                    <?php
-                    $k = 0;
-                    foreach( (array) $row['sub'] as $row2 ){
 
-                        if( empty($row2) ) continue;
-
-                        if($k == 0)
-                            echo '<span class="bg">하위분류</span><div class="gnb_2dul"><ul class="gnb_2dul_box">'.PHP_EOL;
-                    ?>
-                        <li class="gnb_2dli"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" class="gnb_2da"><?php echo $row2['me_name'] ?></a></li>
-                    <?php
-                    $k++;
-                    }   //end foreach $row2
-
-                    if($k > 0)
-                        echo '</ul></div>'.PHP_EOL;
-                    ?>
-                </li>
-                <?php
-                $i++;
-                }   //end foreach $row
-
-                if ($i == 0) {  ?>
-                    <li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
-                <?php } ?>
-            </ul>
-            <div id="gnb_all">
-                <h2>전체메뉴</h2>
-                <ul class="gnb_al_ul">
-                    <?php
-
-                    $i = 0;
-                    foreach( $menu_datas as $row ){
-                    ?>
-                    <li class="gnb_al_li">
-                        <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_al_a"><?php echo $row['me_name'] ?></a>
-                        <?php
-                        $k = 0;
-                        foreach( (array) $row['sub'] as $row2 ){
-                            if($k == 0)
-                                echo '<ul>'.PHP_EOL;
-                        ?>
-                            <li><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a></li>
-                        <?php
-                        $k++;
-                        }   //end foreach $row2
-
-                        if($k > 0)
-                            echo '</ul>'.PHP_EOL;
-                        ?>
-                    </li>
-                    <?php
-                    $i++;
-                    }   //end foreach $row
-
-                    if ($i == 0) {  ?>
-                        <li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <br><a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
-                    <?php } ?>
-                </ul>
-                <button type="button" class="gnb_close_btn"><i class="fa fa-times" aria-hidden="true"></i></button>
-            </div>
-            <div id="gnb_all_bg"></div>
-        </div>
-    </nav>
     <div class="headTop">
       <div class="wrap">
-        <div id="logo" class="logo">
-            <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_IMG_URL ?>/netmarble_logo.png" alt="<?php echo $config['cf_title']; ?>"></a>
-        </div>
+
         <div class="toggleMenu">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-        <div class="conversion">
-          <ul>
-            <li class="on"><a href="#">KOR</a></li>
-            <li><a href="#">ENG</a></li>
-          </ul>
-        </div>
-        <ul class="gnb clearfix">
-          <li><a href="#">회사소개<span class="menuBtn">버튼</span></a>
-            <ul class="lnb">
-              <li><a href="company.html">넷마블 컴퍼니</a></li>
-              <li><a href="#">비전/미션</a></li>
-              <li><a href="#">연혁</a></li>
-              <li><a href="#">뉴스</a></li>
-            </ul>
-          </li>
-          <li><a href="#">사업소개<span class="menuBtn">버튼</span></a>
-            <ul class="lnb">
-              <li><a href="business.html">사업영역</a></li>
-              <li><a href="#">넷마블게임</a></li>
-              <li><a href="#">글로벌사업</a></li>
-            </ul>
-          </li>
-          <li><a href="#">정도경영<span class="menuBtn">버튼</span></a>
-            <ul class="lnb">
-              <li><a href="jeongdo.html">정도경영</a></li>
-              <li><a href="#">윤리강령</a></li>
-            </ul>
-          </li>
-          <li><a href="#">사회공헌<span class="menuBtn">버튼</span></a>
-            <ul class="lnb">
-              <li><a href="strategy.html">방향성</a></li>
-              <li><a href="#">활동소개</a></li>
-              <li><a href="#">활동소식</a></li>
-            </ul>
-          </li>
-          <li><a href="#">IR<span class="menuBtn">버튼</span></a>
-            <ul class="lnb">
-              <li><a href="ir.html">Overview</a></li>
-              <li><a href="#">기업지배구조</a></li>
-              <li><a href="#">재무정보</a></li>
-              <li><a href="#">공시</a></li>
-            </ul>
-          </li>
-          <li><a href="#">인재채용<span class="menuBtn">버튼</span></a>
-            <ul class="lnb">
-              <li><a href="hrs.html">인재상</a></li>
-              <li><a href="#">직무소개</a></li>
-              <li><a href="#">인사제도</a></li>
-              <li><a href="#">채용공고</a></li>
-            </ul>
-          </li>
-        </ul>
+
+
       </div><!-- wrap -->
     </div><!-- headTop -->
 

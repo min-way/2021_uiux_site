@@ -15,7 +15,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <ul class="contList">
       <li class="wow bounceIn">
         <div class="contMoBox">
-          <img class="moImg" src="images/icon01.png" alt="icon">
+          <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon01.png" alt="icon">
           <div class="contMoSort">
             <h2 class="contTit">회사소개</h2>
             <p class="contTxt">치열한 열정, 끊임 없는 도전, 끝없는 변화 의지로 대한민국, 아시아를 넘어 세계로 나아갑니다.</p>
@@ -36,7 +36,7 @@ include_once(G5_THEME_PATH.'/head.php');
       </li>
       <li class="wow bounceIn">
         <div class="contMoBox_left">
-           <img class="moImg" src="images/icon02.png" alt="icon">
+           <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon02.png" alt="icon">
            <div class="contMoSort">
              <h2 class="contMoTit">투자정보</h2>
              <p class="contMoTxt">Investor Relations</p>
@@ -47,7 +47,7 @@ include_once(G5_THEME_PATH.'/head.php');
       </li>
       <li class="wow bounceInLeft">
         <div class="contMoBox">
-            <img class="moImg" src="images/icon03.png" alt="icon">
+            <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon03.png" alt="icon">
             <div class="contMoBg"></div>
             <div class="contMoSort">
               <h2 class="contMoTit">사업소개</h2>
@@ -58,7 +58,7 @@ include_once(G5_THEME_PATH.'/head.php');
       </li>
       <li class="wow bounceIn">
         <div class="contMoBox">
-          <img class="moImg" src="images/icon04.png" alt="icon">
+          <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon04.png" alt="icon">
           <div class="contMoSort">
             <h2 class="contTit">주요개발사</h2>
             <p class="contTxt">최고의 온라인 게임 퍼블리셔 넷마블과 우수한 개발력을 보유한 게임 개발 스튜디오들이 하나되어 글로벌 게임 컴퍼니로 도약합니다.</p>
@@ -83,7 +83,7 @@ include_once(G5_THEME_PATH.'/head.php');
       </li>
       <li class="wow fadeInLeftBig">
         <div class="contMoBox">
-          <img class="moImg" src="images/icon05.png" alt="icon">
+          <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon05.png" alt="icon">
           <div class="contMoBg"></div>
           <div class="contMoSort">
             <h2 class="contMoTit">정도경영</h2>
@@ -103,7 +103,7 @@ include_once(G5_THEME_PATH.'/head.php');
       <ul class="viList clearfix">
         <li>
           <div class="card wow flipInY" data-wow-offset="360" data-wow-duration="3s" data-wow-delay="1s">
-            <img src="images/vision_icon01.png" alt="">
+            <img src="<?php echo G5_THEME_URL ?>/images/vision_icon01.png" alt="">
             <div class="cardTxt">
               <h3>VISION</h3>
               <P>Great Game Culture Company</P>
@@ -112,7 +112,7 @@ include_once(G5_THEME_PATH.'/head.php');
         </li>
         <li>
           <div class="card wow flipInY" data-wow-offset="360" data-wow-duration="3s"  data-wow-delay="1s">
-            <img src="images/vision_icon02.png" alt="">
+            <img src="<?php echo G5_THEME_URL ?>/images/vision_icon02.png" alt="">
             <div class="cardTxt">
               <h3>MISSION</h3>
               <P>We entertain <br>the world with fun games</P>
@@ -121,7 +121,7 @@ include_once(G5_THEME_PATH.'/head.php');
         </li>
         <li>
           <div class="card wow flipInY" data-wow-offset="360" data-wow-duration="3s"  data-wow-delay="1s">
-            <img src="images/vision_icon03.png" alt="">
+            <img src="<?php echo G5_THEME_URL ?>/images/vision_icon03.png" alt="">
             <div class="cardTxt">
               <h3>ENTREPRENURSHIP</h3>
               <P>Enthusiasm <br>Challenge <br>Innovation <br>First-rate</P>
@@ -135,7 +135,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <div class="wrap">
       <div class="newGameIntro wow flipInY">
         <div class="newGameBox">
-          <img src="images/newgame_icon01.png" alt="">
+          <img src="<?php echo G5_THEME_URL ?>/images/newgame_icon01.png" alt="">
           <h3>최신게임</h3>
           <p>넷마블의 최신 모바일 게임을 다양하게 즐겨보세요!</p>
         </div>
@@ -144,7 +144,7 @@ include_once(G5_THEME_PATH.'/head.php');
           <li>
             <div class="newGameBg">
               <div class="arrowUp"></div>
-              <img src="images/bg_mobilegame01.png" class="" alt="">
+              <img src="<?php echo G5_THEME_URL ?>/images/bg_mobilegame01.png" class="" alt="">
             </div>
             <div class="newgameCard">
               <h3>세븐나이츠2</h3><span>MMORPG</span>
@@ -153,8 +153,8 @@ include_once(G5_THEME_PATH.'/head.php');
                 세인과의 치열한 전투 끝에 아일린은 자신의 딸 '렌'에게 최후의 세븐나이츠
                  '루디'를 찾아라!라고 말하게 되는데..</P>
               <div class="appBtn">
-                <a href="#"><img src="images/app_icon01.png" alt=""></a>
-                <a href="#"><img src="images/app_icon02.png" alt=""></a>
+                <a href="#"><img src="<?php echo G5_THEME_URL ?>/images/app_icon01.png" alt=""></a>
+                <a href="#"><img src="<?php echo G5_THEME_URL ?>/images/app_icon02.png" alt=""></a>
               </div>
             </div>
           </li>
@@ -167,18 +167,18 @@ include_once(G5_THEME_PATH.'/head.php');
                 모바일 대표 야구 게임 마구마구!<br>
                 이젠 다같이 함께 ‘마구’ 붙자!</P>
               <div class="appBtn">
-                <a href="#"><img src="images/app_icon01.png" alt=""></a>
-                <a href="#"><img src="images/app_icon02.png" alt=""></a>
+                <a href="#"><img src="<?php echo G5_THEME_URL ?>/images/app_icon01.png" alt=""></a>
+                <a href="#"><img src="<?php echo G5_THEME_URL ?>/images/app_icon02.png" alt=""></a>
               </div>
             </div>
             <div class="newGameBg">
-              <img src="images/bg_mobilegame02.png" alt="">
+              <img src="<?php echo G5_THEME_URL ?>/images/bg_mobilegame02.png" alt="">
               <div class="arrowDown"></div>
             </div>
           </li>
           <li>
             <div class="newGameBg">
-              <img src="images/bg_mobilegame03.png" alt="">
+              <img src="<?php echo G5_THEME_URL ?>/images/bg_mobilegame03.png" alt="">
               <div class="arrowUp"></div>
             </div>
             <div class="newgameCard">
@@ -189,8 +189,8 @@ include_once(G5_THEME_PATH.'/head.php');
                   승리하세요!<br>
                   달콤살벌 캔디쟁탈전! 달달한 재미를 즐기세요!</P>
               <div class="appBtn">
-                <a href="#"><img src="images/app_icon01.png" alt=""></a>
-                <a href="#"><img src="images/app_icon02.png" alt=""></a>
+                <a href="#"><img src="<?php echo G5_THEME_URL ?>/images/app_icon01.png" alt=""></a>
+                <a href="#"><img src="<?php echo G5_THEME_URL ?>/images/app_icon02.png" alt=""></a>
               </div>
             </div>
           </li>
