@@ -72,6 +72,7 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.menu.js?ver='.G5_JS_VER.'"></s
 add_javascript('<script src="'.G5_JS_URL.'/common.js?ver='.G5_JS_VER.'"></script>', 0);
 add_javascript('<script src="'.G5_JS_URL.'/wrest.js?ver='.G5_JS_VER.'"></script>', 0);
 add_javascript('<script src="'.G5_JS_URL.'/placeholders.min.js"></script>', 0);
+add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 10);
 add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font-awesome.min.css">', 0);
 
 if(G5_IS_MOBILE) {
@@ -81,7 +82,11 @@ if(!defined('G5_IS_ADMIN'))
     echo $config['cf_add_script'];
 ?>
 
+<link rel="stylesheet" href="<? echo G5_THEME_CSS_URL ?>/jquery.bxslider.css">
+<link rel="stylesheet" href="<? echo G5_THEME_CSS_URL ?>/animate.css">
 <link rel="stylesheet" href="<? echo G5_THEME_CSS_URL ?>/default.css">
+<script src="<? echo G5_JS_URL ?>/wow.min.js"></script>
+
 </head>
 <body<?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?>>
 <?php
