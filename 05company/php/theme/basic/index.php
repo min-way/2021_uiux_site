@@ -94,7 +94,7 @@ include_once(G5_THEME_PATH.'/head.php');
       </li>
     </ul>
   </div><!-- contents -->
-  <div class="vision wow bounceInLeft">
+  <div class="vision wow fadeInUp">
     <div class="wrap">
       <div class="viIntro">
         <h2 class="viTit wow fadeInUp" data-wow-offset="320" data-wow-delay="0.3s">비전 &#47; 미션 &#47; 넷마블 정신</h2>

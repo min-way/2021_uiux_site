@@ -197,9 +197,6 @@ $(document).ready(function(){
 
   });
 
-  $(".conversion ul li").click(function(){
-    $(this).addClass("on").siblings().removeClass("on");
-  });
 
   $(".toggleMenu").click(function(){
     const check = $(".toggleMenu").attr("class");
@@ -265,23 +262,24 @@ $(document).ready(function(){
 
   function pcView(on){
     if(on=="view"){
-      $(".gnb>li").on("mouseenter",function(){
-        $(".headTop").stop().animate({height:320},50);
-        $(".lnb").stop().slideDown(800);
-        $(".headTop").addClass("fixed");
+      $("#hd_wrapper").on("mouseenter",function(){
+        $("#hd_wrapper").stop().animate({height:330},800);
+        $(".gnb_2dul").stop().slideDown(800);
+        $("#hd_wrapper").addClass("fixed");
       })
-      $(".gnb>li").on("mouseleave",function(){
-        $(".headTop").stop().animate({height:120},50);
-        $(".lnb").stop().slideUp(800);
+      $("#hd_wrapper").on("mouseleave",function(){
+        $("#hd_wrapper").stop().animate({height:140},800);
+        $(".gnb_2dul").stop().slideUp(800);
+        $("#hd_wrapper").removeClass("fixed");
         if(0>=scrollY){
-          $(".headTop").removeClass("fixed");
+          $("#hd_wrapper").removeClass("fixed");
         }else{
-          $(".headTop").addClass("fixed");
+          $("#hd_wrapper").addClass("fixed");
         }
       })
     }else{
-      $(".gnb>li").off("mouseenter");
-      $(".gnb>li").off("mouseleave");
+      $("#hd_wrapper").off("mouseenter");
+      $("#hd_wrapper").off("mouseleave");
     }
   }
 }); // end
@@ -292,4 +290,11 @@ $(document).ready(function(){
     <div id="container_wr" <? if (defined("_INDEX_")){?> style="width:100%" <?}?> >
 
     <div id="container" >
-        <?php if (!defined("_INDEX_")) { ?><h2 id="container_title"><span title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></span></h2><?php }
+        <?php if (!defined("_INDEX_")) { ?>
+
+          <h2 id="container_title">
+            <img src="<?php echo G5_THEME_URL ?>/images/location_icon.png" class="location_icon">
+            <img src="<?php echo G5_THEME_URL ?>/images/location_arrow.png" class="location_arrow">
+            <span title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></span>
+          </h2>
+          <?php }
