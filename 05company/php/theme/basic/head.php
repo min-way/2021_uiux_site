@@ -28,20 +28,19 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
     <? if(!defined('_INDEX_')){?>
       <div class="subVisual">
-        <div class="subImg " id="page_title">
+        <div class="subImg" id="page_title">
           <div class="title">
             <h2 class="loc1D"></h2>
-            <div class="txt">안녕하세요</div>
+            <div class="txt">최고의 온라인 게임 퍼블리셔 넷마블과 우수한 개발력을 보유한 게임 개발 스튜디오들이 하나되어 글로벌 게임 컴퍼니로 도약합니다.</div>
           </div>
         </div>
       </div>
     <?}?>
+
     <?php if(!defined('_INDEX_')) {?>
       <? include_once(G5_THEME_PATH.'/skin/nav/mysubmenu.php');?>
-      <style>
-        #gnb { margin-top: -400px;}
-      </style>
-      <?}?>
+    <?}?>
+
 
     <div id="hd_wrapper">
       <nav id="gnb" class="gnb">
@@ -128,8 +127,6 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
           </div>
       </nav>
 
-
-
       <script>
 
       $(function(){
@@ -142,8 +139,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
       });
 
       </script>
-
     </div>
+
+
   </div>
 <!-- } 상단 끝 -->
 <hr>

@@ -3,11 +3,11 @@
 <style TYPE="text/css">
 
 #snb{width:100%;}
-	#snb {width:100%;}
+	#snb {width:1240px; margin: 0 auto; position: absolute; left: 50%; top: 380px; transform: translate(-50%);}
 	#snb > li.snb{width:100%;display:none;}
 	#snb > li.snb.active{display:block !important;}
-	#snb > li > h2{width:100%;background:#000;}
-	#snb > li > h2 a{display:block;background:#000; text-align:center; padding:80px 10px; color:#fff;}
+	#snb > li > h2{width:100%;background:#000; display: none;}
+	#snb > li > h2 a{display:block;background:#000; text-align:center; color:#fff;}
 	#snb > li > h2 a b{display:block;font-size:18px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 	#snb > li > h2 a sub{display:block;padding-top:10px;font-family:vardana;font-size:12px;letter-spacing:0.05em;font-weight:normal;filter:Alpha(opacity=50); opacity:0.5; -moz-opacity:0.5;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 	#snb > li .snb2dDown{display:none;}
