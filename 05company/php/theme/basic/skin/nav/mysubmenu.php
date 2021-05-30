@@ -16,8 +16,8 @@
 	#snb > li > ul > li{border-bottom: 1px solid #EE3F22; flex:1; background: #f3f3f3;}
 	#snb > li > ul > li a{display:block;padding:15px;color:#444;-webkit-transition-duration: 0.2s;-webkit-transition-timing-function: ease;transition-duration: 0.2s;transition-timing-function: ease; text-align: center; line-height: 30px;}
 	#snb > li > ul > li a b{font-size: 18px;}
-	#snb > li > ul > li a:hover{background:#EE3F22;padding-left:20px;color:#fff;-webkit-transition-duration: 0.2s;-webkit-transition-timing-function: ease;transition-duration: 0.2s;transition-timing-function: ease;}
-	#snb > li > ul > li.snb2d.active a{}
+	#snb > li > ul > li a:hover{background:#EE3F22;color:#fff;-webkit-transition-duration: 0.2s;-webkit-transition-timing-function: ease;transition-duration: 0.2s;transition-timing-function: ease;}
+	#snb > li > ul > li.snb2d.active a {background:#EE3F22;color:#fff;}
 	#snb > li > ul > li a{overflow:hidden;}
 	#snb > li > ul > li a i{display: none;}
 

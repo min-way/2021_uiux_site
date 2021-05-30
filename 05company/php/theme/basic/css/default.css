@@ -167,7 +167,8 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 /* #container {position:relative;float:left;min-height:500px;height:auto !important;margin:20px 0;height:500px;font-size:1em;width:930px;zoom:1} */
 #container:after {display:block;visibility:hidden;clear:both;content:""}
 #container_title {font-size:1.1em;font-weight:bold;margin-top: 20px; display: flex;}
-#container_title span {margin:0 auto 10px;display:block;width: 70px;}
+#container_title h2 {margin-top: 2px;}
+#container_title .location_tit {color: #EE3F22;}
 .location_icon {display: block; width: 22px; height: 22px;}
 
 

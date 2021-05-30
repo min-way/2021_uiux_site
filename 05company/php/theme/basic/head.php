@@ -292,9 +292,11 @@ $(document).ready(function(){
     <div id="container" >
         <?php if (!defined("_INDEX_")) { ?>
 
-          <h2 id="container_title">
+          <div id="container_title">
             <img src="<?php echo G5_THEME_URL ?>/images/location_icon.png" class="location_icon">
             <img src="<?php echo G5_THEME_URL ?>/images/location_arrow.png" class="location_arrow">
-            <span title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></span>
-          </h2>
+            <h2 class="loc1D"></h2>
+            <img src="<?php echo G5_THEME_URL ?>/images/location_arrow.png" class="location_arrow">
+            <h2 title="<?php echo get_text($g5['title']); ?>" class="location_tit"><?php echo get_head_title($g5['title']); ?></h2>
+          </div>
           <?php }

@@ -13,20 +13,20 @@ include_once(G5_THEME_PATH.'/head.php');
 <h2 class="sound_only">컨텐츠</h2>
 <div id="contents" class="contents">
     <ul class="contList">
-      <li class="wow bounceIn">
+      <li class="wow bounceIn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=company'">
         <div class="contMoBox">
           <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon01.png" alt="icon">
           <div class="contMoSort">
             <h2 class="contTit">회사소개</h2>
             <p class="contTxt">치열한 열정, 끊임 없는 도전, 끝없는 변화 의지로 대한민국, 아시아를 넘어 세계로 나아갑니다.</p>
-            <button class="contBtn" onclick="location.href='company.html'">바로 가기</button>
+            <button class="contBtn" id="cont1" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=company'">바로 가기</button>
           </div>
         </div>
       </li>
       <li class="newsBox wow bounceInDown">
         <h2 class="newsTit">NEWS</h2>
         <ul class="newsList clearfix">
-          <li class="more"><a href="#">more</a></li>
+          <li class="more"><a href="http://minway.dothome.co.kr/main/bbs/board.php?bo_table=news">more</a></li>
           <li class="txtLine"><a href="#">넷마블, ‘마구마구 리마스터’ 시즌카드 기록반영 업데이트 실시</a><span>2021.05.03</span></li>
           <li class="txtLine"><a href="#">넷마블, 모바일 RPG <칠대죄> X 넷플릭스 ‘기묘한 이야기' 콜라보레이션 업데이트 실시</a><span>2021.04.30</span></li>
           <li class="txtLine"><a href="#">넷마블, ‘세븐나이츠’에 신규 영웅 ‘레이즈’ 업데이트 실시</a><span>2021.04.30</span></li>
@@ -34,35 +34,35 @@ include_once(G5_THEME_PATH.'/head.php');
           <li class="txtLine"><a href="#">넷마블, '모두의마블'에 ‘과수원 맵’ 업데이트 실시</a><span>2021.04.29</span></li>
         </ul>
       </li>
-      <li class="wow bounceIn">
+      <li class="wow bounceIn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=ir'">
         <div class="contMoBox_left">
            <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon02.png" alt="icon">
            <div class="contMoSort">
              <h2 class="contMoTit">투자정보</h2>
              <p class="contMoTxt">Investor Relations</p>
-             <button class="contMoBtn" onclick="location.href='ir.html'">바로 가기</button>
+             <button class="contMoBtn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=ir'">바로 가기</button>
            </div>
            <div class="contMoBg"></div>
        </div>
       </li>
-      <li class="wow bounceInLeft">
+      <li class="wow bounceInLeft" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=business'">
         <div class="contMoBox">
             <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon03.png" alt="icon">
             <div class="contMoBg"></div>
             <div class="contMoSort">
               <h2 class="contMoTit">사업소개</h2>
               <p class="contMoTxt">넷마블은 우수한 게임을 직접 개발하고 PC/ 모바일 게임 퍼블리싱 사업을 영위하는 글로벌 게임 컴퍼니입니다.</p>
-              <button class="contMoBtn" onclick="location.href='business.html'">바로 가기</button>
+              <button class="contMoBtn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=business'">바로 가기</button>
             </div>
         </div>
       </li>
-      <li class="wow bounceIn">
+      <li class="wow bounceIn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=company'">
         <div class="contMoBox">
           <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon04.png" alt="icon">
           <div class="contMoSort">
             <h2 class="contTit">주요개발사</h2>
             <p class="contTxt">최고의 온라인 게임 퍼블리셔 넷마블과 우수한 개발력을 보유한 게임 개발 스튜디오들이 하나되어 글로벌 게임 컴퍼니로 도약합니다.</p>
-            <button class="contBtn" onclick="location.href='company.html'">바로 가기</button>
+            <button class="contBtn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=company'">바로 가기</button>
           </div>
         </div>
       </li>
@@ -81,14 +81,14 @@ include_once(G5_THEME_PATH.'/head.php');
           <p class="introTxt wow fadeInUp" data-wow-offset="100">우수한 글로벌 네트워크를 통해 전세계 이용자들에게 최고의 재미를 전달할 수 있는 다양한 장르의 게임을 서비스하고 있습니다.</p>
         </div>
       </li>
-      <li class="wow fadeInLeftBig">
+      <li class="wow fadeInLeftBig" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=jeongdo'">
         <div class="contMoBox">
           <img class="moImg" src="<?php echo G5_THEME_URL ?>/images/icon05.png" alt="icon">
           <div class="contMoBg"></div>
           <div class="contMoSort">
             <h2 class="contMoTit">정도경영</h2>
             <p class="contMoTxt">Jeong-Do Management</p>
-            <button class="contMoBtn" onclick="location.href='jeongdo.html'">바로 가기</button>
+            <button class="contMoBtn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=jeongdo'">바로 가기</button>
           </div>
       </div>
       </li>
@@ -203,12 +203,12 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="social wow fadeInLeftBig" data-wow-duration="1s">
           <h3>사회공헌</h3>
           <p>문화적 가치 확산을 통한 <br>우리 사회 미래경쟁력 제고</p>
-          <button class="bannerBtn" onclick="location.href='strategy.html'">자세히보기</button>
+          <button class="bannerBtn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=strategy'">자세히보기</button>
         </div>
         <div class="hr wow fadeInRightBig" data-wow-duration="1s">
           <h3>인재채용</h3>
           <p>열정으로 도전하고, 세상의 변화를 <br>선도하며, 최고를 추구하는 사람</p>
-          <button class="bannerBtn" onclick="location.href='hrs.html'">자세히보기</button>
+          <button class="bannerBtn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=hrs'">자세히보기</button>
         </div>
       </div>
     </div>
