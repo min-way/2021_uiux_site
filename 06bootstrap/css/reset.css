@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: "Noto Sans KR", san-serif;}
+
+ul {list-style: none;}
+
+a:link, a:visited {text-decoration: none; color: #2d2d2d;}
+
+.clearfix:after {content: ''; display: block; clear: both;}

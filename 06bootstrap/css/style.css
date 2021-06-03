@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+:root {
+
+}
+.bg-gray {background: rgba(0,0,0,0.5);}
+
+#header .visualWrap {height: 900px; background: url("../images/bg_main.png")no-repeat 0 0 / cover;}
+.main_title {height: 742px;}
+.main_title span {color: #4E813B;}
+
+.navbar-dark .navbar-nav .nav-link {color: #fff;}
+
+.navbar-nav.gnb li + li {margin-left: 25px;}
+.navbar-nav.submenu a {margin-left: 50px;}
