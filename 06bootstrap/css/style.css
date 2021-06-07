@@ -2,8 +2,12 @@
 
 :root {
   --font-color1:#FABE00;
+  --font-color2: #787878;
+  
 }
 .bg-gray {background: rgba(0,0,0,0.5);}
+.font_color1 {color: var(--font-color1);}
+.text-gray {color: var(--font-color2);}
 
 /* ------------header-------------- */
 #header .visualWrap { background: url("../images/bg_main.png")no-repeat 0 0 / cover;}
@@ -18,13 +22,23 @@
 
 /* ------------contents-------------- */
 .cont_tit h2 {font-size: 35px;}
-.cont_tit p {color: #787878;}
-.vision h4 {font-size: 20px; font-weight: bold;}
+.vision h4 {font-size: 20px;}
 .vision img {border: 5px solid #FABE00; border-radius: 100%;}
-.vision p {color: #787878; font-size: 14px;}
-.font_color1 {color: var(--font-color1);}
+.vision p {font-size: 14px;}
 
 .info {background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/bg_guide.jpg"); background-repeat: no-repeat; background-size: cover;}
+
+
+/* ------------식물소개-------------- */
+.plant img {max-width: 265px; border-radius: 10px;}
+/* ------------식물소개-------------- */
+
+/* ------------식물원 알림-------------- */
+.bg-notice {background: url("../images/bg_notice.png")no-repeat 0 0 / cover;}
+.notice {height: 1000px;}
+.notice div:nth-child(2) video {max-width: 100%;}
+/* ------------식물원 알림-------------- */
+
 /* ------------contents-------------- */
 
 /* ------------footer-------------- */
@@ -36,4 +50,5 @@
   .main_title h2 {font-size: 18px;}
   .tab_menu ul li a {font-size: 14px;}
   .navbar-nav.submenu li + li {margin-left: 30px;}
+  .notice {height: 257px;}
 }
