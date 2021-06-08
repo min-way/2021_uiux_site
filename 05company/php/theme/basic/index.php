@@ -24,15 +24,16 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
       </li>
       <li class="newsBox wow bounceInDown">
-        <h2 class="newsTit">NEWS</h2>
-        <ul class="newsList clearfix">
-          <li class="more"><a href="http://minway.dothome.co.kr/main/bbs/board.php?bo_table=news">more</a></li>
-          <li class="txtLine"><a href="#">넷마블, ‘마구마구 리마스터’ 시즌카드 기록반영 업데이트 실시</a><span>2021.05.03</span></li>
-          <li class="txtLine"><a href="#">넷마블, 모바일 RPG <칠대죄> X 넷플릭스 ‘기묘한 이야기' 콜라보레이션 업데이트 실시</a><span>2021.04.30</span></li>
-          <li class="txtLine"><a href="#">넷마블, ‘세븐나이츠’에 신규 영웅 ‘레이즈’ 업데이트 실시</a><span>2021.04.30</span></li>
-          <li class="txtLine"><a href="#">넷마블, ‘킹 오브 파이터 올스타’ 보스 신드롬 파이터 업데이트 실시</a><span>2021.04.29</span></li>
-          <li class="txtLine"><a href="#">넷마블, '모두의마블'에 ‘과수원 맵’ 업데이트 실시</a><span>2021.04.29</span></li>
-        </ul>
+        <div class="latest_wr">
+            <!-- 사진 최신글2 { -->
+            <?php
+            // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+            // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+            // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+            echo latest('theme/news', 'news', 5, 23);		// 최소설치시 자동생성되는 갤러리게시판
+            ?>
+            <!-- } 사진 최신글2 끝 -->
+        </div>
       </li>
       <li class="wow bounceIn" onclick="location.href='http://minway.dothome.co.kr/main/bbs/content.php?co_id=ir'">
         <div class="contMoBox_left">
@@ -214,6 +215,8 @@ include_once(G5_THEME_PATH.'/head.php');
     </div>
   </div><!-- banner -->
 <!-- 메인 컨텐츠 -->
+
+
 
 <?php
 include_once(G5_THEME_PATH.'/tail.php');

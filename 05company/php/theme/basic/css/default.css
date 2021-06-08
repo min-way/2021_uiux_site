@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 초기화 */
-html {overflow-y:scroll}
+html {overflow-y:scroll;}
 body {margin:0;padding:0;font-size:0.75em;font-family:'Malgun Gothic', dotum, sans-serif;background:#fff}
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
 h1, h2, h3, h4, h5, h6 {font-size:1em;font-family:'Malgun Gothic', dotum, sans-serif}
@@ -503,7 +503,7 @@ box-sizing:content-box;
 .contList .contTxt, .contList .contBtn, .contList .contMoTxt, .contList .contMoBtn  {display: none;}
 
 /* no.2 news */
-.contList>li:nth-child(2) {padding: 40px; text-align: left;}
+/* .contList>li:nth-child(2) {padding: 40px; text-align: left;}
 .contList>li:nth-child(2) .newsTit {font-size: 22px; margin-bottom: 35px; color: #444;}
 .newsList {position: relative;}
 .newsList li:hover a {color: #FFC905;}
@@ -511,7 +511,7 @@ box-sizing:content-box;
 .newsList li span {position: absolute; right: 0; color: #888;}
 .newsList .more a {position: absolute; right: 0; top: -35px; color: #888;}
 .txtLine {width:450px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-.txtLine a {font-weight: bold; color: #444;}
+.txtLine a {font-weight: bold; color: #444;} */
 
 /* no.4 사업소개 */
 .contList>li:nth-child(4) .contMoTit {color: #444;}
@@ -535,9 +535,11 @@ box-sizing:content-box;
 
 /* contents List (hover) */
 .contList>li:hover div {transform: scale(1.15); transition: 0.3s; cursor: pointer;}
+.contList>li:hover:nth-child(2) div,
 .contList>li:hover:nth-child(6) div,
 .contList>li:hover:nth-child(7) div,
 .contList>li:hover:nth-child(8) div {transform: scale(1); cursor: default;}
+
 
 /* ----------vision------------ */
 .vision {height: 700px; background: url("../images/bg_vision.png")no-repeat center fixed; background-size: cover; margin-bottom: 80px;}
