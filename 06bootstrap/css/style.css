@@ -14,7 +14,6 @@
 
 .main_title {height: 800px;}
 .main_title span {color: #4E813B;}
-
 .navbar-dark .navbar-nav .nav-link {color: #fff;}
 .navbar-nav.gnb li + li {margin-left: 25px;}
 .navbar-nav.submenu li + li {margin-left: 50px;}
@@ -39,6 +38,17 @@
 .notice div:nth-child(2) video {max-width: 100%;}
 /* ------------식물원 알림-------------- */
 
+/* ------------식물원 안내-------------- */
+.plant_info div:nth-child(2) {position: relative;}
+.plant_info p {font-size: 14px;}
+.plant_info img {border: 5px solid #59A276; border-radius: 100%;}
+.plant_info div:nth-child(2)::after {}
+
+.timeLine {position: relative;}
+.timeLine::before {content: ''; display: block; height: 80%; width: 2px; background: #59A276; position: absolute; left:50%; top: 50px;}
+/* ------------식물원 안내-------------- */
+
+
 /* ------------contents-------------- */
 
 /* ------------footer-------------- */
@@ -51,4 +61,11 @@
   .tab_menu ul li a {font-size: 14px;}
   .navbar-nav.submenu li + li {margin-left: 30px;}
   .notice {height: 257px;}
+  .plant_info {width: 100%;}
+  .plant_info h4 {font-size: 16px;}
+  .plant_info p {font-size: 12px;}
+  /* .plant_info img {width: 70%} */
+  .plant_main_info {}
+  .timeLine::before {left:10%}
+  
 }
