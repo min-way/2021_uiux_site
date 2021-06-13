@@ -19,16 +19,12 @@
 .section .section_cont .news_list li {float: left; width: calc(100% / 4); padding: 0 30px; padding-bottom: 20px;}
 .section .section_cont .news_list li + li {border-left: 1px solid #ddd;}
 .section .section_cont .news_list .news_tit {margin-bottom: 40px; font-size: 16px;}
-.section .section_cont .news_list .date {text-align: right;}
 .section .section_cont .news_list .new_icon {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#23db79;background:#b9ffda;text-align:center;border-radius:2px;margin-left:2px;font-weight:bold;vertical-align:middle} */
 
-.contList>li:nth-child(2) {padding: 40px; text-align: left;}
-.contList>li:hover:nth-child(2) div {transform: scale(1); cursor: default;}
-.contList>li> .newsTit {font-size: 22px; margin-bottom: 35px; color: #444;}
 
 .newsList {position: relative;}
-.newsList li:hover a {color: #FFC905;}
+.contList>li:hover:nth-child(2) p {color: #FFC905;}
 .newsList li + li {margin-top: 14px;}
 .newsList li span {position: absolute; right: 0; color: #888;}
-.newsList .more {position: absolute; right: 0; top: -15px; color: #888;}
+.newsList .more {position: absolute; right: 0; top: -55px; color: #888; font-size: 16px;}
 /* .txtLine {width:800px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size: 14px; color: #444;} */

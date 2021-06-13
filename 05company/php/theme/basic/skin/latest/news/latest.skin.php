@@ -15,11 +15,11 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
       <?php for ($i=0; $i<$list_count; $i++) {  ?>
       <li>
         <a href="<? echo get_pretty_url($bo_table, $list[$i]['wr_id']); ?>" class="txtLine">
-          <p class="txtLine"><? echo $list[$i]['subject']; ?>
+          <p class="txtLine"><? echo $list[$i]['subject']; ?></a>
             <?php if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>"; ?>
             <span class="date"><?php echo $list[$i]['datetime2'] ?></span>
           </p>
-        </a>
+
       </li>
       <?php }  ?>
     </ul>

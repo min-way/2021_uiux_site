@@ -264,12 +264,12 @@ $(document).ready(function(){
     if(on=="view"){
       $("#hd_wrapper").on("mouseenter",function(){
         $("#hd_wrapper").stop().animate({height:330},800);
-        $(".gnb_2dul").stop().slideDown(800);
+        $("#hd_wrapper").find(".gnb_2dul").stop().slideDown(800);
         $("#hd_wrapper").addClass("fixed");
       })
       $("#hd_wrapper").on("mouseleave",function(){
         $("#hd_wrapper").stop().animate({height:140},800);
-        $(".gnb_2dul").stop().slideUp(800);
+        $("#hd_wrapper").find(".gnb_2dul").stop().slideUp(800);
         $("#hd_wrapper").removeClass("fixed");
         if(0>=scrollY){
           $("#hd_wrapper").removeClass("fixed");
