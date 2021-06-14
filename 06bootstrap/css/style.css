@@ -3,30 +3,30 @@
 :root {
   --font-color1:#FABE00;
   --font-color2: #787878;
-  
+
 }
 .bg-gray {background: rgba(0,0,0,0.5);}
+.bg-highgray {background: rgba(0,0,0,0.8);}
 .font_color1 {color: var(--font-color1);}
 .text-gray {color: var(--font-color2);}
 
 /* ------------header-------------- */
 #header .visualWrap { background: url("../images/bg_main.png")no-repeat 0 0 / cover;}
-
 .main_title {height: 800px;}
 .main_title span {color: #4E813B;}
 .navbar-dark .navbar-nav .nav-link {color: #fff;}
 .navbar-nav.gnb li + li {margin-left: 25px;}
 .navbar-nav.submenu li + li {margin-left: 50px;}
+.bottom-0 {bottom: 0;}
 /* ------------header-------------- */
+
 
 /* ------------contents-------------- */
 .cont_tit h2 {font-size: 35px;}
 .vision h4 {font-size: 20px;}
 .vision img {border: 5px solid #FABE00; border-radius: 100%;}
 .vision p {font-size: 14px;}
-
 .info {background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/bg_guide.jpg"); background-repeat: no-repeat; background-size: cover;}
-
 
 /* ------------식물소개-------------- */
 .plant img {max-width: 265px; border-radius: 10px;}
@@ -43,36 +43,49 @@
 .plant_info p {font-size: 14px;}
 .plant_info img {border: 5px solid #59A276; border-radius: 100%;}
 .plant_info div:nth-child(2)::after {}
-
 .timeLine {position: relative;}
 .timeLine::before {content: ''; display: block; height: 80%; width: 2px; background: #59A276; position: absolute; left:50%; top: 50px;}
 /* ------------식물원 안내-------------- */
 
-
 /* ------------체험프로그램-------------- */
-.exp {border: 1px solid #aaa; padding: 0; border-radius: 10px;max-width: 265px;}
+.exp {border: 1px solid #aaa; padding: 0; border-radius: 10px; max-width: 265px;}
 .exp img {width: 100%; height: 180px; border-radius: 10px 10px 0 0;}
 
 /* ------------체험프로그램-------------- */
-
-
 /* ------------contents-------------- */
 
+
 /* ------------footer-------------- */
+
+#footer > div:nth-child(1) {height: 110px;}
+#footer .row > div:nth-child(3) {font-size: 10px;}
+#footer .row > div:nth-child(3) ul li a {color: white;}
+#footer > div:nth-child(2) {height: 30px;}
+#footer > div:nth-child(2) > p {font-size: 12px;}
 /* ------------footer-------------- */
 
 @media screen and (max-width:768px){
   #header .visualWrap {height: 400px;}
-  .main_title {height: 221px;}
+  .main_title {height: 288px;}
   .main_title h2 {font-size: 18px;}
-  .tab_menu ul li a {font-size: 14px;}
+  .cont_tit h2 {font-size: 2em;}
+  .cont_tit p {font-size: 0.8em;}
+  .submenu li a {font-size: 12px;}
+  .submenu li a img {height: 20px;}
+  .navbar-nav.gnb li + li {margin-left: 0;}
+  .navbar-nav.gnb li a {font-size: 14px;}
   .navbar-nav.submenu li + li {margin-left: 30px;}
   .notice {height: 257px;}
+  .notice > div:nth-child(1) h2 {font-size: 1.5em;}
+  .notice > div:nth-child(1) p {font-size: 0.8em;}
   .plant_info {width: 100%;}
   .plant_info h4 {font-size: 16px;}
   .plant_info p {font-size: 12px;}
   /* .plant_info img {width: 70%} */
   .plant_main_info {}
   .timeLine::before {left:10%}
-  
+#footer > div:nth-child(1) {height: 215px;}
+#footer .row > div:nth-child(2) > img {height: 40px;}
+.exp h5 {font-size: 1.1em;}
+.exp {font-size: 0.8em;}
 }

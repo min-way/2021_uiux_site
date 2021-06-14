@@ -5,55 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/hover.css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.js"></script>
+
   <link rel=" shortcut icon" href="images/favicon.png">
   <link rel="icon" href="images/favicon.png">
   <title>서울식물원</title>
 
 </head>
 <body>
-  <div id="header" class="mb-5">
-    <div class="visualWrap">
-      <div class="container text-white">
-        <nav class="navbar navbar-expand-lg navbar-dark pt-3">
-          <a class="navbar-brand" href="./">
-            <img src="images/logo.png" alt="" class="img-fluid" style="max-width: 142px;">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav gnb ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">식물원이야기</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">이용하기</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">둘러보기</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">참여하기</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">식물정보</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="main_title row align-items-center text-center">
-          <h2 class="col-md-12"><span>서울식물원</span>에 오신 여러분을 환영합니다.</h2>
+  <div class="bg-dark">
+    <div class="container text-white px-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <a class="navbar-brand" href="./">
+          <img src="images/logo.png" alt="" class="img-fluid" style="max-width: 142px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav gnb ml-auto">
+            <li class="nav-item mt-3 mt-md-0">
+              <a class="nav-link" href="#">식물원이야기</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">이용하기</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">둘러보기</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">참여하기</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">식물정보</a>
+            </li>
+          </ul>
         </div>
-      </div><!-- container -->
-      
-        <div class="container-fluid">
+      </nav>
+    </div><!-- container -->
+  </div>
+  <div id="header" class="mb-5">
+    <div class="visualWrap position-relative">
+        <div class="main_title row align-items-center text-center">
+          <h2 class="col-md-12 pt-5 text-white wow slideInDown"><span>서울식물원</span>에 오신 여러분을 환영합니다.</h2>
+        </div>
+        <div class="container-fluid position-absolute bottom-0">
           <nav class="row navbar navbar-expand navbar-dark tab_menu bg-gray mt-4">
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav2">
               <ul class="navbar-nav submenu mx-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="#"><img src="images/icon_guide.png" class="img-fluid pr-0 pr-md-2 d-block d-md-inline-block mx-auto mb-2 mb-md-0" alt="">이용안내</a>
@@ -80,17 +84,17 @@
       <p class="text-gray">서울식물원에 오신 여러분을 환영합니다.</p>
     </div>
     <div class="row text-center mb-5">
-      <div class="col-md-4 vision">
+      <div class="col-md-4 vision wow bounceInLeft">
         <h4 class="font-weight-bold">가드닝 문화</h4>
         <img src="images/vision01.png" class="img-fluid my-4" alt="">
         <p class="text-gray mb-4 mb-md-0">정원 가꾸기, 도시농업 같은 가드닝 문화를 널리 퍼트려 시민 삶을 푸르고 풍요롭게 만듭니다.</p>
       </div>
-      <div class="col-md-4 vision">
+      <div class="col-md-4 vision wow bounceInLeft">
         <h4 class="font-weight-bold">녹색도시의 미래</h4>
         <img src="images/vision02.png" class="img-fluid my-4" alt="">
         <p class="text-gray mb-4 mb-md-0">서울식물원은 백년을 내다보는 지속가능성의 원칙 아래 운영됩니다.서울식물원이 곧 녹색도시 서울의 미래입니다.</p>
       </div>
-      <div class="col-md-4 vision">
+      <div class="col-md-4 vision wow bounceInLeft">
         <h4 class="font-weight-bold">도심 속의 녹색명소</h4>
         <img src="images/vision03.png" class="img-fluid my-4" alt="">
         <p class="text-gray">시민에게 식물이 주는 교육문화적 가치뿐 아니라 쾌적한 휴식과 여가공간을 제공합니다.</p>
@@ -99,7 +103,6 @@
   </div><!-- container -->
 
   <div class="container-fluid py-5">
-
       <div class="cont_tit text-center mb-5">
         <h2 class="font-weight-bold">이용 안내</h2>
         <p class="text-gray">서울식물원에 오신 여러분을 환영합니다.</p>
@@ -253,47 +256,93 @@
     <div class="container">
       <div class="cont_tit text-center mb-5">
         <h2  class="font-weight-bold">체험 프로그램</h2>
-        <p class="text-gray">서울식물원에 오신 여러분을 환영합니다.</p>
+        <p class="text-gray">서울식물원은 시민 삶을 풍요롭게 해 줄 다양한 식물, 식물문화 교육 프로그램을 운영 중입니다.</p>
       </div>
       <div class="row text-center mb-5">
-        <div class="col-md-3">
-          <div class="exp">
-            <img src="images/edu01.jpg" class="img-fluid mb-4" alt="">
-            <h5 class="font-weight-bold">[서울식물원 온라인교육]<br> 열두달 가드닝 (21년 6월)</h5>
-            <p class="text-gray mb-0">2021.06.01 ~ 2021.06.30</p>
-            <p class="text-gray mb-4 mb-md-4">나만의 화분을 만드는 가드닝!</p>
-            <p class="text-gray mb-4 mb-md-4 text-warning">접수중</p>
-          </div>
+        <div class="col-md-3 mb-4">
+          <a href="#!" class="hvr-grow">
+            <div class="exp m-auto">
+              <img src="images/edu01.jpg" class="img-fluid mb-2 mb-md-4" alt="">
+              <h5 class="font-weight-bold px-2">[서울식물원 온라인교육]<br> 열두달 가드닝 (21년 6월)</h5>
+              <p class="text-gray mb-0">2021.06.01 ~ 2021.06.30</p>
+              <p class="text-gray mb-2 mb-md-4">나만의 화분을 만드는 가드닝!</p>
+              <p class="text-gray mb-2 mb-md-4 text-warning">접수중</p>
+            </div>
+          </a>
         </div>
-        <div class="col-md-3">
-          <div class="exp">
-            <img src="images/edu03.jpg" class="img-fluid mb-4" alt="">
-            <h5 class="font-weight-bold">[서울식물원 온라인교육]<br> 열두달 가드닝 (21년 6월)</h5>
-            <p class="text-gray mb-0">2021.06.01 ~ 2021.06.30</p>
-            <p class="text-gray mb-4 mb-md-4">나만의 화분을 만드는 가드닝!</p>
-            <p class="text-gray mb-4 mb-md-4 text-warning">접수중</p>
-          </div>
+        <div class="col-md-3 mb-4">
+          <a href="#!" class="hvr-grow">
+            <div class="exp m-auto">
+              <img src="images/edu03.jpg" class="img-fluid mb-2 mb-md-4" alt="">
+              <h5 class="font-weight-bold px-2">[서울식물원 온라인교육]<br> 열두달 가드닝 (21년 6월)</h5>
+              <p class="text-gray mb-0">2021.06.01 ~ 2021.06.30</p>
+              <p class="text-gray mb-2 mb-md-4">나만의 화분을 만드는 가드닝!</p>
+              <p class="text-gray mb-2 mb-md-4 text-warning">접수중</p>
+            </div>
+          </a>
         </div>
-        <div class="col-md-3">
-          <div class="exp">
-            <img src="images/edu03.jpg" class="img-fluid mb-4" alt="">
-            <h5 class="font-weight-bold">[서울식물원 온라인교육]<br> 열두달 가드닝 (21년 6월)</h5>
-            <p class="text-gray mb-0">2021.06.01 ~ 2021.06.30</p>
-            <p class="text-gray mb-4 mb-md-4">나만의 화분을 만드는 가드닝!</p>
-            <p class="text-gray mb-4 mb-md-4 text-warning">접수중</p>
-          </div>
+        <div class="col-md-3 mb-4">
+          <a href="#!" class="hvr-grow">
+            <div class="exp m-auto">
+              <img src="images/edu03.jpg" class="img-fluid mb-2 mb-md-4" alt="">
+              <h5 class="font-weight-bold px-2">[서울식물원 온라인교육]<br> 열두달 가드닝 (21년 6월)</h5>
+              <p class="text-gray mb-0">2021.06.01 ~ 2021.06.30</p>
+              <p class="text-gray mb-2 mb-md-4">나만의 화분을 만드는 가드닝!</p>
+              <p class="text-gray mb-2 mb-md-4 text-warning">접수중</p>
+            </div>
+          </a>
         </div>
-        <div class="col-md-3">
-          <div class="exp">
-            <img src="images/edu04.jpg" class="img-fluid mb-4" alt="">
-            <h5 class="font-weight-bold">[서울식물원 온라인교육]<br> 열두달 가드닝 (21년 6월)</h5>
-            <p class="text-gray mb-0">2021.06.01 ~ 2021.06.30</p>
-            <p class="text-gray mb-4 mb-md-4">나만의 화분을 만드는 가드닝!</p>
-            <p class="text-gray mb-4 mb-md-4 text-warning">접수중</p>
-          </div>
+        <div class="col-md-3 mb-4">
+          <a href="#!" class="hvr-grow">
+            <div class="exp m-auto">
+              <img src="images/edu04.jpg" class="img-fluid mb-2 mb-md-4" alt="">
+              <h5 class="font-weight-bold px-2">[서울식물원 온라인교육]<br> 열두달 가드닝 (21년 6월)</h5>
+              <p class="text-gray mb-0">2021.06.01 ~ 2021.06.30</p>
+              <p class="text-gray mb-2 mb-md-4">나만의 화분을 만드는 가드닝!</p>
+              <p class="text-gray mb-2 mb-md-4 text-warning">접수중</p>
+            </div>
+          </a>
         </div>
-        
+
       </div><!-- row -->
     </div><!-- container -->
+
+    <footer id=footer>
+      <div class="container-fluid bg-gray d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center text-white">
+            <div class="col-md-4 d-flex justify-content-center justify-content-md-start pt-4 pt-md-0">
+              <img src="images/logo.png" alt="" class="img-fluid" style="max-width: 142px;">
+            </div>
+            <div class="col-md-4 d-flex justify-content-center py-4">
+              <img src="images/icon_facebook.png" class="img-fluid" alt="">
+              <img src="images/icon_insta.png" class="img-fluid px-5"  alt="">
+              <img src="images/icon_youtube.png" class="img-fluid"  alt="">
+            </div>
+            <div class="col-md-4 text-center text-md-right">
+              <ul class="d-flex justify-content-center justify-content-md-end text-nowrap mb-0">
+                <li><a href="#!">개인정보처리방침</a></li>
+                <li class="px-2">|</li>
+                <li><a href="#!">저작권 정책</a></li>
+                <li class="px-2">|</li>
+                <li><a href="#!">영상정보처리기기 운영 관리방침</a></li>
+              </ul>
+              <ul class="d-flex justify-content-center justify-content-md-end text-nowrap">
+                <li><a href="#!">홈페이지 바로잡기</a></li>
+                <li class="px-2">|</li>
+                <li><a href="#!">행정서비스 헌장</a></li>
+              </ul>
+              <p class="">(우) 07789 서울 강서구 마곡동로 161 서울식물원 </p>
+            </div>
+          </div>
+        </div><!-- container -->
+      </div>
+      <div class="container-fluid bg-highgray text-white d-flex align-items-center">
+        <p class="m-auto">Copyright©Seoul Metropolitan Government all rights reserved</p>
+      </div>
+    </footer>
 </body>
+<script>
+  new WOW().init();
+</script>
 </html>
