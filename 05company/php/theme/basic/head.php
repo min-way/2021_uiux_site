@@ -272,7 +272,7 @@ $(document).ready(function(){
         $("#hd_wrapper").stop().animate({height:140},800);
         $("#hd_wrapper").find(".gnb_2dul").stop().slideUp(800);
         $("#hd_wrapper").removeClass("fixed");
-    
+
         if(0>=scrollY){
           $("#hd_wrapper").removeClass("fixed");
         }else{

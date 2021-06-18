@@ -74,7 +74,7 @@ border:1px solid #558ab7 !important;
 #tnb:after {display:block;visibility:hidden;clear:both;content:""}
 #tnb .inner {margin:0 auto}
 
-#hd_wrapper {position:absolute; width: 100%; margin:0 auto;height:140px;zoom:1; left: 50%; transform: translate(-50%);z-index: 9999; top: 0; position: 1s;}
+#hd_wrapper {position:absolute; width: 100%; margin:0 auto;height:140px;zoom:1; left: 50%; transform: translate(-50%);z-index: 9999; top: 0; transition: 0.5s;}
 #hd_wrapper.fixed {background: #ee3f22;height: 330px;}
 
 #hd_wrapper:after {display:block;visibility:hidden;clear:both;content:""}
