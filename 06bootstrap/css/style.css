@@ -3,7 +3,6 @@
 :root {
   --font-color1:#FABE00;
   --font-color2: #787878;
-
 }
 .bg-gray {background: rgba(0,0,0,0.5);}
 .bg-highgray {background: rgba(0,0,0,0.8);}
@@ -21,7 +20,6 @@
 /* ------------header-------------- */
 
 /* ------------contents-------------- */
-.cont_tit h2 {}
 .vision img {border: 5px solid #FABE00; border-radius: 100%;}
 .vision p {font-size: 14px;}
 .info {background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/bg_guide.jpg"); background-repeat: no-repeat; background-size: cover;}
