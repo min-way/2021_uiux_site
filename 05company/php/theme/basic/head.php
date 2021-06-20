@@ -42,7 +42,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     <?}?>
 
 
-    <div id="hd_wrapper">
+    <div id="hd_wrapper"<?php if(!defined('_INDEX_')) {?> style="background: rgba(0,0,0,0.0);" <?}?> >
       <nav id="gnb" class="gnb">
           <h2>메인메뉴</h2>
           <div class="gnb_wrap">
@@ -263,14 +263,14 @@ $(document).ready(function(){
   function pcView(on){
     if(on=="view"){
       $("#hd_wrapper").on("mouseenter",function(){
-        $("#hd_wrapper").stop().animate({height:330},800);
+        $("#hd_wrapper").stop().animate({height:330},200);
         $("#hd_wrapper").find(".gnb_2dul").stop().slideDown(800);
         $("#hd_wrapper").addClass("fixed");
 
       })
       $("#hd_wrapper").on("mouseleave",function(){
-        $("#hd_wrapper").stop().animate({height:140},800);
-        $("#hd_wrapper").find(".gnb_2dul").stop().slideUp(800);
+        $("#hd_wrapper").stop().animate({height:140},250);
+        $("#hd_wrapper").find(".gnb_2dul").stop().slideUp(200);
         $("#hd_wrapper").removeClass("fixed");
 
         if(0>=scrollY){
